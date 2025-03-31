@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 63,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\main.cpp",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\main.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\main.cpp",
+              "RelativeToolTip": "projektzaliczeniowy\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-31T19:33:46.708Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
