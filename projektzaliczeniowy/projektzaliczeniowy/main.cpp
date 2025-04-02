@@ -4,7 +4,12 @@ using namespace sf;
 int main()
 {
     RenderWindow okno(VideoMode(1200, 800), "GraKotPiekarz");
+        if (!arial.loadFromFile("ArialCE.ttf"))
+        {
+            cout << "nie dziala";
+        }
     button g1(500,300,"guzik.png");
+    napisy n1(100, 100, "napis taki o");
     while (okno.isOpen()) {
         Event event;
         while (okno.pollEvent(event)) {
@@ -19,7 +24,10 @@ int main()
             }
             
         }
+
+
         okno.clear(tlo);
+        okno.draw(n1.nap);
         okno.draw(g1.guzikson);
         okno.display();
     }

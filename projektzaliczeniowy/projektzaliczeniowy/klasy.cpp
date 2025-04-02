@@ -2,6 +2,7 @@
 
 using namespace std;
 using namespace sf;
+
 button::button( float x, float y, string nazwa)
 {
 	
