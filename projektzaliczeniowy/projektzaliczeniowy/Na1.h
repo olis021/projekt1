@@ -5,6 +5,9 @@ using namespace std;
 #pragma once
 static Color tlo = Color::Black;
 static Font arial;
+extern bool etap1;
+extern bool etap2;
+class obiekt;
 class napisy
 {
 protected:
@@ -23,6 +26,7 @@ public:
 };
 class button//klasa co tworzy guziki ,jest jeszcze zdecydowanie nie dopracowana podajesz jej pozycje na x i y ,nazwe pliku co potem siê otwiera jako graficzka
 {
+	friend obiekt;
 protected:
 	float x;
 	float y;
@@ -33,19 +37,13 @@ public:
 	FloatRect hitbox;
 	button( float x, float y, string nazwa);
 	button() : x(0), y(0), nazwa("guzi") {};
-	bool p1(Vector2i pozycjamyszy)
-	{
-		if (hitbox.contains(Vector2f(pozycjamyszy)))
-		{
-			
-			if (tlo == Color::Green)
-			{
-				tlo = Color::Black;
-			}
-			else tlo = Color::Green;;
-			return true;
-		}
-		else return false;
-	}
+	bool p1(Vector2i pozycjamyszy);
+
+
+};
+class obiekt:public button
+{
+public:
+	obiekt(float x, float y, string nazwa);
 
 };
