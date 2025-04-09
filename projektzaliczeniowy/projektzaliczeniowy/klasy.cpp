@@ -1,4 +1,5 @@
 #include "Na1.h"
+#include "petla.h"
 
 using namespace std;
 using namespace sf;
@@ -29,12 +30,11 @@ obiekt::obiekt(float x, float y, string nazwa)
 bool button::p1(Vector2i pozycjamyszy)
 {
 	{
-		if (this->hitbox.contains(Vector2f(pozycjamyszy))&& etap1==true)
+		if (this->hitbox.contains(Vector2f(pozycjamyszy)))
 		{
-			etap1 = false;
-			etap2 = true; 
+
 			cout << "kliknieto gozik";
-			
+			return true;
 
 		}
 		else return false;

@@ -1,4 +1,6 @@
 #include "SFML/Graphics.hpp"
+#include"petla.h"
+#include "status_gry.h"
 #include <iostream>
 using namespace sf;
 using namespace std;
