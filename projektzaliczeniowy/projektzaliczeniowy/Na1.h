@@ -19,7 +19,7 @@ public:
 	napisy(float x, float y,string tresc):x(x),y(y),tresc(tresc){
 		nap.setFont(arial);
 		nap.setString(tresc);
-		nap.setFillColor(Color::White);
+		nap.setFillColor(Color::Red);
 		nap.setCharacterSize(30);
 		nap.setPosition(x, y);
 	}

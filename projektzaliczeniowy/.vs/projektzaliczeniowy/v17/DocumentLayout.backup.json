@@ -22,22 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 63,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\main.cpp",
-              "RelativeDocumentMoniker": "projektzaliczeniowy\\main.cpp",
-              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\main.cpp*",
-              "RelativeToolTip": "projektzaliczeniowy\\main.cpp*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-31T19:33:46.708Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -48,13 +34,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\main.cpp",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\main.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\main.cpp*",
+              "RelativeToolTip": "projektzaliczeniowy\\main.cpp*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-31T19:33:46.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "klasy.cpp",
               "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\klasy.cpp",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\klasy.cpp",
               "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\klasy.cpp",
               "RelativeToolTip": "projektzaliczeniowy\\klasy.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-02T16:38:03.702Z",
               "EditorCaption": ""
@@ -67,7 +66,7 @@
               "RelativeDocumentMoniker": "projektzaliczeniowy\\Na1.h",
               "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Na1.h",
               "RelativeToolTip": "projektzaliczeniowy\\Na1.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-02T16:38:16.358Z",
               "EditorCaption": ""

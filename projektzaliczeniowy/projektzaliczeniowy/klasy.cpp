@@ -29,7 +29,7 @@ obiekt::obiekt(float x, float y, string nazwa)
 bool button::p1(Vector2i pozycjamyszy)
 {
 	{
-		if (this->hitbox.contains(Vector2f(pozycjamyszy)))
+		if (this->hitbox.contains(Vector2f(pozycjamyszy))&& etap1==true)
 		{
 			etap1 = false;
 			etap2 = true; 

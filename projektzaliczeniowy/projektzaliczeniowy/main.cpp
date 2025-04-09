@@ -1,6 +1,11 @@
 #include "Na1.h"
 using namespace std;
 using namespace sf;
+    button g1(450,300,"start.png");
+    obiekt o2(350, 100, "menugowne.png");
+    napisy n1(465, 250, "super gra o piekarzu");
+    obiekt o1(300, 50, "obraz1.png");
+    button g2(450, 600, "tbc.png");
 int main()
 {
     RenderWindow okno(VideoMode(1200, 800), "GraKotPiekarz");
@@ -8,11 +13,6 @@ int main()
         {
             cout << "nie dziala";
         }
-    button g1(450,300,"guzik.png");
-    
-    napisy n1(465, 250, "super gra o piekarzu");
-    obiekt o1(300, 50, "obraz1.png");
-    button g2(450, 600, "tbc.png");
     while (okno.isOpen()) {
         Event event;
         while (okno.pollEvent(event)) {
@@ -31,11 +31,13 @@ int main()
             okno.clear(tlo);
         if(etap1)
         {
+            okno.draw(o2.guzikson);
             okno.draw(n1.nap);
             okno.draw(g1.guzikson);
         }
         if (etap2)
         {
+            
             okno.draw(o1.guzikson);
             okno.draw(g2.guzikson);
             
