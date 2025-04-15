@@ -11,8 +11,10 @@ class menu :public status_gry
 	obiekt o2;
 	button g1;
 
+
 public:
 	menu(petla& p1);
 	void obsluga_zdarzen(Event& e, RenderWindow& okno) override;
 	void wyswietl(RenderWindow& okno) override;
+	void logika(float dt) override;
 };

@@ -6,9 +6,12 @@ using namespace sf;
 #pragma once
 class ustawienia :public status_gry
 {
+	petla& p1;
 	obiekt o1;
+	button g1;
 public:
 	ustawienia(petla& p1);
 	void obsluga_zdarzen(Event& e, RenderWindow& okno) override;
+	void logika(float dt) override;
 	void wyswietl(RenderWindow& okno) override;
 };

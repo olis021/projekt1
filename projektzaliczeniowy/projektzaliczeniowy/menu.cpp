@@ -29,3 +29,7 @@ void menu::wyswietl(RenderWindow& okno)
     okno.draw(g1.guzikson);
     
 }
+void menu::logika(float dt)
+{
+
+}

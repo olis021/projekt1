@@ -159,18 +159,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="akcja.cpp" />
     <ClCompile Include="klasy.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="petla.cpp" />
+    <ClCompile Include="stats.cpp" />
     <ClCompile Include="ustawienia.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="akcja.h" />
     <ClInclude Include="menu.h" />
+    <ClInclude Include="stats.h" />
     <ClInclude Include="petla.h" />
     <ClInclude Include="Na1.h" />
     <ClInclude Include="status_gry.h" />
     <ClInclude Include="ustawienia.h" />
+    <ClInclude Include="zmienne.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

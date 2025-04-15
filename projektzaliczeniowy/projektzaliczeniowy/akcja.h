@@ -1,0 +1,16 @@
+#include "petla.h"
+#include "Na1.h"
+#include "status_gry.h"
+using namespace std;
+using namespace sf;
+#pragma once
+class akcja :public status_gry
+{
+	petla& p1;
+
+public:
+	akcja(petla& p1);
+	void obsluga_zdarzen(Event& e, RenderWindow& okno) override;
+	void logika(float dt) override;
+	void wyswietl(RenderWindow& okno) override;
+};
