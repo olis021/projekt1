@@ -40,3 +40,7 @@ bool button::p1(Vector2i pozycjamyszy)
 		else return false;
 	}
 }
+bool obiekt::czystoi()
+{
+	return false;
+}

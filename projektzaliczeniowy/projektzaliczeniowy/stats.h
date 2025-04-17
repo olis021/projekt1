@@ -12,12 +12,12 @@ class stats:public status_gry
 	button g1;
 	napisy t2;
 	button g2;
-	zmienne z1 = zmienne();
+	zmienne& z1;
 
 public:
-	stats(petla& p1);
+	stats(petla& p1,zmienne& z1);
 	void obsluga_zdarzen(Event& e, RenderWindow& okno) override;
-	void logika(float dt) override;
+	void logika(float dt, Event& e) override;
 	void wyswietl(RenderWindow& okno) override;
 
 };

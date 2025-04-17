@@ -6,7 +6,7 @@ class status_gry
 {
 public:
 	virtual void obsluga_zdarzen(Event& e, RenderWindow& okno) = 0;
-	virtual void logika(float dt) = 0;
+	virtual void logika(float dt, Event& e) = 0;
 	virtual void wyswietl(RenderWindow& okno) = 0;
 	virtual ~status_gry() =default;
 };

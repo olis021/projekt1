@@ -1,11 +1,12 @@
 #include "stats.h"
 #include "Na1.h"
+#include "akcja.h"
 #include "zmienne.h"
 using namespace std;
 using namespace sf;
-stats::stats(petla& p1) :p1(p1), t1(200, 200, "monety:") , g1(400, 400, "tg1.png"), t2(200, 240, "maka:")
+stats::stats(petla& p1,zmienne& z1) :p1(p1),z1(z1), t1(200, 200, "monety:"), g1(400, 400, "tg1.png"), t2(200, 240, "maka:"), g2(800, 600, "tg1.png")
 {
-arial.loadFromFile("ArialCE.ttf");
+
 }
 void stats::wyswietl(RenderWindow& okno)
 {
@@ -14,6 +15,7 @@ void stats::wyswietl(RenderWindow& okno)
 	okno.draw(t1.nap);
 	okno.draw(g1.guzikson);
     okno.draw(t2.nap);
+    okno.draw(g2.guzikson);
 }
 void stats::obsluga_zdarzen(Event& e,RenderWindow& okno)
 {
@@ -27,12 +29,16 @@ void stats::obsluga_zdarzen(Event& e,RenderWindow& okno)
             }
             
         }
+        if (g2.p1(pozycjamyszy))
+        {
+            p1.zmana_stanu(make_unique<akcja>(p1,z1));
+        }
 
 
 
     }
 }
-void stats::logika(float dt)
+void stats::logika(float dt,Event& e)
 {
 
 }

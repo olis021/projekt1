@@ -20,7 +20,7 @@ Clock czas;
 
 		}
 		float dt = czas.restart().asSeconds();
-		obecnystan->logika(dt);
+		obecnystan->logika(dt,event);
 		okno.clear();
 		obecnystan->wyswietl(okno);
 		okno.display();
