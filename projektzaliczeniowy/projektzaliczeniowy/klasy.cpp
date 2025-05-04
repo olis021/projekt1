@@ -1,6 +1,6 @@
 #include "Na1.h"
 #include "petla.h"
-
+#include "zmienne.h"
 using namespace std;
 using namespace sf;
 bool etap1 = true;
@@ -44,3 +44,4 @@ bool obiekt::czystoi()
 {
 	return false;
 }
+vector<string> zam = { "dzien dobry,poprosze","chleby","kajzerki" };

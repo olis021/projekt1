@@ -12,6 +12,7 @@ class stats:public status_gry
 	button g1;
 	napisy t2;
 	button g2;
+	napisy t3;
 	zmienne& z1;
 
 public:
