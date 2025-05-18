@@ -9,6 +9,7 @@ petla::petla():okno(VideoMode(1200,800),"gra o piekarzu")
 }
 void petla::gra()
 {
+Clock czas;
 	while (okno.isOpen())
 	{
 		Event event;
@@ -18,6 +19,8 @@ void petla::gra()
 			obecnystan->obsluga_zdarzen(event,okno);
 
 		}
+		float dt = czas.restart().asSeconds();
+		obecnystan->logika(dt,event);
 		okno.clear();
 		obecnystan->wyswietl(okno);
 		okno.display();

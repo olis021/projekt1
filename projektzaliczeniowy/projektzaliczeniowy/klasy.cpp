@@ -1,6 +1,6 @@
 #include "Na1.h"
 #include "petla.h"
-
+#include "zmienne.h"
 using namespace std;
 using namespace sf;
 bool etap1 = true;
@@ -40,3 +40,8 @@ bool button::p1(Vector2i pozycjamyszy)
 		else return false;
 	}
 }
+bool obiekt::czystoi()
+{
+	return false;
+}
+vector<string> zam = { "dzien dobry,poprosze","chleby","kajzerki" };
