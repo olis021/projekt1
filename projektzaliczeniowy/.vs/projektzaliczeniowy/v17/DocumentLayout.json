@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 63,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -63,8 +63,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-09T16:49:10.196Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -77,8 +76,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-09T12:06:32.866Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -91,77 +89,11 @@
               "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-09T11:19:35.085Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ustawienia.h",
-              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\ustawienia.h",
-              "RelativeDocumentMoniker": "projektzaliczeniowy\\ustawienia.h",
-              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\ustawienia.h",
-              "RelativeToolTip": "projektzaliczeniowy\\ustawienia.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-09T17:48:07.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ustawienia.cpp",
-              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\ustawienia.cpp",
-              "RelativeDocumentMoniker": "projektzaliczeniowy\\ustawienia.cpp",
-              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\ustawienia.cpp",
-              "RelativeToolTip": "projektzaliczeniowy\\ustawienia.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-09T17:48:19.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "status_gry.h",
-              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\status_gry.h",
-              "RelativeDocumentMoniker": "projektzaliczeniowy\\status_gry.h",
-              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\status_gry.h",
-              "RelativeToolTip": "projektzaliczeniowy\\status_gry.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-09T11:23:02.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "petla.h",
-              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.h",
-              "RelativeDocumentMoniker": "projektzaliczeniowy\\petla.h",
-              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.h",
-              "RelativeToolTip": "projektzaliczeniowy\\petla.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-09T11:18:25.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "klasy.cpp",
-              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\klasy.cpp",
-              "RelativeDocumentMoniker": "projektzaliczeniowy\\klasy.cpp",
-              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\klasy.cpp",
-              "RelativeToolTip": "projektzaliczeniowy\\klasy.cpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-09T17:06:40.182Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -177,6 +109,70 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ustawienia.h",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\ustawienia.h",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\ustawienia.h",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\ustawienia.h",
+              "RelativeToolTip": "projektzaliczeniowy\\ustawienia.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-09T17:48:07.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ustawienia.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\ustawienia.cpp",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\ustawienia.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\ustawienia.cpp",
+              "RelativeToolTip": "projektzaliczeniowy\\ustawienia.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-09T17:48:19.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "status_gry.h",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\status_gry.h",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\status_gry.h",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\status_gry.h",
+              "RelativeToolTip": "projektzaliczeniowy\\status_gry.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-09T11:23:02.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "petla.h",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.h",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\petla.h",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.h",
+              "RelativeToolTip": "projektzaliczeniowy\\petla.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-09T11:18:25.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "klasy.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\klasy.cpp",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\klasy.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\klasy.cpp",
+              "RelativeToolTip": "projektzaliczeniowy\\klasy.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-09T17:06:40.182Z"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "main.cpp",
@@ -186,8 +182,7 @@
               "RelativeToolTip": "projektzaliczeniowy\\main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-31T19:33:46.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T19:33:46.708Z"
             }
           ]
         }
