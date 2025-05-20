@@ -16,6 +16,4 @@ public:
 	petla();
 	void gra();
 	void zmana_stanu(unique_ptr<status_gry> nowy);
-
-
 };

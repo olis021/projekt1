@@ -18,7 +18,7 @@ class stats:public status_gry
 public:
 	stats(petla& p1,zmienne& z1);
 	void obsluga_zdarzen(Event& e, RenderWindow& okno) override;
-	void logika(float dt, Event& e) override;
+	void logika(float dt, Event& e, RenderWindow& okno) override;
 	void wyswietl(RenderWindow& okno) override;
 
 };

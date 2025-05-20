@@ -4,19 +4,31 @@
 #include <iostream>
 using namespace sf;
 using namespace std;
+//plik naglowkowy z klasa obiekt, napisy, grafika, button
 #pragma once
 static Color tlo = Color::Black;
 static Font arial;
-class obiekt;
-class napisy
+
+class obiekt
+	//podstawowy obiekt, po którym bêd¹ dziedziczyæ klasy guzik, napis itd.
 {
 protected:
-	float x;
+	float x; //zmienne po³o¿enia
 	float y;
+	FloatRect hitbox;
+public:
+	obiekt(float x, float y);
+};
+
+class napisy: public obiekt
+{
+protected:
 	string tresc;
+
 public:
 	Text nap;
-	napisy(float x, float y,string tresc):x(x),y(y),tresc(tresc){
+	napisy(float x, float y, string tresc): obiekt(x,y), tresc(tresc) 
+	{
 		arial.loadFromFile("ArialCE.ttf");
 		nap.setFont(arial);
 		nap.setString(tresc);
@@ -25,27 +37,34 @@ public:
 		nap.setPosition(x, y);
 	}
 };
-class button//klasa co tworzy guziki ,jest jeszcze zdecydowanie nie dopracowana podajesz jej pozycje na x i y ,nazwe pliku co potem siê otwiera jako graficzka
+
+class grafika : public obiekt
 {
-	friend obiekt;
 protected:
 	string nazwa;
 	Texture tekstura;
-	FloatRect hitbox;
-
+	Sprite obraz;
 public:
-	float x;
-	float y;
-	Sprite guzikson;
-	button( float x, float y, string nazwa);
-	button() : x(0), y(0), nazwa("guzi") {};
-	bool p1(Vector2i pozycjamyszy);
-
-
+	grafika(float x, float y, string nazwa);
+	grafika() : obiekt(x, y), nazwa("grafika)") {}
+	void rysuj(RenderWindow& okno); //virtual?
 };
-class obiekt:public button
+class button: public grafika
 {
+protected:
+	string nazwaWskaznika;
+	Texture teksturaWskaznika;
 public:
-	obiekt(float x, float y, string nazwa);
-	bool czystoi();
+	button( float x, float y, string nazwa, string nazwaWskaznika);
+	button() : grafika(0,0,"guzik"){}
+	bool p1(Vector2i pozycjamyszy);
+	void wskaznikGuzik(Vector2i pozycjamyszy);
 };
+
+
+//class obiekt:public button
+//{
+//public:
+//	obiekt(float x, float y, string nazwa);
+//	bool czystoi();
+//};
