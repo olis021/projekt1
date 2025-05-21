@@ -24,9 +24,9 @@ class napisy: public obiekt
 {
 protected:
 	string tresc;
-
-public:
+	Font czcionka;
 	Text nap;
+public:
 	napisy(float x, float y, string tresc);
 };
 

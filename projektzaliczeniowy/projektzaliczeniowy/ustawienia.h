@@ -11,6 +11,7 @@ class ustawienia :public status_gry
 	grafika o1;
 	button g1;
 	zmienne& z1;
+	napisy n1;
 public:
 	ustawienia(petla& p1);
 	void obsluga_zdarzen(Event& e, RenderWindow& okno) override;

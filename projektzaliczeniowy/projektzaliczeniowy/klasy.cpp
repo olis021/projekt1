@@ -4,6 +4,7 @@
 using namespace std;
 using namespace sf;
 //plik z definicjami klas z plików nag³ówkowych: Na1, petla, zmienne
+//DODAC OBSLUGE BLEDOW PRZY OTWIERANIU PLIKOW
 
 bool etap1 = true;
 bool etap2 = false;
@@ -16,12 +17,13 @@ obiekt::obiekt(float x, float y)
 
 napisy::napisy(float x, float y, string tresc) : obiekt(x, y), tresc(tresc)
 {
-	/*font.loadFromFile("ArialCE.ttf");
-	nap.setFont(arial);
+	czcionka.loadFromFile("MegamaxJonathanToo-YqOq2.ttf");
+
+	nap.setFont(czcionka);
 	nap.setString(this->tresc);
 	nap.setFillColor(Color::White);
 	nap.setCharacterSize(30);
-	nap.setPosition(this->x, this->y);*/
+	nap.setPosition(this->x, this->y);
 }
 
 grafika::grafika(float x, float y, string nazwa) : obiekt(x, y)
