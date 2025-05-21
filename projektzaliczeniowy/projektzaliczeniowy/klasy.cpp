@@ -14,6 +14,16 @@ obiekt::obiekt(float x, float y)
 	this->y = y;
 }
 
+napisy::napisy(float x, float y, string tresc) : obiekt(x, y), tresc(tresc)
+{
+	font.loadFromFile("ArialCE.ttf");
+	nap.setFont(arial);
+	nap.setString(this->tresc);
+	nap.setFillColor(Color::White);
+	nap.setCharacterSize(30);
+	nap.setPosition(this->x, this->y);
+}
+
 grafika::grafika(float x, float y, string nazwa) : obiekt(x, y)
 {
 	this->nazwa = nazwa;

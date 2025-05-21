@@ -27,15 +27,7 @@ protected:
 
 public:
 	Text nap;
-	napisy(float x, float y, string tresc): obiekt(x,y), tresc(tresc) 
-	{
-		arial.loadFromFile("ArialCE.ttf");
-		nap.setFont(arial);
-		nap.setString(tresc);
-		nap.setFillColor(Color::White);
-		nap.setCharacterSize(30);
-		nap.setPosition(x, y);
-	}
+	napisy(float x, float y, string tresc);
 };
 
 class grafika : public obiekt

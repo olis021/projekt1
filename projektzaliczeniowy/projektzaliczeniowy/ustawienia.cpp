@@ -5,7 +5,7 @@
 using namespace std;
 using namespace sf;
 
-ustawienia::ustawienia(petla& p1):p1(p1),z1(p1.k1), o1(300, 50, "obraz1.png"), g1(450, 400, "tg1.png", "tg1.png")
+ustawienia::ustawienia(petla& p1):p1(p1),z1(p1.k1), o1(0, 0, "instrukcja.png"), g1(450, 400, "tg1.png", "tg1.png")
 {
 
 }
