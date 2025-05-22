@@ -7,7 +7,6 @@ using namespace sf;
 #pragma once
 class zmienne
 {
-
 public:
 	int monety ;
 	int maka ;
