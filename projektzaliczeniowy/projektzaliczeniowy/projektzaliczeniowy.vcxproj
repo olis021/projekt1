@@ -160,7 +160,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="akcja.cpp" />
+    <ClCompile Include="Animacja.cpp" />
     <ClCompile Include="klasy.cpp" />
+    <ClCompile Include="Klient.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="petla.cpp" />
@@ -169,6 +171,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="akcja.h" />
+    <ClInclude Include="Animacja.h" />
+    <ClInclude Include="Klient.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="stats.h" />
     <ClInclude Include="petla.h" />

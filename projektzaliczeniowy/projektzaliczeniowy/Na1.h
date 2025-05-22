@@ -25,9 +25,12 @@ class napisy: public obiekt
 protected:
 	string tresc;
 	Font czcionka;
-	Text nap;
+	Color kolor;
+	int Size;
 public:
-	napisy(float x, float y, string tresc);
+	Text nap;
+	napisy(float x, float y, string tresc, Color kolor, int Size);
+	napisy() : obiekt(0, 0), tresc("napis"), Size(1) {}
 };
 
 class grafika : public obiekt
@@ -35,11 +38,12 @@ class grafika : public obiekt
 protected:
 	string nazwa;
 	Texture tekstura;
-	Sprite obraz;
 public:
+	Sprite obraz;
 	grafika(float x, float y, string nazwa);
-	grafika() : obiekt(x, y), nazwa("grafika)") {}
+	grafika() : obiekt(0.f, 0.f), nazwa("grafika)") {}
 	void rysuj(RenderWindow& okno); //virtual?
+	void zmienTeksture(string nowaTekstura);
 };
 class button: public grafika
 {
@@ -53,7 +57,7 @@ public:
 	void wskaznikGuzik(Vector2i pozycjamyszy);
 };
 
-
+//
 //class obiekt:public button
 //{
 //public:

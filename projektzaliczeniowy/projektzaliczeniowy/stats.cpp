@@ -4,7 +4,7 @@
 #include "zmienne.h"
 using namespace std;
 using namespace sf;
-stats::stats(petla& p1,zmienne& z1) :p1(p1),z1(z1), t1(200, 200, "monety:"), g1(400, 400, "tg1.png", "tg1.png"), t2(200, 240, "maka:"), g2(800, 600, "tg1.png", "tg1.png"), t3(450, 100, "dzien:")
+stats::stats(petla& p1,zmienne& z1) :p1(p1),z1(z1), t1(200, 200, "monety:", Color::White, 12), g1(400, 400, "tg1.png", "tg1.png"), t2(200, 240, "maka:", Color::White, 12), g2(800, 600, "tg1.png", "tg1.png"), t3(450, 100, "dzien:", Color::White, 12)
 {
 
 }
@@ -35,8 +35,6 @@ void stats::obsluga_zdarzen(Event& e,RenderWindow& okno)
         {
             p1.zmana_stanu(make_unique<akcja>(p1,z1));
         }
-
-
     }
 }
 void stats::logika(float dt, Event& e, RenderWindow& okno)

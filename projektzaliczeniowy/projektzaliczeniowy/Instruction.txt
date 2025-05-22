@@ -1,0 +1,10 @@
+Help Mr. Soft Paws save his quaint bakery from the heinous clutches of inflation and the bailiff! Manage the shops' finances, pay daily rent and sell only the best of baked goods! But be carefull with your spendings, you never know when the inflation will strike and completely derail your business plans. Best of luck and remember to keep a cool head.
+
+Daily tasks:
+- Sell  as many good as you can;
+- The day will end after your shop is visited by 5 costumers;
+- Pay rent and utility bill after you finish your shift;
+- Buy ingredients if needed;
+
+On you first day the utility bill and rent start at 15$.
+

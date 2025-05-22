@@ -15,14 +15,13 @@ obiekt::obiekt(float x, float y)
 	this->y = y;
 }
 
-napisy::napisy(float x, float y, string tresc) : obiekt(x, y), tresc(tresc)
+napisy::napisy(float x, float y, string tresc, Color kolor, int Size) : obiekt(x, y), kolor(kolor),tresc(tresc), Size(Size)
 {
 	czcionka.loadFromFile("MegamaxJonathanToo-YqOq2.ttf");
-
 	nap.setFont(czcionka);
 	nap.setString(this->tresc);
-	nap.setFillColor(Color::White);
-	nap.setCharacterSize(30);
+	nap.setFillColor(kolor);
+	nap.setCharacterSize(Size);
 	nap.setPosition(this->x, this->y);
 }
 
@@ -33,6 +32,12 @@ grafika::grafika(float x, float y, string nazwa) : obiekt(x, y)
 	this->obraz.setTexture(this->tekstura);
 	this ->obraz.setPosition(this->x, this->y);
 	hitbox = obraz.getGlobalBounds();
+}
+
+void grafika::zmienTeksture(string nowaTekstura)
+{
+	this->tekstura.loadFromFile(nowaTekstura);
+	this->obraz.setTexture(tekstura);
 }
 
 void grafika::rysuj(RenderWindow&okno)

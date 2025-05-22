@@ -1,19 +1,21 @@
 #include "akcja.h"
 #include "zmienne.h"
 #include "stats.h"
+#include "Klient.h"
+#include "Animacja.h"
 using namespace std;
 using namespace sf;
 
-	bool sprzedane = false;
-	bool losowanie = false;
-	bool losowanie2 = false;
-	int x;
-akcja::akcja(petla& p1, zmienne& z1) :p1(p1), z1(z1), g1(100, 100, "tg1.png", "tg1.png"), o1(800, 700, "klient.png"), o2(0, 0, "bakery_background.png"), t1(600, 650, " "), t2(200, 200, " "), dystans(0), t3(200, 250, ""), t4(200, 300, ""), g2(800, 150, "tg1.png", "tg1.png"), g3(100, 10, "tg1.png","tg1.png"), t5(200, 350, "kajzerka")
-{
-
-}
+bool sprzedane = false;
+bool losowanie = false;
+bool losowanie2 = false;
+int x;
+akcja::akcja(petla& p1, zmienne& z1) :p1(p1), z1(z1), g1(100, 100, "tg1.png", "tg1.png"), o1(800, 700, "cat1.png"), o2(0, 0, "bakery_background.png"),
+t1(600, 650, " ", Color::White, 12), t2(200, 200, " ", Color::White, 12), dystans(0), t3(200, 250, "", Color::White, 12), t4(200, 300, "", Color::White, 12), 
+g2(800, 150, "tg1.png", "tg1.png"), g3(100, 10, "tg1.png","tg1.png"), t5(200, 350, "kajzerka", Color::White, 12){}
 void akcja::logika(float dt,Event& e,RenderWindow& okno)
 {
+	MrPaw.update(dt);
 //klienci(dystans, dt);
 }
 void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
@@ -56,81 +58,82 @@ void akcja::wyswietl(RenderWindow& okno)
 	g1.rysuj(okno);
 	o1.rysuj(okno);
 	o2.rysuj(okno);
+	MrPaw.klatka.rysuj(okno);
 	g2.rysuj(okno);
 	g3.rysuj(okno);
 	okno.draw(t5.nap);
 }
-//void akcja::klientspecjalny(float& dystans,float dt)
-//{
-//	if (dystans < 200)
-//	{
-//		o1.guzikson.move(-100 * dt, -50 * dt);
-//		dystans = dystans + 100 * dt;
-//	}
-//	if (dystans > 190 && dystans <= 200) t1.nap.setString("siema moge chlebek bratku?");
-//	if (z1.chleb >= 1 && dystans >= 200 && dystans <= 800 && !sprzedane)
-//	{
-//		z1.chleb = z1.chleb - 1;
-//		z1.monety = z1.monety + 3;
-//		sprzedane = true;
-//	}
-//	if (dystans >= 200 && dystans <= 750 && sprzedane)
-//	{
-//		o1.guzikson.move(-100 * dt, 0);
-//		dystans = dystans + 100 * dt;
-//		t1.nap.setString(" ");
-//		if (dystans >= 200 && dystans <= 240) t1.nap.setString("dzieki bracie!");
-//
-//	}
-//	if (dystans >= 750)
-//	{
-//		sprzedane = false;
-//		o1.obraz.setPosition(800, 700);
-//		dystans = 0;
-//	}
-//
-//}
-//		int za,ile;
-//void akcja::klienci(float& dystans,float dt)
-//{
-//	if (!losowanie)
-//	{
-//		za = losuj(1, 2);
-//		ile = losuj(1, 4);
-//		losowanie = true;
-//	}
-//	if (dystans < 200)
-//	{
-//		o1.guzikson.move(-100 * dt, -50 * dt);
-//		dystans = dystans + 100 * dt;
-//	}
-//	if (dystans > 190 && dystans <= 200) t1.nap.setString(zam[0]+to_string(ile)+" "+zam[za]);
-//	if (za==1&&z1.chleb >= ile && dystans >= 200 && dystans <= 800 && !sprzedane)
-//	{
-//		z1.chleb = z1.chleb - ile;
-//		z1.monety = z1.monety + 3*ile;
-//		sprzedane = true;
-//	}
-//	if (za == 2 && z1.kajzerka >= ile && dystans >= 200 && dystans <= 800 && !sprzedane)
-//	{
-//		z1.kajzerka = z1.kajzerka - ile;
-//		z1.monety = z1.monety + 2 * ile;
-//		sprzedane = true;
-//	}
-//	if (dystans >= 200 && dystans <= 750 && sprzedane)
-//	{
-//		o1.guzikson.move(-100 * dt, 0); //add move func
-//		dystans = dystans + 100 * dt;
-//		t1.nap.setString(" ");
-//		if (dystans >= 200 && dystans <= 240) t1.nap.setString("dziekuje dowidzenia!");
-//
-//	}
-//	if (dystans >= 750)
-//	{
-//		sprzedane = false;
-//		o1.guzikson.setPosition(800, 700); // add set position func
-//		dystans = 0;
-//		losowanie = false;
-//		losowanie2 = false;
-//	}
-//}
+void akcja::klientspecjalny(float& dystans,float dt)
+{
+	if (dystans < 200)
+	{
+		o1.obraz.move(-100 * dt, -50 * dt);
+		dystans = dystans + 100 * dt;
+	}
+	if (dystans > 190 && dystans <= 200) t1.nap.setString("siema moge chlebek bratku?");
+	if (z1.chleb >= 1 && dystans >= 200 && dystans <= 800 && !sprzedane)
+	{
+		z1.chleb = z1.chleb - 1;
+		z1.monety = z1.monety + 3;
+		sprzedane = true;
+	}
+	if (dystans >= 200 && dystans <= 750 && sprzedane)
+	{
+		o1.obraz.move(-100 * dt, 0);
+		dystans = dystans + 100 * dt;
+		t1.nap.setString(" ");
+		if (dystans >= 200 && dystans <= 240) t1.nap.setString("dzieki bracie!");
+
+	}
+	if (dystans >= 750)
+	{
+		sprzedane = false;
+		o1.obraz.setPosition(800, 700);
+		dystans = 0;
+	}
+
+}
+		int za,ile;
+void akcja::klienci(float& dystans,float dt)
+{
+	if (!losowanie)
+	{
+		za = losuj(1, 2);
+		ile = losuj(1, 4);
+		losowanie = true;
+	}
+	if (dystans < 200)
+	{
+		o1.obraz.move(-100 * dt, -50 * dt);
+		dystans = dystans + 100 * dt;
+	}
+	if (dystans > 190 && dystans <= 200) t1.nap.setString(zam[0]+to_string(ile)+" "+zam[za]);
+	if (za==1&&z1.chleb >= ile && dystans >= 200 && dystans <= 800 && !sprzedane)
+	{
+		z1.chleb = z1.chleb - ile;
+		z1.monety = z1.monety + 3*ile;
+		sprzedane = true;
+	}
+	if (za == 2 && z1.kajzerka >= ile && dystans >= 200 && dystans <= 800 && !sprzedane)
+	{
+		z1.kajzerka = z1.kajzerka - ile;
+		z1.monety = z1.monety + 2 * ile;
+		sprzedane = true;
+	}
+	if (dystans >= 200 && dystans <= 750 && sprzedane)
+	{
+		o1.obraz.move(-100 * dt, 0); //add move func
+		dystans = dystans + 100 * dt;
+		t1.nap.setString(" ");
+		if (dystans >= 200 && dystans <= 240) t1.nap.setString("dziekuje dowidzenia!");
+
+	}
+	if (dystans >= 750)
+	{
+		sprzedane = false;
+		o1.obraz.setPosition(800, 700); // add set position func
+		dystans = 0;
+		losowanie = false;
+		losowanie2 = false;
+	}
+}
