@@ -1,74 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\",
+  "WorkspaceRootPath": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Animacja.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\Animacja.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja_klienci.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\akcja_klienci.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Animacja.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\Animacja.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\akcja.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\status_gry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\status_gry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\petla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\akcja.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\klasy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\klasy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\klasy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Na1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\Na1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\petla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\ustawienia.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\ustawienia.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\zmienne.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\zmienne.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\zmienne.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\stats.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\stats.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\akcja.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Klient.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Animacja.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\Animacja.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\petla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Na1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\Na1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Klient.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\Klient.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\stats.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\stats.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\stats.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\stats.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\stats.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\status_gry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\status_gry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Animacja.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\Animacja.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\akcja.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\petla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\ustawienia.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\ustawienia.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A6F824-14FC-4046-958B-A5FF83C5FD87}|projektzaliczeniowy\\projektzaliczeniowy.vcxproj|solutionrelative:projektzaliczeniowy\\menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,43 +82,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 63,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "menu.h",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\menu.h",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\menu.h",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\menu.h",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\menu.h",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\menu.h",
               "RelativeToolTip": "projektzaliczeniowy\\menu.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-17T12:27:18.518Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "petla.h",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.h",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.h",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\petla.h",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.h",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.h",
               "RelativeToolTip": "projektzaliczeniowy\\petla.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-17T11:48:07.869Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "akcja_klienci.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja_klienci.cpp",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\akcja_klienci.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja_klienci.cpp*",
+              "RelativeToolTip": "projektzaliczeniowy\\akcja_klienci.cpp*",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAFEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-22T14:20:49.006Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "Animacja.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Animacja.cpp",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\Animacja.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Animacja.cpp",
+              "RelativeToolTip": "projektzaliczeniowy\\Animacja.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-22T12:33:45.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "status_gry.h",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\status_gry.h",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\status_gry.h",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\status_gry.h",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\status_gry.h",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\status_gry.h",
               "RelativeToolTip": "projektzaliczeniowy\\status_gry.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -123,24 +159,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Animacja.cpp",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Animacja.cpp",
-              "RelativeDocumentMoniker": "projektzaliczeniowy\\Animacja.cpp",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Animacja.cpp",
-              "RelativeToolTip": "projektzaliczeniowy\\Animacja.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-22T12:33:45.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "Animacja.h",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Animacja.h",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Animacja.h",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\Animacja.h",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Animacja.h",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Animacja.h",
               "RelativeToolTip": "projektzaliczeniowy\\Animacja.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -149,13 +172,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "akcja.cpp",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.cpp",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\akcja.cpp",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.cpp",
               "RelativeToolTip": "projektzaliczeniowy\\akcja.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-15T16:42:47.317Z",
               "EditorCaption": ""
@@ -164,22 +187,22 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Na1.h",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Na1.h",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Na1.h",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\Na1.h",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Na1.h",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Na1.h",
               "RelativeToolTip": "projektzaliczeniowy\\Na1.h",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-09T11:19:35.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "petla.cpp",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.cpp",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\petla.cpp",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\petla.cpp",
               "RelativeToolTip": "projektzaliczeniowy\\petla.cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -188,24 +211,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "klasy.cpp",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\klasy.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\klasy.cpp",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\klasy.cpp",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\klasy.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\klasy.cpp",
               "RelativeToolTip": "projektzaliczeniowy\\klasy.cpp",
-              "ViewState": "AgIAABMAAAAAAAAAAAAIwBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-17T12:51:17.257Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "akcja.h",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.h",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.h",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\akcja.h",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.h",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.h",
               "RelativeToolTip": "projektzaliczeniowy\\akcja.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -214,24 +237,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "ustawienia.cpp",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\ustawienia.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\ustawienia.cpp",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\ustawienia.cpp",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\ustawienia.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\ustawienia.cpp",
               "RelativeToolTip": "projektzaliczeniowy\\ustawienia.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-09T17:48:19.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T17:48:19.537Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "menu.cpp",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\menu.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\menu.cpp",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\menu.cpp",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\menu.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\menu.cpp",
               "RelativeToolTip": "projektzaliczeniowy\\menu.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -240,37 +262,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\main.cpp",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\main.cpp",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\main.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\main.cpp",
               "RelativeToolTip": "projektzaliczeniowy\\main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T14:49:02.143Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T14:49:02.143Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "zmienne.h",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\zmienne.h",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\zmienne.h",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\zmienne.h",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\zmienne.h",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\zmienne.h",
               "RelativeToolTip": "projektzaliczeniowy\\zmienne.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwBsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-15T16:50:48.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 9,
               "Title": "stats.h",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\stats.h",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\stats.h",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\stats.h",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\stats.h",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\stats.h",
               "RelativeToolTip": "projektzaliczeniowy\\stats.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAswBMAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -279,24 +300,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 8,
               "Title": "Klient.h",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Klient.h",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Klient.h",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\Klient.h",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Klient.h",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Klient.h",
               "RelativeToolTip": "projektzaliczeniowy\\Klient.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-22T11:52:33.407Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 10,
               "Title": "stats.cpp",
-              "DocumentMoniker": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\stats.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\stats.cpp",
               "RelativeDocumentMoniker": "projektzaliczeniowy\\stats.cpp",
-              "ToolTip": "C:\\Users\\magda\\Documents\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\stats.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\stats.cpp",
               "RelativeToolTip": "projektzaliczeniowy\\stats.cpp",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
