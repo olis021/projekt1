@@ -1,13 +1,12 @@
 #include "stats.h"
 #include "Na1.h"
 #include "akcja.h"
+#include "sklep.h"
 #include "zmienne.h"
 using namespace std;
 using namespace sf;
-stats::stats(petla& p1,zmienne& z1) :p1(p1),z1(z1), t1(200, 200, "monety:", Color::White, 12), g1(400, 400, "tg1.png", "tg1.png"), t2(200, 240, "maka:", Color::White, 12), g2(800, 600, "tg1.png", "tg1.png"), t3(450, 100, "dzien:", Color::White, 12)
-{
-
-}
+stats::stats(petla& p1, zmienne& z1) :p1(p1), z1(z1), t1(200, 200, "monety:", Color::White, 12), o1(0, 0, "statystyki_tlo.png"), 
+g1(400, 400, "tg1.png", "tg1.png"), t2(200, 240, "maka:", Color::White, 12), g2(1471, 867, "statystyki_next.png", "statystyki_next_zaznaczony.png"), t3(450, 100, "dzien:", Color::White, 12) {}
 void stats::wyswietl(RenderWindow& okno)
 {
     t1.nap.setString("monety:" + to_string(z1.monety));
@@ -15,6 +14,7 @@ void stats::wyswietl(RenderWindow& okno)
     t3.nap.setString("dzien: " + to_string(z1.dzien));
 	okno.draw(t1.nap);
     g1.rysuj(okno);
+    o1.rysuj(okno);
     okno.draw(t2.nap);
     g2.rysuj(okno);
     okno.draw(t3.nap);
@@ -33,11 +33,12 @@ void stats::obsluga_zdarzen(Event& e,RenderWindow& okno)
         }
         if (g2.p1(pozycjamyszy))
         {
-            p1.zmana_stanu(make_unique<akcja>(p1,z1));
+            p1.zmana_stanu(make_unique<sklep>(p1,z1));
         }
     }
 }
 void stats::logika(float dt, Event& e, RenderWindow& okno)
 {
-
+    Vector2i pozycjamyszy = Mouse::getPosition(okno);
+    g2.wskaznikGuzik(pozycjamyszy);
 }

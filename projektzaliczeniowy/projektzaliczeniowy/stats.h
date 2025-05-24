@@ -9,6 +9,7 @@ class stats:public status_gry
 {
 	petla& p1;
 	napisy t1;
+	grafika o1;
 	button g1;
 	napisy t2;
 	button g2;

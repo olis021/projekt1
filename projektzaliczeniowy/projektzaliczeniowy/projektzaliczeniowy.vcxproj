@@ -164,9 +164,11 @@
     <ClCompile Include="Animacja.cpp" />
     <ClCompile Include="klasy.cpp" />
     <ClCompile Include="Klient.cpp" />
+    <ClCompile Include="koniec_gry.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="petla.cpp" />
+    <ClCompile Include="sklep.cpp" />
     <ClCompile Include="stats.cpp" />
     <ClCompile Include="ustawienia.cpp" />
   </ItemGroup>
@@ -174,7 +176,9 @@
     <ClInclude Include="akcja.h" />
     <ClInclude Include="Animacja.h" />
     <ClInclude Include="Klient.h" />
+    <ClInclude Include="koniec_gry.h" />
     <ClInclude Include="menu.h" />
+    <ClInclude Include="sklep.h" />
     <ClInclude Include="stats.h" />
     <ClInclude Include="petla.h" />
     <ClInclude Include="Na1.h" />

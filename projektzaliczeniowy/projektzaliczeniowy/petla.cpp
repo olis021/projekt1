@@ -8,14 +8,7 @@ petla::petla():okno(VideoMode(1920,1080), "Mr. Soft Paws' Bakery", Style::Titleb
 {
 	petla::zmana_stanu(make_unique<menu>(*this)); //zmiana sceny
 }
-//void petla::zmianaOkna(View& widok)
-//{
-//	float skala = static_cast<float>(okno.getSize().y) / static_cast<float>(okno.getSize().x);
-//	if(skala <1.0f)
-//		widok.setSize(SZEROKOSC, SZEROKOSC * skala);
-//	else
-//		widok.setSize(SZEROKOSC*1.0f/skala,SZEROKOSC);
-//}
+
 void petla::gra()
 {
 Clock czas;
