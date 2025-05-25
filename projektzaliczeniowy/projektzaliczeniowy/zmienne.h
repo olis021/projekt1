@@ -12,14 +12,22 @@ public:
 	//moze dzien zrobic jako osbna zmienna globalba poprostu?
 	int monety ;
 	int maka ;
+	int mleko = 0;
+	int drozdze = 0;
 	int chleb;
 	int dzien;
 	int kajzerka;
+	bool wydajzamowienie = false;
 	void dodajm(int x) { monety = monety + x; }
 	void kupmake(int x) { monety = monety - x, maka = maka + 1; }
-	void zrobchleb(int x) { maka = maka - x, chleb = chleb + 1; }
-	void zrobkajzerke(int x) { maka = maka - x, kajzerka = kajzerka + 2; }
-	zmienne() { monety = 10, maka = 0, chleb = 0, dzien = 1,kajzerka=0; }
+	void kupdrozdze(int x) { monety = monety - x, drozdze = drozdze + 3; }
+	void kupmleko(int x) { monety = monety - x, mleko = mleko + 1; }
+	void zrobchleb(int x) { maka = maka - x*2,drozdze=drozdze-2*x,mleko=mleko-x, chleb = chleb + x; }
+	void zrobkajzerke(int x) { maka = maka - x,drozdze=drozdze-x,mleko=mleko-x, kajzerka = kajzerka + x; }
+	void zaplacpodatek(int x) {
+		int podatek = 5 + x * 2;
+		monety = monety - podatek;  }
+	zmienne() { monety = 30, maka = 0, chleb = 0, dzien = 1,kajzerka=0; }
 };
 inline int losuj(int min, int max) {
 	static random_device rd;

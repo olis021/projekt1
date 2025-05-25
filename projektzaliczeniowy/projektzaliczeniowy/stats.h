@@ -11,9 +11,13 @@ class stats:public status_gry
 	napisy t1;
 	grafika o1;
 	button g1;
+	button g3;
+	button g4;
 	napisy t2;
 	button g2;
 	napisy t3;
+	napisy t4;
+	napisy t5;
 	zmienne& z1;
 
 public:

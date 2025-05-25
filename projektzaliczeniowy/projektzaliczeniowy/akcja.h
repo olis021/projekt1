@@ -25,10 +25,17 @@ class akcja :public status_gry
 	napisy t1;
 	napisy t2;
 	napisy t3;
+	napisy tdu;
 	napisy t4;
 	napisy t5;
+	napisy t6;
+	napisy t7;
 	nakladka n1;
 	przepis kajzerka;
+	przepis maka;
+	przepis chlebek;
+	przepis drozdze;
+	przepis mleko;
 	float dystans;
 
 public:
@@ -36,7 +43,7 @@ public:
 	void obsluga_zdarzen(Event& e, RenderWindow& okno) override;
 	void logika(float dt, Event& e, RenderWindow& okno) override;
 	void wyswietl(RenderWindow& okno) override;
-	void klientspecjalny(float& dystans, float dt);
+	void akcja_zdarzenia(Vector2i pozycjamyszy);
 	void klienci(float& dystans, float dt);
 };
 

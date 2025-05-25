@@ -36,5 +36,8 @@ class nakladka : public grafika //UWAGA NAKLADKA MA OSOBNA FUNCKJE RYSUJ MOZE ZR
 {
 public:
 	bool nakladkaAktywna = false;
+	bool nakladkaskladniki = false;
+	bool nakladkaprzepisy = true;
+	bool nakladkaekwipunek = false;
 	nakladka(float x, float y, string nazwa);
 };

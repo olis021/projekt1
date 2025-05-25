@@ -31,7 +31,7 @@ void akcja::klienci(float& dystans, float dt)
 	}
 	if (dystans < 200 )
 	{
-		
+		z1.wydajzamowienie = false;
 		o1.obraz.move(-100 * dt, -50 * dt);
 
 		if (hop && hopka==0)
@@ -47,16 +47,18 @@ void akcja::klienci(float& dystans, float dt)
 		}
 	}
 	if (dystans > 190 && dystans <= 200) t1.nap.setString(zam[0] + to_string(ile) + " " + zam[za]);
-	if (za == 1 && z1.chleb >= ile && dystans >= 200 && dystans <= 800 && !sprzedane)
+	if (za == 1 && z1.chleb >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
 	{
+		z1.wydajzamowienie = false;
 		z1.chleb = z1.chleb - ile;
-		z1.monety = z1.monety + 3 * ile;
+		z1.monety = z1.monety + 10 * ile;
 		sprzedane = true;
 	}
-	if (za == 2 && z1.kajzerka >= ile && dystans >= 200 && dystans <= 800 && !sprzedane)
+	if (za == 2 && z1.kajzerka >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
 	{
+		z1.wydajzamowienie = false;
 		z1.kajzerka = z1.kajzerka - ile;
-		z1.monety = z1.monety + 2 * ile;
+		z1.monety = z1.monety + 5 * ile;
 		sprzedane = true;
 	}
 	if (dystans >= 200 && dystans <= 750 && sprzedane)

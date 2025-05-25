@@ -161,6 +161,7 @@
   <ItemGroup>
     <ClCompile Include="akcja.cpp" />
     <ClCompile Include="akcja_klienci.cpp" />
+    <ClCompile Include="akcja_zdarzenia.cpp" />
     <ClCompile Include="Animacja.cpp" />
     <ClCompile Include="klasy.cpp" />
     <ClCompile Include="Klient.cpp" />
