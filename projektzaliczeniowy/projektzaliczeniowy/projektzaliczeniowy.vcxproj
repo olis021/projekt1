@@ -167,6 +167,7 @@
     <ClCompile Include="koniec_gry.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
+    <ClCompile Include="nakladka.cpp" />
     <ClCompile Include="petla.cpp" />
     <ClCompile Include="sklep.cpp" />
     <ClCompile Include="stats.cpp" />
@@ -178,6 +179,7 @@
     <ClInclude Include="Klient.h" />
     <ClInclude Include="koniec_gry.h" />
     <ClInclude Include="menu.h" />
+    <ClInclude Include="nakladka.h" />
     <ClInclude Include="sklep.h" />
     <ClInclude Include="stats.h" />
     <ClInclude Include="petla.h" />

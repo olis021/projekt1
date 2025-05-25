@@ -1,13 +1,15 @@
+#pragma once
 #include "SFML/Graphics.hpp"
 #include <iostream>
 #include <memory>
 #include <random>
 using namespace std;
 using namespace sf;
-#pragma once
+
 class zmienne
 {
 public:
+	//moze dzien zrobic jako osbna zmienna globalba poprostu?
 	int monety ;
 	int maka ;
 	int chleb;

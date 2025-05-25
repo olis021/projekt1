@@ -1,9 +1,9 @@
+#pragma once
 #include "Na1.h"
 #include "zmienne.h"
 #include "status_gry.h"
 using namespace std;
 using namespace sf;
-#pragma once
 class end :public status_gry
 {
 	petla& p1;

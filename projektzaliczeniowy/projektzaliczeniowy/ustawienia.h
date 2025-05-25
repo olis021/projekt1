@@ -1,10 +1,10 @@
+#pragma once
 #include"status_gry.h"
 #include "petla.h"
 #include "Na1.h"
 #include "zmienne.h"
 using namespace std;
 using namespace sf;
-#pragma once
 class ustawienia :public status_gry
 {
 	petla& p1;

@@ -1,10 +1,10 @@
+#pragma once
 #include "petla.h"
 #include "Na1.h"
 #include "zmienne.h"
 #include "status_gry.h"
 using namespace std;
 using namespace sf;
-#pragma once
 class stats:public status_gry
 {
 	petla& p1;

@@ -1,10 +1,10 @@
+#pragma once
 #include <SFML/Graphics.hpp>
 #include "petla.h"
 #include "Na1.h"
 #include "status_gry.h"
 using namespace std;
 using namespace sf;
-#pragma once
 //dzeidziczy po klasie wirtualnej (musi miec te same funkcje - dlatego override - zapewnic poprawne nadpisywanie funkcji wirtualnej)
 class menu :public status_gry
 {

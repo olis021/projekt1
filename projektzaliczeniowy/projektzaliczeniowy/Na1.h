@@ -1,3 +1,4 @@
+#pragma once
 #include "SFML/Graphics.hpp"
 #include"petla.h"
 #include "status_gry.h"
@@ -5,7 +6,6 @@
 using namespace sf;
 using namespace std;
 //plik naglowkowy z klasa obiekt, napisy, grafika, button
-#pragma once
 static Color tlo = Color::Black;
 static Font arial;
 
@@ -41,9 +41,10 @@ protected:
 public:
 	Sprite obraz;
 	grafika(float x, float y, string nazwa);
-	grafika() : obiekt(0.f, 0.f), nazwa("grafika)") {}
+	grafika() : obiekt(0.f, 0.f), nazwa("grafika") {}
 	void rysuj(RenderWindow& okno); //virtual?
 	void zmienTeksture(string nowaTekstura);
+	void zmienPolozenie(float x, float y);
 };
 class button: public grafika
 {
@@ -56,6 +57,7 @@ public:
 	bool p1(Vector2i pozycjamyszy);
 	void wskaznikGuzik(Vector2i pozycjamyszy);
 };
+
 
 //
 //class obiekt:public button

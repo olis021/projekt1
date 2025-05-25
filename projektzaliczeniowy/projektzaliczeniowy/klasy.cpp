@@ -44,6 +44,10 @@ void grafika::rysuj(RenderWindow&okno)
 {
 	okno.draw(obraz);
 }
+void grafika::zmienPolozenie(float x, float y)
+{
+	this->obraz.setPosition(x, y);
+}
 
 button::button(float x, float y, string nazwa, string nazwaWskaznik): grafika(x, y, nazwa) 
 {
@@ -75,5 +79,6 @@ void button::wskaznikGuzik(Vector2i pozycjamyszy)
 		this->obraz.setTexture(this->tekstura);
 	}
 }
+
 
 vector<string> zam = { "dzien dobry,poprosze ","chleby", "kajzerki" };
