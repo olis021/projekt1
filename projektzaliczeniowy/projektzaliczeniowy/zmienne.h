@@ -27,7 +27,7 @@ public:
 	void zaplacpodatek(int x) {
 		int podatek = 5 + x * 2;
 		monety = monety - podatek;  }
-	zmienne() { monety = 30, maka = 0, chleb = 0, dzien = 1,kajzerka=0; }
+	zmienne() { monety = 40, maka = 0, chleb = 0, dzien = 1,kajzerka=0; }
 };
 inline int losuj(int min, int max) {
 	static random_device rd;
