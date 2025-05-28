@@ -1,2 +1,16 @@
-﻿  akcja.cpp
+﻿  Animacja.cpp
+  Klient.cpp
+  akcja.cpp
+  akcja_klienci.cpp
+  akcja_zdarzenia.cpp
+  klasy.cpp
+  koniec_gry.cpp
+  main.cpp
+  menu.cpp
+  nakladka.cpp
+  petla.cpp
+  sklep.cpp
+  stats.cpp
+  ustawienia.cpp
+  Generowanie kodu...
   projektzaliczeniowy.vcxproj -> C:\Users\OliLa\OneDrive\Dokumenty\GitHub\projekt1\projektzaliczeniowy\x64\Debug\projektzaliczeniowy.exe
