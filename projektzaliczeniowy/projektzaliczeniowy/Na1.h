@@ -20,7 +20,7 @@ public:
 	obiekt(float x, float y);
 };
 
-class napisy: public obiekt
+class napisy : public obiekt
 {
 protected:
 	string tresc;
@@ -31,6 +31,8 @@ public:
 	Text nap;
 	napisy(float x, float y, string tresc, Color kolor, int Size);
 	napisy() : obiekt(0, 0), tresc("napis"), Size(1) {}
+	void rysujnapisInt(RenderWindow& okno, int& x);
+	void zmienNapis(RenderWindow& okno, string nowyNapis);
 };
 
 class grafika : public obiekt
@@ -45,6 +47,7 @@ public:
 	void rysuj(RenderWindow& okno); //virtual?
 	void zmienTeksture(string nowaTekstura);
 	void zmienPolozenie(float x, float y);
+	Vector2f zwrocPolozenie();
 };
 class button: public grafika
 {

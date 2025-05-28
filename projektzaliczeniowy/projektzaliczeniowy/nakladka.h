@@ -5,39 +5,64 @@
 using namespace std;
 using namespace sf;
 
-class suwak : public button
-{
-protected:
-	bool ciagnie = false;
-public:
-	suwak(float x, float y, string nazwa, string nazwaZaznaczony);
-	suwak() : button(0, 0, "suwak1", "suwak2") {}
-	void podazaj(Vector2i pozycjamyszy);
-};
 
-class przepis : public grafika
+class skladnik : public grafika
 {
 public:
-	void zrob();
-	void ilosc();
-	void skladnik();
 	int liczba_do_wypieczenia = 0;
 	int liczba_w_ekwipunku = 0;
-	int cena = 0;
 	napisy t1;
 	button g1;
 	button g2;
-	przepis(float x, float y, float a, float b, float c, float d, float m, float n, int cena, string nazwaObraz, string nazwaGuzik1, 
-	string nazwaGuzikZaznaczony1, string nazwaGuzik2, string nazwaGuzikZaznaczony2);
-	void rysujprzepis(RenderWindow& okno);
+	void zmniejsz();
+	skladnik(float x, float y, string nazwaObraz, string nazwaGuzik1, string nazwaGuzik2);
+	skladnik() : grafika(0, 0, "kajzerka.png"),
+		g1(0 + 340, 0 + 160, "kajzerka.png", "kajzerka.png"), g2(0 + 589, 0 + 160, "kajzerka.png", "kajzerka.png"), t1(0 + 495, 0 + 168, "0", Color::Black, 50) {
+	}
+	void rysujskladnik(RenderWindow& okno);
+	void przyciskNacisnietySkladnik(zmienne& z1, Vector2i pozycjamyszy);
 };
 
-class nakladka : public grafika //UWAGA NAKLADKA MA OSOBNA FUNCKJE RYSUJ MOZE ZROBIC JAKAS WIRTUALNA DLA GRAFIK JAK TO RYSUJ JEST WSZEDZIE
+class przepis : public skladnik
 {
 public:
+	bool warunek(skladnik& s1, skladnik& s2, skladnik& s3);
+	void zrob();
+	int liczbas1 = 0;
+	int liczbas2 = 0;
+	int liczbas3 = 0;
+	int cena = 0;
+	napisy t2;
+	napisy t3;
+	napisy t4;
+	przepis(float x, float y, int s1, int s2, int s3, int cena, string nazwaObraz, string nazwaGuzik1, 
+	string nazwaGuzik2);
+	przepis() : skladnik(0, 0, "kajzerka.png", "kajzerka.png", "kajzerka.png"),
+		t2(0 + 412, 0 + 9, "0", Color::Black, 50), t3(0 + 532, 0 + 9, "0", Color::Black, 50), t4(0 + 651, 0 + 9, "0", Color::Black, 50), cena(0), liczbas1(0), liczbas2(0), liczbas3(0) {
+	}
+	void rysujprzepis(RenderWindow& okno);
+	void przyciskNacisniety(Vector2i pozycjamyszy);
+	bool moznaUpiec(skladnik& s1, skladnik& s2, skladnik& s3, zmienne& z1);
+};
+
+class suwak: public button
+{
+public:
+	bool ciagnie = false;
+	suwak(float x, float y, string nazwa, string nazwaZaznaczony);
+	suwak() : button(0, 0, "suwak1", "suwak2") {}
+	void podazaj(Vector2i pozycjamyszy, skladnik& o1);
+
+};
+
+class nakladka : public grafika
+{
+public:
+	suwak s1;
 	bool nakladkaAktywna = false;
 	bool nakladkaskladniki = false;
 	bool nakladkaprzepisy = true;
 	bool nakladkaekwipunek = false;
 	nakladka(float x, float y, string nazwa);
+	void ustawbool(bool przepisy, bool skladniki, bool ekwpipunek, bool wydajzamowienie, zmienne& z1);
 };

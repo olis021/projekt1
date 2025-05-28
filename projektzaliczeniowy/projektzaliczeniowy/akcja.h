@@ -6,7 +6,6 @@
 #include "nakladka.h"
 using namespace std;
 using namespace sf;
-
 class akcja :public status_gry
 {
 	petla& p1;
@@ -25,17 +24,22 @@ class akcja :public status_gry
 	napisy t1;
 	napisy t2;
 	napisy t3;
-	napisy tdu;
 	napisy t4;
 	napisy t5;
 	napisy t6;
 	napisy t7;
 	nakladka n1;
 	przepis kajzerka;
-	przepis maka;
 	przepis chlebek;
-	przepis drozdze;
-	przepis mleko;
+	przepis rogalik;
+	przepis precel;
+	przepis chalka;
+	skladnik maka;
+	skladnik drozdze;
+	skladnik mleko;
+	skladnik jajka;
+	skladnik woda;
+	skladnik maslo;
 	float dystans;
 
 public:
@@ -45,5 +49,6 @@ public:
 	void wyswietl(RenderWindow& okno) override;
 	void akcja_zdarzenia(Vector2i pozycjamyszy);
 	void klienci(float& dystans, float dt);
+	void guzikiZaznaczenie(Vector2i pozycjamyszy);
 };
 

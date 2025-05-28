@@ -2,7 +2,6 @@
 #include "zmienne.h"
 #include "nakladka.h"
 #include "stats.h"
-#include "Klient.h"
 #include "Animacja.h"
 using namespace std;
 using namespace sf;

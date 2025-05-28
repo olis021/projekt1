@@ -1,6 +1,5 @@
 #include "akcja.h"
 #include "Na1.h"
-#include "Klient.h"
 #include "zmienne.h"
 using namespace std;
 using namespace sf;

@@ -24,6 +24,19 @@ napisy::napisy(float x, float y, string tresc, Color kolor, int Size) : obiekt(x
 	nap.setCharacterSize(Size);
 	nap.setPosition(this->x, this->y);
 }
+void napisy::rysujnapisInt(RenderWindow& okno, int& x)
+{
+	this->tresc = to_string(x);
+	this->nap.setString(this->tresc);
+	okno.draw(this->nap);
+}
+
+void napisy::zmienNapis(RenderWindow& okno, string nowynapis)
+{
+	this->tresc =  nowynapis;
+	this->nap.setString(this->tresc);
+	okno.draw(this->nap);
+}
 
 grafika::grafika(float x, float y, string nazwa) : obiekt(x, y)
 {
@@ -39,13 +52,18 @@ void grafika::zmienTeksture(string nowaTekstura)
 	this->tekstura.loadFromFile(nowaTekstura);
 	this->obraz.setTexture(tekstura);
 }
-
+Vector2f grafika::zwrocPolozenie()
+{
+	return Vector2f(this->x, this->y);
+}
 void grafika::rysuj(RenderWindow&okno)
 {
 	okno.draw(obraz);
 }
 void grafika::zmienPolozenie(float x, float y)
 {
+	this->x = x;
+	this->y = y;
 	this->obraz.setPosition(x, y);
 }
 
