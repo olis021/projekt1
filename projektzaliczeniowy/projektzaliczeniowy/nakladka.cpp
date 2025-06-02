@@ -6,7 +6,7 @@ skladnik::skladnik(float x, float y, string nazwaObraz, string nazwaGuzik1,
 	g1(x + 340, y + 160, nazwaGuzik1, nazwaGuzik1), g2(x + 589, y + 160, nazwaGuzik2, nazwaGuzik2), t1(x + 495, y + 168, "0", Color::Black, 50) {
 }
 
-przepis::przepis(float x, float y, int s1, int s2, int s3, int cena, string nazwaObraz, string nazwaGuzik1,
+przepis::przepis(float x, float y, int s1, int s2, int s3, float cena, string nazwaObraz, string nazwaGuzik1,
 	string nazwaGuzik2): skladnik(x, y, nazwaObraz, nazwaGuzik1, nazwaGuzik2), 
 	t2(x + 412,y+9, "0", Color::Black,50), t3(x+532,y+ 9, "0", Color::Black, 50), t4(x + 651, y + 9, "0", Color::Black, 50), cena(cena), liczbas1(s1), liczbas2(s1), liczbas3(s3) {
 }
@@ -59,7 +59,7 @@ void skladnik::przyciskNacisnietySkladnik(zmienne& z1, Vector2i pozycjamyszy)
 }
 void przepis::zrob()
 {
-	int koszt = liczba_do_wypieczenia * cena;
+	float koszt = liczba_do_wypieczenia * cena;
 	monetki = monetki - koszt;
 	liczba_w_ekwipunku += liczba_do_wypieczenia;
 	liczba_do_wypieczenia = 0;

@@ -173,6 +173,7 @@
     <ClCompile Include="sklep.cpp" />
     <ClCompile Include="stats.cpp" />
     <ClCompile Include="ustawienia.cpp" />
+    <ClCompile Include="zmienne.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="akcja.h" />

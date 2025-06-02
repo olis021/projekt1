@@ -30,11 +30,12 @@ void sklep::obsluga_zdarzen(Event& e, RenderWindow& okno)
 
         if (g2.p1(pozycjamyszy) && z1.dzien >1 && !zaplacone)
         {
-            z1.zaplacpodatek(z1.dzien);
+            z1.zaplacpodatek();
             zaplacone = true;
         }
         if (g1.p1(pozycjamyszy) && zaplacone)
         {
+            z1.inflacja();
             p1.zmana_stanu(make_unique<stats>(p1, z1));
             zaplacone = false;
         }

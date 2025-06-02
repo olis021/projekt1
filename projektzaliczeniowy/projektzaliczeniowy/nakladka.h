@@ -31,14 +31,14 @@ public:
 	int liczbas1 = 0;
 	int liczbas2 = 0;
 	int liczbas3 = 0;
-	int cena = 0;
+	float cena;
 	napisy t2;
 	napisy t3;
 	napisy t4;
-	przepis(float x, float y, int s1, int s2, int s3, int cena, string nazwaObraz, string nazwaGuzik1, 
+	przepis(float x, float y, int s1, int s2, int s3, float cena, string nazwaObraz, string nazwaGuzik1, 
 	string nazwaGuzik2);
 	przepis() : skladnik(0, 0, "kajzerka.png", "kajzerka.png", "kajzerka.png"),
-		t2(0 + 412, 0 + 9, "0", Color::Black, 50), t3(0 + 532, 0 + 9, "0", Color::Black, 50), t4(0 + 651, 0 + 9, "0", Color::Black, 50), cena(0), liczbas1(0), liczbas2(0), liczbas3(0) {
+		t2(0 + 412, 0 + 9, "0", Color::Black, 50), t3(0 + 532, 0 + 9, "0", Color::Black, 50), t4(0 + 651, 0 + 9, "0", Color::Black, 50), liczbas1(0), liczbas2(0), liczbas3(0), cena(1) {
 	}
 	void rysujprzepis(RenderWindow& okno);
 	void przyciskNacisniety(Vector2i pozycjamyszy);

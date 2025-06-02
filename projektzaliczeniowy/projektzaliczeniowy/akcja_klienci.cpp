@@ -3,6 +3,7 @@
 #include "zmienne.h"
 using namespace std;
 using namespace sf;
+
 int za, ile;
 int numerkota = 0;
 int ostatnikot = 0;
@@ -31,14 +32,14 @@ void akcja::klienci(float& dystans, float dt)
 	if (dystans < 200 )
 	{
 		z1.wydajzamowienie = false;
-		o1.obraz.move(-100 * dt, -50 * dt);
+		o1.obraz.move(-100.0f * dt, -50 * dt);
 
 		if (hop && hopka==0)
 		{
-			o1.obraz.move(0, -10);
+			o1.obraz.move(0, -10*dt);
 			hop = false;
-		}else if(!hop && hopka == 0) o1.obraz.move(0, 10) , hop=true;
-		dystans = dystans + 100 * dt;
+		}else if(!hop && hopka == 0) o1.obraz.move(0, 10*dt) , hop=true;
+		dystans = dystans + 100.0f * dt;
 		hopka++;
 		if (hopka >= 50)
 		{
@@ -67,11 +68,11 @@ void akcja::klienci(float& dystans, float dt)
 
 		if (hop && hopka==0)
 		{
-			o1.obraz.move(0, -10);
+			o1.obraz.move(0, -10*dt);
 			hop = false;
 		}
-		else if(!hop && hopka==0) o1.obraz.move(0, 35), hop = true;
-		dystans = dystans + 100 * dt;
+		else if(!hop && hopka==0) o1.obraz.move(0, 35*dt), hop = true;
+		dystans = dystans + 100.0f * dt;
 		hopka++;
 		if (hopka >= 50)
 		{
@@ -86,7 +87,7 @@ void akcja::klienci(float& dystans, float dt)
 		losowanie = false;
 		sprzedane = false;
 		losowanie2 = false;
-		o1.obraz.setPosition(800, 700); // add set position func
+		o1.obraz.setPosition(800, 700);
 		dystans = 0;
 	}
 }

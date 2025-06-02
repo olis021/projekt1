@@ -16,5 +16,4 @@ void Animacja::update(float dt) {
 
 vector<string> softPawSciezki = { "SofrPaw1.png","SofrPaw2.png","SofrPaw3.png", "SofrPaw4.png" };
 vector<float> softPawCzasy = { 0.5f,0.3f,0.5f,0.3f };
-
 Animacja MrPaw(softPawSciezki, softPawCzasy, 1269, 167);
