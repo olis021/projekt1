@@ -9,3 +9,7 @@ void akcja::akcja_zdarzenia(Vector2i pozycjamyszy)
 {
 
 }
+void akcja::zmianastrony(Vector2i pozycjamyszy)
+{
+	
+}

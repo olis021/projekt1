@@ -48,7 +48,7 @@ void przepis::przyciskNacisniety(Vector2i pozycjamyszy)
 
 void skladnik::przyciskNacisnietySkladnik(zmienne& z1, Vector2i pozycjamyszy)
 {
-	if (this-> g1.p1(pozycjamyszy) && z1.maka > this->liczba_do_wypieczenia)
+	if (this-> g1.p1(pozycjamyszy))
 	{
 		this->liczba_do_wypieczenia++;
 	}
@@ -85,10 +85,20 @@ void nakladka::ustawbool(bool przepisy, bool skladnik, bool ekwpipunek, bool wyd
 	this->nakladkaekwipunek = ekwpipunek;
 	z1.wydajzamowienie = wydajzamowienie;
 }
-
+void nakladka::zmianastrony()
+{
+	if (this->zmienstrone=false)
+	{
+		this->zmienstrone = true;
+	}
+	if (this->zmienstrone)
+	{
+		this->zmienstrone = false;
+	}
+}
 bool przepis::moznaUpiec(skladnik& s1, skladnik& s2, skladnik& s3, zmienne& z1)
 {
-	return (s1.liczba_do_wypieczenia == this->liczbas1 &&
-		s2.liczba_do_wypieczenia == this->liczbas2 &&
-		s3.liczba_do_wypieczenia == this->liczbas3);
+	return (s1.liczba_do_wypieczenia == this->liczbas1*this->liczba_do_wypieczenia &&
+		s2.liczba_do_wypieczenia == this->liczbas2 * this->liczba_do_wypieczenia &&
+		s3.liczba_do_wypieczenia == this->liczbas3 * this->liczba_do_wypieczenia);
 }

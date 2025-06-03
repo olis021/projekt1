@@ -1,25 +1,2 @@
-﻿  akcja.cpp
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,69): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,69): warning C4244:         with
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,69): warning C4244:         [
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,69): warning C4244:             T=float
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,69): warning C4244:         ]
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,69): warning C4244:         and
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,69): warning C4244:         [
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,69): warning C4244:             T=int
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,69): warning C4244:         ]
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,50): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,50): warning C4244:         with
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,50): warning C4244:         [
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,50): warning C4244:             T=float
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,50): warning C4244:         ]
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,50): warning C4244:         and
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,50): warning C4244:         [
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,50): warning C4244:             T=int
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(63,50): warning C4244:         ]
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja.cpp(66,69): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
-  klasy.cpp
-  Generowanie kodu...
-  projektzaliczeniowy.vcxproj -> C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\x64\Debug\projektzaliczeniowy.exe
-  'pwsh.exe' is not recognized as an internal or external command,
-  operable program or batch file.
+﻿  stats.cpp
+  projektzaliczeniowy.vcxproj -> C:\Users\OliLa\OneDrive\Dokumenty\GitHub\projekt1\projektzaliczeniowy\x64\Debug\projektzaliczeniowy.exe

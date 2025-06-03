@@ -13,6 +13,9 @@ public:
 	int maka ;
 	int mleko = 0;
 	int drozdze = 0;
+	int jajka = 0;
+	int woda = 0;
+	int maslo = 0;
 	int chleb;
 	int dzien;
 	int kajzerka;
@@ -21,6 +24,9 @@ public:
 	void kupmake(int x) { monety = monety - x, maka = maka + 1; }
 	void kupdrozdze(int x) { monety = monety - x, drozdze = drozdze + 3; }
 	void kupmleko(int x) { monety = monety - x, mleko = mleko + 1; }
+	void kupmaslo(int x) { monety = monety - x, maslo = maslo + 1; }
+	void kupjajka(int x) { monety = monety - x, jajka = jajka + 4; }
+	void kupwoda(int x) { monety = monety - x, woda = woda + 5; }
 	void zrobchleb(int x) { maka = maka - x*2,drozdze=drozdze-2*x,mleko=mleko-x, chleb = chleb + x; }
 	void zrobkajzerke(int x) { maka = maka - x,drozdze=drozdze-x,mleko=mleko-x, kajzerka = kajzerka + x; }
 	void zaplacpodatek(int x) {
