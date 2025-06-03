@@ -12,6 +12,7 @@ petla::petla():okno(VideoMode(1920,1080), "Mr. Soft Paws' Bakery", Style::Titleb
 void petla::gra()
 {
 Clock czas;
+Vector2i poprzedniaPozycjaMyszy = Mouse::getPosition(okno);
 	while (okno.isOpen())
 	{
 		Event event;

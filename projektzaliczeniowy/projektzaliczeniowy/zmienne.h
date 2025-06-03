@@ -9,7 +9,6 @@ using namespace sf;
 class zmienne
 {
 public:
-	//moze dzien zrobic jako osbna zmienna globalba poprostu?
 	int monety ;
 	int maka ;
 	int mleko = 0;

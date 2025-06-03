@@ -83,9 +83,6 @@
     <ClInclude Include="zmienne.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="Klient.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
     <ClInclude Include="Animacja.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
