@@ -63,6 +63,8 @@ public:
 	bool nakladkaskladniki = false;
 	bool nakladkaprzepisy = true;
 	bool nakladkaekwipunek = false;
+	bool zmienstrone = false;
 	nakladka(float x, float y, string nazwa);
 	void ustawbool(bool przepisy, bool skladniki, bool ekwpipunek, bool wydajzamowienie, zmienne& z1);
+	void zmianastrony();
 };

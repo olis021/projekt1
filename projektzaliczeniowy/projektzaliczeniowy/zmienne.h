@@ -9,58 +9,30 @@ using namespace sf;
 class zmienne
 {
 public:
-	//dane dnia
-	float monety ;
-	int dzien;
-	float inflacja_wartosc;
-	float podatek;
-	//liczba skladnikow
+	int monety ;
 	int maka ;
-	int mleko;
-	int jajko;
-	int woda;
-	int maslo;
-	int drozdze;
-	//liczba wypiekow
+	int mleko = 0;
+	int drozdze = 0;
+	int jajka = 0;
+	int woda = 0;
+	int maslo = 0;
 	int chleb;
+	int dzien;
 	int kajzerka;
-	int rogal;
-	int chalka;
-	int precel;
-	//cena biezaca skladnikow
-	float cena_maki;
-	float cena_jajka;
-	float cena_mleka;
-	float cena_wody;
-	float cena_masla;
-	float cena_drozdze;
-	//cena biezaca wypiekow
-	float cena_rogal;
-	float cena_kajzerka;
-	float cena_chalka;
-	float cena_chleb;
-	float cena_precel;
-
 	bool wydajzamowienie = false;
-
-	void dodajm(int x);
-	void kupmake();
-	void kupmleko();
-	void kupdrozdze();
-	void kupjajko();
-	void kupwode();
-	void zrobchleb(int x);
-	void zrobkajzerke(int x);
-	void zrobrogal(int x);
-	void zrobprecel(int x);
-	void zrobchalke(int x);
-	void zaplacpodatek();
-	void inflacja();
-	zmienne() 
-	{monety = 40; dzien = 1; maka = 0; mleko = 0; jajko = 0; maslo = 0; woda = 0; drozdze = 0; chleb = 0; precel = 0;
-	rogal = 0; kajzerka = 0; chalka = 0; kajzerka = 0; cena_maki = 1, 6; cena_mleka = 2; cena_jajka = 0, 8; cena_wody = 0, 5; cena_masla = 4, 1; cena_drozdze = 1, 2;
-	cena_rogal = 3, 4; cena_chleb = 6; cena_kajzerka = 1, 2; cena_chalka = 8; cena_precel = 2, 8; inflacja_wartosc = 1; podatek = 5;
-	}
+	void dodajm(int x) { monety = monety + x; }
+	void kupmake(int x) { monety = monety - x, maka = maka + 1; }
+	void kupdrozdze(int x) { monety = monety - x, drozdze = drozdze + 3; }
+	void kupmleko(int x) { monety = monety - x, mleko = mleko + 1; }
+	void kupmaslo(int x) { monety = monety - x, maslo = maslo + 1; }
+	void kupjajka(int x) { monety = monety - x, jajka = jajka + 4; }
+	void kupwoda(int x) { monety = monety - x, woda = woda + 5; }
+	void zrobchleb(int x) { maka = maka - x*2,drozdze=drozdze-2*x,mleko=mleko-x, chleb = chleb + x; }
+	void zrobkajzerke(int x) { maka = maka - x,drozdze=drozdze-x,mleko=mleko-x, kajzerka = kajzerka + x; }
+	void zaplacpodatek(int x) {
+		int podatek = 5 + x * 2;
+		monety = monety - podatek;  }
+	zmienne() { monety = 35, maka = 0, chleb = 0, dzien = 1,kajzerka=0; }
 };
 inline int losuj(int min, int max) {
 	static random_device rd;
