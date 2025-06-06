@@ -150,11 +150,16 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 					z1.ostatniKlik = z1.Dol;
 				}
 			}
-			for (przepis* i : przepisy_widoczne)
+			for (przepis* i : przepisy_zbior)
 			{
-				i->przyciskNacisniety(pozycjamyszy);
+				if (i->widoczny)
+				{
+					if (i == &rogalik) rogalik.przyciskNacisniety(pozycjamyszy);
+					else
+						i->przyciskNacisniety(pozycjamyszy);
+				}
+					
 			}
-
 		}
 		if (n1.nakladkaskladniki && n1.nakladkaAktywna)
 		{
@@ -173,6 +178,7 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 		}
 	}
 }
+
 
 void akcja::wyswietl(RenderWindow& okno)
 {
@@ -205,28 +211,11 @@ void akcja::wyswietl(RenderWindow& okno)
 		g8.rysuj(okno);
 		if (n1.nakladkaprzepisy)
 		{
-			if (z1.dzien == 1) {
-				chlebek.rysujprzepis(okno);
-			}
-			if (z1.dzien == 2)
+			for (przepis* i : przepisy_zbior)
 			{
-				chlebek.rysujprzepis(okno);
-				kajzerka.rysujprzepis(okno);
-			}
-			if (z1.dzien == 3)
-			{
-				chlebek.rysujprzepis(okno);
-				kajzerka.rysujprzepis(okno);
-				rogalik.rysujprzepis(okno);
-			}
-			if (z1.dzien >= 4)
-			{
-				for (przepis* i : przepisy_widoczne)
+				if (i->widoczny)
 				{
-					if (i->widoczny)
-					{
-						i->rysujprzepis(okno);
-					}
+					i->rysujprzepis(okno);
 				}
 			}
 		}

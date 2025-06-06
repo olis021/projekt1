@@ -45,10 +45,8 @@ class akcja :public status_gry
 	skladnik woda;
 	skladnik maslo;
 	float dystans;
-	deque<przepis*> przepisy_widoczne = { &chlebek, &kajzerka, &rogalik };
-	deque<przepis*> przepisy_niewidoczne = { &precel, &chalka };
+	deque<przepis*> przepisy_zbior = { &chlebek, &kajzerka, &rogalik};
 	deque<skladnik*> skladniki_widoczne = { &maka, &woda, &drozdze};
-	deque<skladnik*> skladniki_niewidoczne = {&jajka, &mleko, &maslo };
 public:
 	akcja(petla& p1, zmienne& z1);
 	void obsluga_zdarzen(Event& e, RenderWindow& okno) override;

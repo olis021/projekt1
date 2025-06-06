@@ -1,7 +1,11 @@
-﻿  akcja.cpp
+﻿  Animacja.cpp
+  Klient.cpp
+  akcja.cpp
+  akcja_klienci.cpp
   akcja_zdarzenia.cpp
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja_zdarzenia.cpp(22,28): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja_zdarzenia.cpp(24,28): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja_zdarzenia.cpp(20,28): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  koniec_gry.cpp
+  stats.cpp
   Generowanie kodu...
   projektzaliczeniowy.vcxproj -> C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\x64\Debug\projektzaliczeniowy.exe
   'pwsh.exe' is not recognized as an internal or external command,

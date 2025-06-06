@@ -44,12 +44,16 @@ void przepis::przyciskNacisniety(Vector2i pozycjamyszy)
 {
 	if (this->g1.p1(pozycjamyszy))
 	{
+		if(this->widoczny)
 		this->liczba_do_wypieczenia++;
 	}
 	if (this->g2.p1(pozycjamyszy))
 	{
-		if(this->liczba_do_wypieczenia >= 1)
-		this->liczba_do_wypieczenia--;
+		if (this->widoczny)
+		{
+			if (this->liczba_do_wypieczenia >= 1)
+				this->liczba_do_wypieczenia--;
+		}
 	}
 }
 
@@ -79,16 +83,15 @@ bool przepis::warunek(skladnik& s1, skladnik& s2, skladnik& s3)
 
 void przepis::przeniesPrzepis(float y)
 {
-	this->zmienPolozenie(this->x, this->y + y);
-    float baseX = this->x;
-    float baseY = this->y;
-
-    this->t1.zmienPolozenie(baseX + 495, baseY + 168);
-    this->t2.zmienPolozenie(baseX + 412, baseY + 9);
-    this->t3.zmienPolozenie(baseX + 532, baseY + 9);
-    this->t4.zmienPolozenie(baseX + 651, baseY + 9);
-    this->g1.zmienPolozenie(baseX + 340, baseY + 160);
-    this->g2.zmienPolozenie(baseX + 589, baseY + 160);
+    float noweX = this->zwrocPolozenie().x;
+    float noweY = this->y + y;
+	this->zmienPolozenie(noweX, noweY);
+    this->t1.nap.move(noweX + 495, noweY + 168);
+    this->t2.nap.move(noweX + 412, noweY + 9);
+    this->t3.nap.move(noweX + 532, noweY + 9);
+    this->t4.nap.move(noweX + 651, noweY + 9);
+    this->g1.zmienPolozenie(noweX + 340, noweY + 160);
+    this->g2.zmienPolozenie(noweX + 589, noweY + 160);
 }
 
 nakladka::nakladka(float x, float y, string nazwa) : grafika(x, y, nazwa), g1(741, 16, "przycisk_gora.png", "przycisk_gora.png"), g2(741, 939, "przycik_dol.png", "przycik_dol.png") {}
