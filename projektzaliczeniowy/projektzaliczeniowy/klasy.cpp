@@ -24,6 +24,16 @@ napisy::napisy(float x, float y, string tresc, Color kolor, int Size) : obiekt(x
 	nap.setCharacterSize(Size);
 	nap.setPosition(this->x, this->y);
 }
+void napisy::zmienPolozenie(float x, float y)
+{
+	this->x = x;
+	this->y = y;
+	this->nap.setPosition(this->x, this->y);
+}
+Vector2f napisy::zwrocPolozenie()
+{
+	return Vector2f(this->x, this->y);
+}
 void napisy::rysujnapisInt(RenderWindow& okno, int& x)
 {
 	this->tresc = to_string(x);

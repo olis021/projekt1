@@ -1,20 +1,19 @@
 #include "zmienne.h"
 
-
-bool wydajzamowienie = false;
-void zmienne::dodajm(int x) { monety = monety + x; }
+void zmienne::dodajm(int x) { monety = monety + static_cast<float>(x); }
 
 void zmienne::kupmake() { monety = monety - cena_maki; maka++; }
 void zmienne::kupdrozdze() { monety = monety - cena_drozdze; drozdze++; }
 void zmienne::kupmleko() { monety = monety - cena_mleka;mleko = mleko++; }
-void zmienne::kupjajko() { monety = monety - cena_jajka;jajko = jajko++; }
+void zmienne::kupjajko() { monety = monety - cena_jajka;jajka = jajka++; }
 void zmienne::kupwode() { monety = monety - cena_wody, woda++; }
+void zmienne::kupmaslo() { monety = monety - cena_masla, maslo++; }
 
-void zmienne::zrobchleb(int x) { maka = maka - x * 4, drozdze = drozdze - x, woda = woda- x, chleb = chleb + x; }
-void zmienne::zrobkajzerke(int x) { maka = maka - x, drozdze = drozdze - x, mleko = mleko - x, kajzerka = kajzerka + x; }
-void zmienne::zrobchalke(int x) { maka = maka - 2*x, mleko = mleko - x, drozdze = drozdze- x, chalka = chalka + x; }
-void zmienne::zrobrogal(int x) { maka = maka - 4*x, maslo = maslo - x, mleko = mleko - x, rogal = rogal + x; }
-void zmienne::zrobprecel(int x) { maka = maka - x, woda = woda - x, jajko = jajko - x, precel = precel + x; }
+void zmienne::zrobchleb(int x) { maka = maka - x * 4, drozdze = drozdze - x, woda = woda - x, chleb = chleb + x; }
+void zmienne::zrobkajzerke(int x) { maka = maka - 3 * x, drozdze = drozdze - x, jajka = jajka - x, kajzerka = kajzerka + x; }
+void zmienne::zrobchalke(int x) { maka = maka - 2 * x, mleko = mleko - x, drozdze = drozdze - x, chalka = chalka + x; }
+void zmienne::zrobrogal(int x) { maka = maka - 4 * x, maslo = maslo - x, mleko = mleko - x, rogal = rogal + x; }
+void zmienne::zrobprecel(int x) { maka = maka - x, woda = woda - x, jajka = jajka - x, precel = precel + x; }
 
 void zmienne::zaplacpodatek() {
 	monety = monety - podatek;

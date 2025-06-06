@@ -4,7 +4,7 @@
 #include "zmienne.h"
 using namespace std;
 using namespace sf;
-sklep::sklep(petla& p1, zmienne& z1) :p1(p1), z1(z1), o1(0, 0, "shop_tlo.png"), g1(1471, 867, "sklep_play.png", "sklep_play_zaznaczony.png"), g2(420, 200, "tg1.png", "tg1.png"), t1(200, 200, "monety:", Color::White, 30)
+sklep::sklep(petla& p1, zmienne& z1) :p1(p1), z1(z1), o1(0, 0, "statystyki_tlo.png"), g1(1471, 867, "statystyki_next.png", "statystyki_next_zaznaczony.png"), g2(420, 200, "statystyki_pay.png", "statystyki_pay_Zaznaczony.png"), t1(200, 200, "monety:", Color::White, 30)
 {}
 
 void sklep::wyswietl(RenderWindow& okno)
@@ -45,4 +45,5 @@ void sklep::logika(float dt, Event& e, RenderWindow& okno)
 {
     Vector2i pozycjamyszy = Mouse::getPosition(okno);
     g1.wskaznikGuzik(pozycjamyszy);
+    g2.wskaznikGuzik(pozycjamyszy);
 }

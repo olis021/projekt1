@@ -1,9 +1,10 @@
+#pragma once
 #include "petla.h"
 #include "Na1.h"
 #include "status_gry.h"
-#pragma once
 #include "zmienne.h"
 #include "nakladka.h"
+#include <deque>
 using namespace std;
 using namespace sf;
 class akcja :public status_gry
@@ -18,7 +19,6 @@ class akcja :public status_gry
 	button g6;
 	button g7;
 	button g8;
-	button g9;
 	grafika o1;
 	grafika o2;
 	grafika o3;
@@ -45,7 +45,10 @@ class akcja :public status_gry
 	skladnik woda;
 	skladnik maslo;
 	float dystans;
-
+	deque<przepis*> przepisy_widoczne = { &chlebek, &kajzerka, &rogalik };
+	deque<przepis*> przepisy_niewidoczne = { &precel, &chalka };
+	deque<skladnik*> skladniki_widoczne = { &maka, &woda, &drozdze};
+	deque<skladnik*> skladniki_niewidoczne = {&jajka, &mleko, &maslo };
 public:
 	akcja(petla& p1, zmienne& z1);
 	void obsluga_zdarzen(Event& e, RenderWindow& okno) override;
@@ -55,5 +58,6 @@ public:
 	void akcja_zdarzenia(Vector2i pozycjamyszy);
 	void klienci(float& dystans, float dt);
 	void guzikiZaznaczenie(Vector2i pozycjamyszy);
+	void przewinPrzepisy(int przesuniecieY);
 };
 

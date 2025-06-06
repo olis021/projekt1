@@ -1,2 +1,8 @@
-﻿  stats.cpp
-  projektzaliczeniowy.vcxproj -> C:\Users\OliLa\OneDrive\Dokumenty\GitHub\projekt1\projektzaliczeniowy\x64\Debug\projektzaliczeniowy.exe
+﻿  akcja.cpp
+  akcja_zdarzenia.cpp
+C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja_zdarzenia.cpp(22,28): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\projektzaliczeniowy\akcja_zdarzenia.cpp(24,28): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  Generowanie kodu...
+  projektzaliczeniowy.vcxproj -> C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\x64\Debug\projektzaliczeniowy.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

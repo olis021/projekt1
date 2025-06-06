@@ -33,6 +33,8 @@ public:
 	napisy() : obiekt(0, 0), tresc("napis"), Size(1) {}
 	void rysujnapisInt(RenderWindow& okno, int& x);
 	void zmienNapis(RenderWindow& okno, string nowyNapis);
+	void zmienPolozenie(float x, float y);
+	Vector2f zwrocPolozenie();
 };
 
 class grafika : public obiekt
@@ -49,6 +51,9 @@ public:
 	void zmienPolozenie(float x, float y);
 	Vector2f zwrocPolozenie();
 };
+
+
+
 class button: public grafika
 {
 protected:
