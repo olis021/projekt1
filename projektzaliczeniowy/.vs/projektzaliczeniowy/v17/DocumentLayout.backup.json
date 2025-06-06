@@ -110,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 63,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -123,8 +123,7 @@
               "ViewState": "AgIAABUAAAAAAAAAAAAAACYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-25T08:08:50.799Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -137,12 +136,24 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-27T18:28:43.331Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "akcja.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.cpp",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\akcja.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.cpp",
+              "RelativeToolTip": "projektzaliczeniowy\\akcja.cpp",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAACoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-15T16:42:47.317Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -158,8 +169,7 @@
               "RelativeToolTip": "projektzaliczeniowy\\nakladka.cpp",
               "ViewState": "AgIAAEcAAAAAAAAAAAAlwFkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-25T12:55:53.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T12:55:53.883Z"
             },
             {
               "$type": "Document",
@@ -171,8 +181,7 @@
               "RelativeToolTip": "projektzaliczeniowy\\akcja_klienci.cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAADAAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-25T10:44:01.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T10:44:01.135Z"
             },
             {
               "$type": "Document",
@@ -184,8 +193,7 @@
               "RelativeToolTip": "projektzaliczeniowy\\akcja_zdarzenia.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-25T14:31:10.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T14:31:10.279Z"
             },
             {
               "$type": "Document",
@@ -197,8 +205,7 @@
               "RelativeToolTip": "projektzaliczeniowy\\akcja.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-03T18:51:11.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T18:51:11.162Z"
             },
             {
               "$type": "Document",
@@ -210,8 +217,7 @@
               "RelativeToolTip": "projektzaliczeniowy\\Klient.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-27T19:30:11.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T19:30:11.279Z"
             },
             {
               "$type": "Document",
@@ -223,21 +229,7 @@
               "RelativeToolTip": "projektzaliczeniowy\\sklep.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAADkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-25T16:48:43.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "akcja.cpp",
-              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.cpp",
-              "RelativeDocumentMoniker": "projektzaliczeniowy\\akcja.cpp",
-              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.cpp",
-              "RelativeToolTip": "projektzaliczeniowy\\akcja.cpp",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACoAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-15T16:42:47.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T16:48:43.308Z"
             },
             {
               "$type": "Document",
@@ -249,8 +241,7 @@
               "RelativeToolTip": "projektzaliczeniowy\\stats.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAACYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-06T19:47:26.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-06T19:47:26.982Z"
             },
             {
               "$type": "Document",
@@ -262,8 +253,7 @@
               "RelativeToolTip": "projektzaliczeniowy\\zmienne.h",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAACYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-25T12:49:52.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T12:49:52.978Z"
             },
             {
               "$type": "Document",
@@ -383,8 +373,7 @@
               "RelativeToolTip": "projektzaliczeniowy\\klasy.cpp",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-17T12:51:17.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T12:51:17.257Z"
             },
             {
               "$type": "Document",

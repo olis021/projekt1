@@ -110,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 63,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -123,8 +123,7 @@
               "ViewState": "AgIAABUAAAAAAAAAAAAAACYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-25T08:08:50.799Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -137,8 +136,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-27T18:28:43.331Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -147,84 +145,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "nakladka.cpp",
-              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\nakladka.cpp",
-              "RelativeDocumentMoniker": "projektzaliczeniowy\\nakladka.cpp",
-              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\nakladka.cpp",
-              "RelativeToolTip": "projektzaliczeniowy\\nakladka.cpp",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAlwFkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-25T12:55:53.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "akcja_klienci.cpp",
-              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja_klienci.cpp",
-              "RelativeDocumentMoniker": "projektzaliczeniowy\\akcja_klienci.cpp",
-              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja_klienci.cpp",
-              "RelativeToolTip": "projektzaliczeniowy\\akcja_klienci.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADAAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-25T10:44:01.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "akcja_zdarzenia.cpp",
-              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja_zdarzenia.cpp",
-              "RelativeDocumentMoniker": "projektzaliczeniowy\\akcja_zdarzenia.cpp",
-              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja_zdarzenia.cpp",
-              "RelativeToolTip": "projektzaliczeniowy\\akcja_zdarzenia.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-25T14:31:10.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "akcja.h",
-              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.h",
-              "RelativeDocumentMoniker": "projektzaliczeniowy\\akcja.h",
-              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.h",
-              "RelativeToolTip": "projektzaliczeniowy\\akcja.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-03T18:51:11.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Klient.cpp",
-              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Klient.cpp",
-              "RelativeDocumentMoniker": "projektzaliczeniowy\\Klient.cpp",
-              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Klient.cpp",
-              "RelativeToolTip": "projektzaliczeniowy\\Klient.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-27T19:30:11.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "sklep.cpp",
-              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\sklep.cpp",
-              "RelativeDocumentMoniker": "projektzaliczeniowy\\sklep.cpp",
-              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\sklep.cpp",
-              "RelativeToolTip": "projektzaliczeniowy\\sklep.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAADkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-25T16:48:43.308Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -241,6 +161,78 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "nakladka.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\nakladka.cpp",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\nakladka.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\nakladka.cpp",
+              "RelativeToolTip": "projektzaliczeniowy\\nakladka.cpp",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAlwFkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-25T12:55:53.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "akcja_klienci.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja_klienci.cpp",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\akcja_klienci.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja_klienci.cpp",
+              "RelativeToolTip": "projektzaliczeniowy\\akcja_klienci.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADAAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-25T10:44:01.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "akcja_zdarzenia.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja_zdarzenia.cpp",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\akcja_zdarzenia.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja_zdarzenia.cpp",
+              "RelativeToolTip": "projektzaliczeniowy\\akcja_zdarzenia.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-25T14:31:10.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "akcja.h",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.h",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\akcja.h",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\akcja.h",
+              "RelativeToolTip": "projektzaliczeniowy\\akcja.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-03T18:51:11.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Klient.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Klient.cpp",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\Klient.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\Klient.cpp",
+              "RelativeToolTip": "projektzaliczeniowy\\Klient.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-27T19:30:11.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sklep.cpp",
+              "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\sklep.cpp",
+              "RelativeDocumentMoniker": "projektzaliczeniowy\\sklep.cpp",
+              "ToolTip": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\sklep.cpp",
+              "RelativeToolTip": "projektzaliczeniowy\\sklep.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAADkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-25T16:48:43.308Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "stats.cpp",
               "DocumentMoniker": "C:\\Users\\OliLa\\OneDrive\\Dokumenty\\GitHub\\projekt1\\projektzaliczeniowy\\projektzaliczeniowy\\stats.cpp",
@@ -249,8 +241,7 @@
               "RelativeToolTip": "projektzaliczeniowy\\stats.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAACYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-06T19:47:26.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-06T19:47:26.982Z"
             },
             {
               "$type": "Document",
@@ -262,8 +253,7 @@
               "RelativeToolTip": "projektzaliczeniowy\\zmienne.h",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAACYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-25T12:49:52.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T12:49:52.978Z"
             },
             {
               "$type": "Document",
@@ -383,8 +373,7 @@
               "RelativeToolTip": "projektzaliczeniowy\\klasy.cpp",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-17T12:51:17.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T12:51:17.257Z"
             },
             {
               "$type": "Document",
