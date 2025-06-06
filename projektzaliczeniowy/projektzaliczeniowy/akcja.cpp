@@ -205,11 +205,28 @@ void akcja::wyswietl(RenderWindow& okno)
 		g8.rysuj(okno);
 		if (n1.nakladkaprzepisy)
 		{
-			for (przepis* i : przepisy_widoczne)
+			if (z1.dzien == 1) {
+				chlebek.rysujprzepis(okno);
+			}
+			if (z1.dzien == 2)
 			{
-				if (i->widoczny)
+				chlebek.rysujprzepis(okno);
+				kajzerka.rysujprzepis(okno);
+			}
+			if (z1.dzien == 3)
+			{
+				chlebek.rysujprzepis(okno);
+				kajzerka.rysujprzepis(okno);
+				rogalik.rysujprzepis(okno);
+			}
+			if (z1.dzien >= 4)
+			{
+				for (przepis* i : przepisy_widoczne)
 				{
-					i->rysujprzepis(okno);
+					if (i->widoczny)
+					{
+						i->rysujprzepis(okno);
+					}
 				}
 			}
 		}
