@@ -4,14 +4,14 @@
 #include "zmienne.h"
 using namespace std;
 using namespace sf;
-end::end(petla& p1) :p1(p1), o1(0, 0, "end_game_tlo.png"), g1(1471, 867, "koniec_quit.png", "koniec_quit_zaznaczony.png"), t1() {}
+koniec::koniec(petla& p1,zmienne& z1) :p1(p1),z1(z1), o1(0, 0, "end_game_tlo.png"), g1(1471, 867, "koniec_quit.png", "koniec_quit_zaznaczony.png"), t1() {}
 
-void end::wyswietl(RenderWindow& okno)
+void koniec::wyswietl(RenderWindow& okno)
 {
     o1.rysuj(okno);
     g1.rysuj(okno);
 }
-void end::obsluga_zdarzen(Event& e, RenderWindow& okno)
+void koniec::obsluga_zdarzen(Event& e, RenderWindow& okno)
 {
     if (e.type == Event::MouseButtonPressed && e.mouseButton.button == Mouse::Left)
     {
@@ -23,7 +23,7 @@ void end::obsluga_zdarzen(Event& e, RenderWindow& okno)
         }
     }
 }
-void end::logika(float dt, Event& e, RenderWindow& okno)
+void koniec::logika(float dt, Event& e, RenderWindow& okno)
 {
     Vector2i pozycjamyszy = Mouse::getPosition(okno);
     g1.wskaznikGuzik(pozycjamyszy);

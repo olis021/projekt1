@@ -3,7 +3,7 @@
 #include "zmienne.h"
 using namespace std;
 using namespace sf;
-int za, ile;
+int za, ile,n=2;
 int numerkota = 0;
 int ostatnikot = 0;
 bool sprzedane = false;
@@ -16,8 +16,9 @@ void akcja::klienci(float& dystans, float dt)
 {
 	if (!losowanie)
 	{
-		za = losuj(1, 2);
-		ile = losuj(1, 4);
+		if (z1.dzien == 2 || z1.dzien == 4 || z1.dzien == 7) n++;
+		za = losuj(1, n);
+		ile = losuj(1, 3);
 		numerkota = losuj(0, 9);
 		while (numerkota == ostatnikot)
 		{
@@ -58,6 +59,27 @@ void akcja::klienci(float& dystans, float dt)
 		z1.wydajzamowienie = false;
 		z1.kajzerka = z1.kajzerka - ile;
 		z1.monety = z1.monety + 5 * ile;
+		sprzedane = true;
+	}
+	if (za == 3 && z1.precle >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
+	{
+		z1.wydajzamowienie = false;
+		z1.precle = z1.precle - ile;
+		z1.monety = z1.monety + 15 * ile;
+		sprzedane = true;
+	}
+	if (za == 4 && z1.rogale >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
+	{
+		z1.wydajzamowienie = false;
+		z1.rogale = z1.rogale - ile;
+		z1.monety = z1.monety + 20 * ile;
+		sprzedane = true;
+	}
+	if (za == 5 && z1.chalki >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
+	{
+		z1.wydajzamowienie = false;
+		z1.chalki = z1.chalki - ile;
+		z1.monety = z1.monety + 30 * ile;
 		sprzedane = true;
 	}
 	if (dystans >= 200 && dystans <= 750 && sprzedane)

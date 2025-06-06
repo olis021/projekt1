@@ -8,7 +8,7 @@ skladnik::skladnik(float x, float y, string nazwaObraz, string nazwaGuzik1,
 
 przepis::przepis(float x, float y, int s1, int s2, int s3, int cena, string nazwaObraz, string nazwaGuzik1,
 	string nazwaGuzik2): skladnik(x, y, nazwaObraz, nazwaGuzik1, nazwaGuzik2), 
-	t2(x + 412,y+9, "0", Color::Black,50), t3(x+532,y+ 9, "0", Color::Black, 50), t4(x + 651, y + 9, "0", Color::Black, 50), cena(cena), liczbas1(s1), liczbas2(s1), liczbas3(s3) {
+	t2(x + 412,y+9, "0", Color::Black,50), t3(x+532,y+ 9, "0", Color::Black, 50), t4(x + 651, y + 9, "0", Color::Black, 50), cena(cena), liczbas1(s1), liczbas2(s2), liczbas3(s3) {
 }
 
 void przepis::rysujprzepis(RenderWindow& okno)

@@ -18,6 +18,7 @@ protected:
 	FloatRect hitbox;
 public:
 	obiekt(float x, float y);
+	virtual ~obiekt() {};
 };
 
 class napisy : public obiekt
@@ -33,6 +34,7 @@ public:
 	napisy() : obiekt(0, 0), tresc("napis"), Size(1) {}
 	void rysujnapisInt(RenderWindow& okno, int& x);
 	void zmienNapis(RenderWindow& okno, string nowyNapis);
+	virtual ~napisy() {};
 };
 
 class grafika : public obiekt
@@ -48,6 +50,7 @@ public:
 	void zmienTeksture(string nowaTekstura);
 	void zmienPolozenie(float x, float y);
 	Vector2f zwrocPolozenie();
+	virtual ~grafika() {};
 };
 class button: public grafika
 {
@@ -59,6 +62,7 @@ public:
 	button() : grafika(0,0,"guzik"){}
 	bool p1(Vector2i pozycjamyszy);
 	void wskaznikGuzik(Vector2i pozycjamyszy);
+	virtual ~button() {};
 };
 
 

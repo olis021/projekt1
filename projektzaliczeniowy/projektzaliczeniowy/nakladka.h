@@ -21,6 +21,7 @@ public:
 	}
 	void rysujskladnik(RenderWindow& okno);
 	void przyciskNacisnietySkladnik(zmienne& z1, Vector2i pozycjamyszy);
+	virtual ~skladnik() {};
 };
 
 class przepis : public skladnik
@@ -43,6 +44,7 @@ public:
 	void rysujprzepis(RenderWindow& okno);
 	void przyciskNacisniety(Vector2i pozycjamyszy);
 	bool moznaUpiec(skladnik& s1, skladnik& s2, skladnik& s3, zmienne& z1);
+	virtual ~przepis() {};
 };
 
 class suwak: public button
@@ -52,6 +54,7 @@ public:
 	suwak(float x, float y, string nazwa, string nazwaZaznaczony);
 	suwak() : button(0, 0, "suwak1", "suwak2") {}
 	void podazaj(Vector2i pozycjamyszy, skladnik& o1);
+	virtual ~suwak() {};
 
 };
 
@@ -67,4 +70,5 @@ public:
 	nakladka(float x, float y, string nazwa);
 	void ustawbool(bool przepisy, bool skladniki, bool ekwpipunek, bool wydajzamowienie, zmienne& z1);
 	void zmianastrony();
+	virtual ~nakladka() {};
 };

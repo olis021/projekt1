@@ -32,6 +32,7 @@ class akcja :public status_gry
 	napisy t8;
 	napisy t9;
 	napisy t10;
+	napisy t11, t12, t13;
 	nakladka n1;
 	przepis kajzerka;
 	przepis chlebek;
@@ -55,5 +56,6 @@ public:
 	void akcja_zdarzenia(Vector2i pozycjamyszy);
 	void klienci(float& dystans, float dt);
 	void guzikiZaznaczenie(Vector2i pozycjamyszy);
+	virtual ~akcja() {};
 };
 

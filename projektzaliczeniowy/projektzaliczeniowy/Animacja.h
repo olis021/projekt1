@@ -15,6 +15,7 @@ public:
 	grafika klatka;
 	Animacja(const vector<string>& sciezki, const vector<float>& czasy, float x, float y);
 	void update(float dt);
+	virtual ~Animacja() {};
 };
 
 extern std::vector<std::string> softPawSciezki;
