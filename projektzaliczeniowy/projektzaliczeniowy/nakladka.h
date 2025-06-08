@@ -15,7 +15,7 @@ public:
 	button g1;
 	button g2;
 	void zmniejsz();
-	skladnik(float x, float y, string nazwaObraz, string nazwaGuzik1, string nazwaGuzik2);
+	skladnik(float x, float y, string nazwaObraz, string nazwaGuzik1, string nazwaGuzikZaznaczony1, string nazwaGuzik2, string nazwaGuzikZaznaczony2);
 	skladnik() : grafika(0, 0, "kajzerka.png"),
 		g1(0 + 340, 0 + 160, "kajzerka.png", "kajzerka.png"), g2(0 + 589, 0 + 160, "kajzerka.png", "kajzerka.png"), t1(0 + 495, 0 + 168, "0", Color::Black, 50) {
 	}
@@ -36,9 +36,9 @@ public:
 	napisy t2;
 	napisy t3;
 	napisy t4;
-	przepis(float x, float y, int s1, int s2, int s3, int cena, string nazwaObraz, string nazwaGuzik1, 
-	string nazwaGuzik2);
-	przepis() : skladnik(0, 0, "kajzerka.png", "kajzerka.png", "kajzerka.png"),
+	przepis(float x, float y, int s1, int s2, int s3, int cena, string nazwaObraz, string nazwaGuzik1, string nazwaGuzikZaznaczony1, 
+	string nazwaGuzik2, string nazwaGuzikZaznaczony2);
+	przepis() : skladnik(0, 0, "kajzerka.png", "kajzerka.png", "kajzerka.png", "kajzerka.png", "kajzerka.png"),
 		t2(0 + 412, 0 + 9, "0", Color::Black, 50), t3(0 + 532, 0 + 9, "0", Color::Black, 50), t4(0 + 651, 0 + 9, "0", Color::Black, 50), cena(0), liczbas1(0), liczbas2(0), liczbas3(0) {
 	}
 	void rysujprzepis(RenderWindow& okno);
@@ -47,21 +47,10 @@ public:
 	virtual ~przepis() {};
 };
 
-class suwak: public button
-{
-public:
-	bool ciagnie = false;
-	suwak(float x, float y, string nazwa, string nazwaZaznaczony);
-	suwak() : button(0, 0, "suwak1", "suwak2") {}
-	void podazaj(Vector2i pozycjamyszy, skladnik& o1);
-	virtual ~suwak() {};
-
-};
 
 class nakladka : public grafika
 {
 public:
-	suwak s1;
 	bool nakladkaAktywna = false;
 	bool nakladkaskladniki = false;
 	bool nakladkaprzepisy = true;

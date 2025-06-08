@@ -135,7 +135,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SOlutionDir)\SFML-2.6.2\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-system-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -155,20 +155,21 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SOlutionDir)\SFML-2.6.2\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-system.lib;sfml-graphics.lib;sfml-window.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-system.lib;sfml-graphics.lib;sfml-window.lib;sfml-audio.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="akcja.cpp" />
     <ClCompile Include="akcja_klienci.cpp" />
-    <ClCompile Include="akcja_zdarzenia.cpp" />
     <ClCompile Include="Animacja.cpp" />
     <ClCompile Include="klasy.cpp" />
     <ClCompile Include="Klient.cpp" />
     <ClCompile Include="koniec_gry.cpp" />
+    <ClCompile Include="kontrolki.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="nakladka.cpp" />
+    <ClCompile Include="nowy_skladnik.cpp" />
     <ClCompile Include="petla.cpp" />
     <ClCompile Include="sklep.cpp" />
     <ClCompile Include="stats.cpp" />
@@ -178,8 +179,10 @@
     <ClInclude Include="akcja.h" />
     <ClInclude Include="Animacja.h" />
     <ClInclude Include="koniec_gry.h" />
+    <ClInclude Include="kontrolki.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="nakladka.h" />
+    <ClInclude Include="nowy_skladnik.h" />
     <ClInclude Include="sklep.h" />
     <ClInclude Include="stats.h" />
     <ClInclude Include="petla.h" />

@@ -4,6 +4,7 @@
 #pragma once
 #include "zmienne.h"
 #include "nakladka.h"
+
 using namespace std;
 using namespace sf;
 class akcja :public status_gry
@@ -19,9 +20,16 @@ class akcja :public status_gry
 	button g7;
 	button g8;
 	button g9;
+	button wyjdz;
+	button odmow;
 	grafika o1;
 	grafika o2;
 	grafika o3;
+	grafika chleb_e;
+	grafika rogal_e;
+	grafika kajzerka_e;
+	grafika chalka_e;
+	grafika precel_e;
 	napisy t1;
 	napisy t2;
 	napisy t3;
@@ -32,7 +40,7 @@ class akcja :public status_gry
 	napisy t8;
 	napisy t9;
 	napisy t10;
-	napisy t11, t12, t13;
+	napisy t11, t12, t13, t14;
 	nakladka n1;
 	przepis kajzerka;
 	przepis chlebek;
@@ -45,15 +53,27 @@ class akcja :public status_gry
 	skladnik jajka;
 	skladnik woda;
 	skladnik maslo;
+	Music mruczenie;
+	SoundBuffer buffer_meow;
+	Sound meow;
 	float dystans;
+protected:
+
+	int za, ile, n = 2;
+	int numerkota = 0;
+	int ostatnikot = 0;
+	bool sprzedane = false;
+	bool hop = false;
+	int hopka = 0;
+	bool losowanie = false;
+	bool losowanie2 = false;
+	bool odmowa = false;
 
 public:
 	akcja(petla& p1, zmienne& z1);
 	void obsluga_zdarzen(Event& e, RenderWindow& okno) override;
 	void logika(float dt, Event& e, RenderWindow& okno) override;
 	void wyswietl(RenderWindow& okno) override;
-	void zmianastrony(Vector2i pozycjamyszy);
-	void akcja_zdarzenia(Vector2i pozycjamyszy);
 	void klienci(float& dystans, float dt);
 	void guzikiZaznaczenie(Vector2i pozycjamyszy);
 	virtual ~akcja() {};

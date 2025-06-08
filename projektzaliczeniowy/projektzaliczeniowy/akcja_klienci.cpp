@@ -3,14 +3,7 @@
 #include "zmienne.h"
 using namespace std;
 using namespace sf;
-int za, ile,n=2;
-int numerkota = 0;
-int ostatnikot = 0;
-bool sprzedane = false;
-bool hop = false;
-int hopka = 0;
-bool losowanie = false;
-bool losowanie2 = false;
+
 vector<string> koty = { "cat1.png","cat2.png","cat3.png","cat4.png","cat5.png","cat6.png","cat7.png","cat8.png","cat9.png","cat10.png" };
 void akcja::klienci(float& dystans, float dt)
 {
@@ -28,6 +21,7 @@ void akcja::klienci(float& dystans, float dt)
 
 		o1.zmienTeksture(koty[numerkota]);
 		losowanie = true;
+		meow.play();
 	}
 	if (dystans < 200 )
 	{
@@ -41,7 +35,7 @@ void akcja::klienci(float& dystans, float dt)
 		}else if(!hop && hopka == 0) o1.obraz.move(0, 10) , hop=true;
 		dystans = dystans + 100 * dt;
 		hopka++;
-		if (hopka >= 50)
+		if (hopka >= 50*dt)
 		{
 			hopka = 0;
 		}
@@ -61,28 +55,28 @@ void akcja::klienci(float& dystans, float dt)
 		z1.monety = z1.monety + 5 * ile;
 		sprzedane = true;
 	}
-	if (za == 3 && z1.precle >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
+	if (za == 3 && z1.precel >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
 	{
 		z1.wydajzamowienie = false;
-		z1.precle = z1.precle - ile;
+		z1.precel = z1.precel - ile;
 		z1.monety = z1.monety + 15 * ile;
 		sprzedane = true;
 	}
-	if (za == 4 && z1.rogale >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
+	if (za == 4 && z1.rogalik >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
 	{
 		z1.wydajzamowienie = false;
-		z1.rogale = z1.rogale - ile;
+		z1.rogalik = z1.rogalik - ile;
 		z1.monety = z1.monety + 20 * ile;
 		sprzedane = true;
 	}
-	if (za == 5 && z1.chalki >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
+	if (za == 5 && z1.chalka >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
 	{
 		z1.wydajzamowienie = false;
-		z1.chalki = z1.chalki - ile;
+		z1.chalka = z1.chalka - ile;
 		z1.monety = z1.monety + 30 * ile;
 		sprzedane = true;
 	}
-	if (dystans >= 200 && dystans <= 750 && sprzedane)
+	if (dystans >= 200 && dystans <= 750 && sprzedane || odmowa)
 	{
 		o1.obraz.move(-100 * dt, 0); //add move func
 	
@@ -101,7 +95,7 @@ void akcja::klienci(float& dystans, float dt)
 		}
 		t1.nap.setString(" ");
 		if (dystans >= 200 && dystans <= 240) t1.nap.setString("dziekuje do widzenia!");
-
+		odmowa = false;
 	}
 	if (dystans >= 750)
 	{
@@ -112,3 +106,4 @@ void akcja::klienci(float& dystans, float dt)
 		dystans = 0;
 	}
 }
+

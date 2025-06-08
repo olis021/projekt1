@@ -1,13 +1,12 @@
 #include "nakladka.h"
 extern int monetki = 10;
 
-skladnik::skladnik(float x, float y, string nazwaObraz, string nazwaGuzik1,
-	string nazwaGuzik2): grafika(x, y, nazwaObraz),
-	g1(x + 340, y + 160, nazwaGuzik1, nazwaGuzik1), g2(x + 589, y + 160, nazwaGuzik2, nazwaGuzik2), t1(x + 495, y + 168, "0", Color::Black, 50) {
+skladnik::skladnik(float x, float y, string nazwaObraz, string nazwaGuzik1, string nazwaGuzikZaznaczony1, string nazwaGuzik2, string nazwaGuzikZaznaczony2): grafika(x, y, nazwaObraz),
+	g1(x + 340, y + 160, nazwaGuzik1, nazwaGuzikZaznaczony1), g2(x + 589, y + 160, nazwaGuzik2, nazwaGuzikZaznaczony2), t1(x + 495, y + 168, "0", Color::Black, 50) {
 }
 
-przepis::przepis(float x, float y, int s1, int s2, int s3, int cena, string nazwaObraz, string nazwaGuzik1,
-	string nazwaGuzik2): skladnik(x, y, nazwaObraz, nazwaGuzik1, nazwaGuzik2), 
+przepis::przepis(float x, float y, int s1, int s2, int s3, int cena, string nazwaObraz, string nazwaGuzik1, string nazwaGuzikZaznaczony1,
+	string nazwaGuzik2, string nazwaGuzikZaznaczony2): skladnik(x, y, nazwaObraz, nazwaGuzik1, nazwaGuzikZaznaczony1, nazwaGuzik2, nazwaGuzikZaznaczony2),
 	t2(x + 412,y+9, "0", Color::Black,50), t3(x+532,y+ 9, "0", Color::Black, 50), t4(x + 651, y + 9, "0", Color::Black, 50), cena(cena), liczbas1(s1), liczbas2(s2), liczbas3(s3) {
 }
 
@@ -69,13 +68,8 @@ bool przepis::warunek(skladnik& s1, skladnik& s2, skladnik& s3)
 {
 	return(this->liczbas1 == s1.liczba_do_wypieczenia && this->liczbas2 == s2.liczba_do_wypieczenia && this->liczbas3 == s3.liczba_do_wypieczenia);
 }
-suwak::suwak(float x, float y, string nazwa, string nazwaZaznaczony) : button(x, y, nazwa, nazwaZaznaczony) {}
 
-void suwak::podazaj(Vector2i pozycjamyszy, skladnik& o1)
-{
-	o1.zmienPolozenie(o1.zwrocPolozenie().x, o1.zwrocPolozenie().y + pozycjamyszy.y);
-}
-nakladka::nakladka(float x, float y, string nazwa) : grafika(x, y, nazwa), s1(741, 16, "suwak.png", "suwak_zaznaczony.png") {}
+nakladka::nakladka(float x, float y, string nazwa) : grafika(x, y, nazwa) {}
 
 
 void nakladka::ustawbool(bool przepisy, bool skladnik, bool ekwpipunek, bool wydajzamowienie, zmienne& z1)

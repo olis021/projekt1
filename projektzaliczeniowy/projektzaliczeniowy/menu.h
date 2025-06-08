@@ -12,6 +12,7 @@ class menu :public status_gry
 	grafika o2;
 	button g1;
 	button g2;
+	button g3;
 
 public:
 	menu(petla& p1);

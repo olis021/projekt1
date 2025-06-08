@@ -9,9 +9,12 @@ class sklep :public status_gry
 	petla& p1;
 	grafika o1;
 	button g1;
-	zmienne& z1;
 	button g2;
+	zmienne& z1;
 	napisy t1;
+	napisy t2;
+	napisy t3;
+	napisy t4;
 
 public:
 	sklep(petla& p1, zmienne& z1);

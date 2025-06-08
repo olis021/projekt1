@@ -6,6 +6,10 @@ using namespace sf;
 
 petla::petla():okno(VideoMode(1920,1080), "Mr. Soft Paws' Bakery", Style::Titlebar | Style::Close)
 {
+	if(!muzyka.openFromFile("muzyka_tlo.ogg")) cerr << "Nie udalo sie zaladowac muzyki!" << endl;;
+	muzyka.setLoop(true); 
+	muzyka.setVolume(60);
+	muzyka.play();
 	petla::zmana_stanu(make_unique<menu>(*this)); //zmiana sceny
 }
 

@@ -2,6 +2,7 @@
 #include "Na1.h"
 #include "zmienne.h"
 #include "status_gry.h"
+#include "SFML/Audio.hpp"
 using namespace std;
 using namespace sf;
 class koniec :public status_gry
@@ -11,6 +12,8 @@ class koniec :public status_gry
 	grafika o1;
 	button g1;
 	napisy t1;
+	SoundBuffer buffer_cry;
+	Sound cry;
 
 public:
 	koniec(petla& p1,zmienne& z1);
