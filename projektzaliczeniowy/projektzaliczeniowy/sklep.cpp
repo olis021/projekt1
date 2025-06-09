@@ -16,7 +16,7 @@ void sklep::wyswietl(RenderWindow& okno)
     t1.nap.setString("Coins: " + z1.zaokraglij(z1.monety));
     t2.nap.setString("Day: " + to_string(z1.dzien - 1));
     t3.nap.setString("Inflation: " + z1.zaokraglij(z1.inflacja_wartosc));
-    t4.nap.setString("Tax and utility bill: " + z1.zaokraglij(z1.podatek));
+    t4.nap.setString("Tax: " + z1.zaokraglij(z1.podatek));
     o1.rysuj(okno);
     g1.rysuj(okno);
     if(z1.dzien >1)g2.rysuj(okno);

@@ -37,9 +37,9 @@ int x;
 
 
 akcja::akcja(petla& p1, zmienne& z1) :p1(p1), z1(z1), g1(200, 200, "tg1.png", "tg1.png"), o1(800, 700, "cat1.png"), o2(0, 0, "bakery_background.png"), o3(0, 0, "nakladka_przepis.png"),
-t1(1233, 390, " ", Color::Black, 60), dystans(0), t3(400, 30, "", Color::White, 30), t4(200, 300, "", Color::White, 30),
+t1(1233, 390, " ", Color::Black, 60), dystans(0), t3(400, 30, "", Color::White, 30), t4(553,284, "", Color::White, 30),
 g2(1560, 13, "zakoncz_dzien.png", "zakoncz_dzien_zaznaczony.png"), g3(100, 10, "tg1.png", "tg1.png"), g4(30, 13, "akcja_przepisy_guzik.png", "akcja_przepisy_guzik_zaznaczony.png"),
-g5(780, 0, "guzik_przepisy.png", "guzik_przepisy.png"), g6(780, 137, "guzik_skladniki.png", "guzik_skladniki_zaznaczony.png"),
+g5(780, 0, "gzuik_przepisy.png", "gzuik_przepisy.png"), g6(780, 137, "guzik_skladniki.png", "guzik_skladniki_zaznaczony.png"),
 g7(780, 274, "piecyk.png", "piecyk.png"), g8(780, 411, "guzik_wyjdz.png", "guzik_wyjdz_zaznaczony.png"),
 g9(780, 600, "olis_strzalka.png", "olis_strzalka03.png"), t11(200, 380, "precle:", Color::White, 30), t12(200, 420, "rogaliki", Color::White, 30), t13(480, 300, "chalki", Color::White, 30), n1(0, 0, "nakladka_przepis.png"), kajzerka(20, 16, 2, 1, 1, "kajzerka.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
 maka(20, 16, "flour.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"), chlebek(20, 276, 4, 1, 2, "chleb.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
@@ -180,16 +180,16 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 void akcja::wyswietl(RenderWindow& okno)
 {
 	t2.nap.setString("Flour: " + to_string(z1.maka));
-	t4.nap.setString("Bread: " + to_string(z1.chleb));
-	t5.nap.setString("Bread roll: " + to_string(z1.kajzerka));
+	t4.nap.setString(to_string(z1.chleb));
+	t5.nap.setString(to_string(z1.kajzerka));
 	t6.nap.setString("Milk: " + to_string(z1.mleko));
 	t7.nap.setString("Yeast: " + to_string(z1.drozdze));
 	t8.nap.setString("Water: " + to_string(z1.woda));
 	t9.nap.setString("Egg: " + to_string(z1.jajka));
 	t10.nap.setString("Butter: " + to_string(z1.maslo));
-	t11.nap.setString("Pretzel: " + to_string(z1.precel));
-	t12.nap.setString("Crescent roll: " + to_string(z1.rogalik));
-	t13.nap.setString("Hallah: " + to_string(z1.chalka));
+	t11.nap.setString(to_string(z1.precel));
+	t12.nap.setString(to_string(z1.rogalik));
+	t13.nap.setString(to_string(z1.chalka));
 	t14.nap.setString("Coins: " + z1.zaokraglij(z1.monety));
 	o2.rysuj(okno);
 	MrPaw.klatka.rysuj(okno);
