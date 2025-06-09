@@ -17,7 +17,7 @@ obiekt::obiekt(float x, float y)
 
 napisy::napisy(float x, float y, string tresc, Color kolor, int Size) : obiekt(x, y), kolor(kolor),tresc(tresc), Size(Size)
 {
-	czcionka.loadFromFile("MegamaxJonathanToo-YqOq2.ttf");
+	if(!czcionka.loadFromFile("MegamaxJonathanToo-YqOq2.ttf")) cerr << "Nie udalo sie zaladowac czcionki!" << endl;
 	nap.setFont(czcionka);
 	nap.setString(this->tresc);
 	nap.setFillColor(kolor);
@@ -41,7 +41,7 @@ void napisy::zmienNapis(RenderWindow& okno, string nowynapis)
 grafika::grafika(float x, float y, string nazwa) : obiekt(x, y)
 {
 	this->nazwa = nazwa;
-	this->tekstura.loadFromFile(nazwa);
+	if(!this->tekstura.loadFromFile(nazwa)) cerr << "Nie udalo sie zaladowac tekstury!" << endl;
 	this->obraz.setTexture(this->tekstura);
 	this ->obraz.setPosition(this->x, this->y);
 	hitbox = obraz.getGlobalBounds();
@@ -49,7 +49,7 @@ grafika::grafika(float x, float y, string nazwa) : obiekt(x, y)
 
 void grafika::zmienTeksture(string nowaTekstura)
 {
-	this->tekstura.loadFromFile(nowaTekstura);
+	if (!this->tekstura.loadFromFile(nowaTekstura)) cerr << "Nie udalo sie zaladowac tekstury!" << endl;
 	this->obraz.setTexture(tekstura);
 }
 Vector2f grafika::zwrocPolozenie()
@@ -70,7 +70,7 @@ void grafika::zmienPolozenie(float x, float y)
 button::button(float x, float y, string nazwa, string nazwaWskaznik): grafika(x, y, nazwa) 
 {
 	this->nazwaWskaznika = nazwaWskaznik;
-	this->teksturaWskaznika.loadFromFile(nazwaWskaznik);
+	if (!this->teksturaWskaznika.loadFromFile(nazwaWskaznika)) cerr << "Nie udalo sie zaladowac tekstury!" << endl;
 }
 
 bool button::p1(Vector2i pozycjamyszy)
@@ -99,4 +99,4 @@ void button::wskaznikGuzik(Vector2i pozycjamyszy)
 }
 
 
-vector<string> zam = { "dzien dobry,poprosze ","chleby", "kajzerki","precle","rogale","chalki"};
+vector<string> zam = { " ","chleb_klient.png","kajzerka_klient.png","precel_klient.png","rogalik_klient.png","chalka_klient.png"};

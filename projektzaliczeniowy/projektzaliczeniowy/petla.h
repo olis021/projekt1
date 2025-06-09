@@ -1,5 +1,6 @@
 #pragma once
 #include "SFML/Graphics.hpp"
+#include "SFML/Audio.hpp"
 #include "status_gry.h"
 #include <iostream>
 #include <memory>
@@ -11,6 +12,7 @@ class petla
 protected:
 	RenderWindow okno;
 	unique_ptr<status_gry> obecnystan;
+	Music muzyka;
 public:
 	zmienne k1;
 	petla();
