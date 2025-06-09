@@ -11,14 +11,14 @@ t6(145, 563, "wodda:", Color::White, 60), t7(145, 723, "jajka:", Color::White, 6
 g1(1405, 423, "guzik_plus_sklep.png", "guzik_plus_sklep.png"), t2(145, 403, "maka:", Color::White, 60), g2(1471, 867, "sklep_play.png", "sklep_play_zaznaczony.png"), t3(145, 243, "dzien:", Color::White, 60) {}
 void stats::wyswietl(RenderWindow& okno)
 {
-    t1.nap.setString("monety:" + z1.zaokraglij(z1.monety));
-    t2.nap.setString("maka:" + to_string(z1.maka) + ", cena: " + z1.zaokraglij(z1.cena_maka));
-    t3.nap.setString("dzien: " + to_string(z1.dzien));
-    t4.nap.setString("drozdze:" + to_string(z1.drozdze) + ", cena: " + z1.zaokraglij(z1.cena_drozdze));
-    t6.nap.setString("woda:" + to_string(z1.woda) + ", cena: " + z1.zaokraglij(z1.cena_woda));
-    t5.nap.setString("mleko: " + to_string(z1.mleko) + ", cena: " + z1.zaokraglij(z1.cena_mleko));
-    t7.nap.setString("jajka: " + to_string(z1.jajka) + ", cena: " + z1.zaokraglij(z1.cena_jajko));
-    t8.nap.setString("maslo: " + to_string(z1.maslo) + ", cena: " + z1.zaokraglij(z1.cena_masla));
+    t1.nap.setString("Coins:" + z1.zaokraglij(z1.monety));
+    t2.nap.setString("Flour:" + to_string(z1.maka) + ", price: " + z1.zaokraglij(z1.cena_maka));
+    t3.nap.setString("Day: " + to_string(z1.dzien));
+    t4.nap.setString("Yeast:" + to_string(z1.drozdze) + ", price: " + z1.zaokraglij(z1.cena_drozdze));
+    t6.nap.setString("Water:" + to_string(z1.woda) + ", price: " + z1.zaokraglij(z1.cena_woda));
+    t5.nap.setString("Milk: " + to_string(z1.mleko) + ", price: " + z1.zaokraglij(z1.cena_mleko));
+    t7.nap.setString("Egg: " + to_string(z1.jajka) + ", price: " + z1.zaokraglij(z1.cena_jajko));
+    t8.nap.setString("Butter: " + to_string(z1.maslo) + ", price: " + z1.zaokraglij(z1.cena_masla));
     o1.rysuj(okno);
     g2.rysuj(okno);
     g1.rysuj(okno);

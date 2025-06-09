@@ -30,6 +30,8 @@ class akcja :public status_gry
 	grafika kajzerka_e;
 	grafika chalka_e;
 	grafika precel_e;
+	grafika chmurka;
+	grafika zamowienie;
 	napisy t1;
 	napisy t2;
 	napisy t3;
@@ -59,7 +61,7 @@ class akcja :public status_gry
 	float dystans;
 protected:
 
-	int za, ile, n = 2;
+	int za = 1, ile = 1, n = 2;
 	int numerkota = 0;
 	int ostatnikot = 0;
 	bool sprzedane = false;
@@ -68,6 +70,7 @@ protected:
 	bool losowanie = false;
 	bool losowanie2 = false;
 	bool odmowa = false;
+	bool kotek_najwyzej = false;
 
 public:
 	akcja(petla& p1, zmienne& z1);

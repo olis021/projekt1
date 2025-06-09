@@ -99,4 +99,4 @@ void button::wskaznikGuzik(Vector2i pozycjamyszy)
 }
 
 
-vector<string> zam = { "dzien dobry,poprosze ","chleby", "kajzerki","precle","rogale","chalki"};
+vector<string> zam = { " ","chleb_klient.png","kajzerka_klient.png","precel_klient.png","rogalik_klient.png","chalka_klient.png"};

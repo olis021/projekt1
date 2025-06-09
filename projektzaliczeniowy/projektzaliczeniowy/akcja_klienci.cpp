@@ -40,7 +40,12 @@ void akcja::klienci(float& dystans, float dt)
 			hopka = 0;
 		}
 	}
-	if (dystans > 190 && dystans <= 200) t1.nap.setString(zam[0] + to_string(ile) + " " + zam[za]);
+	if (dystans > 190 && dystans <= 200)
+	{
+		kotek_najwyzej = true;
+		zamowienie.zmienTeksture(zam[za]);
+		t1.nap.setString(to_string(ile));
+	}
 	if (za == 1 && z1.chleb >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
 	{
 		z1.wydajzamowienie = false;
@@ -78,6 +83,7 @@ void akcja::klienci(float& dystans, float dt)
 	}
 	if (dystans >= 200 && dystans <= 750 && sprzedane || odmowa)
 	{
+		kotek_najwyzej = false;
 		o1.obraz.move(-100 * dt, 0); //add move func
 	
 
@@ -95,13 +101,14 @@ void akcja::klienci(float& dystans, float dt)
 		}
 		t1.nap.setString(" ");
 		if (dystans >= 200 && dystans <= 240) t1.nap.setString("dziekuje do widzenia!");
-		odmowa = false;
+		
 	}
 	if (dystans >= 750)
 	{
 		losowanie = false;
 		sprzedane = false;
 		losowanie2 = false;
+		odmowa = false;
 		o1.obraz.setPosition(800, 700); // add set position func
 		dystans = 0;
 	}

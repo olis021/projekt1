@@ -1,17 +1,4 @@
 ﻿  akcja.cpp
-  akcja_klienci.cpp
-  Animacja.cpp
-  klasy.cpp
-  Klient.cpp
-  koniec_gry.cpp
-  kontrolki.cpp
-  main.cpp
-  menu.cpp
-  nakladka.cpp
-  nowy_skladnik.cpp
-  petla.cpp
-  sklep.cpp
-  stats.cpp
-  ustawienia.cpp
-  Generowanie kodu...
-LINK : fatal error LNK1104: nie można otworzyć pliku „C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\x64\Debug\projektzaliczeniowy.exe”
+  projektzaliczeniowy.vcxproj -> C:\Users\magda\Documents\GitHub\projekt1\projektzaliczeniowy\x64\Debug\projektzaliczeniowy.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

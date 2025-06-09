@@ -37,21 +37,19 @@ int x;
 
 
 akcja::akcja(petla& p1, zmienne& z1) :p1(p1), z1(z1), g1(200, 200, "tg1.png", "tg1.png"), o1(800, 700, "cat1.png"), o2(0, 0, "bakery_background.png"), o3(0, 0, "nakladka_przepis.png"),
-t1(700, 600, " ", Color::White, 30), t2(100, 200, "maka", Color::White, 30), dystans(0), t3(400, 30, "", Color::White, 30), t4(200, 300, "", Color::White, 30),
+t1(1233, 390, " ", Color::Black, 60), dystans(0), t3(400, 30, "", Color::White, 30), t4(200, 300, "", Color::White, 30),
 g2(1560, 13, "zakoncz_dzien.png", "zakoncz_dzien_zaznaczony.png"), g3(100, 10, "tg1.png", "tg1.png"), g4(30, 13, "akcja_przepisy_guzik.png", "akcja_przepisy_guzik_zaznaczony.png"),
 g5(780, 0, "guzik_przepisy.png", "guzik_przepisy.png"), g6(780, 137, "guzik_skladniki.png", "guzik_skladniki_zaznaczony.png"),
 g7(780, 274, "piecyk.png", "piecyk.png"), g8(780, 411, "guzik_wyjdz.png", "guzik_wyjdz_zaznaczony.png"),
-g9(780, 600, "olis_strzalka.png", "olis_strzalka03.png"), t11(200, 380, "precle:", Color::White, 30), t12(200, 420, "rogaliki", Color::White, 30), t13(480, 300, "chalki", Color::White, 30),
-t5(200, 340, "kajzerka", Color::White, 30), n1(0, 0, "nakladka_przepis.png"), kajzerka(20, 16, 2, 1, 1, 2, "kajzerka.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
-t6(100, 950, "mleko", Color::White, 30), t7(100, 650, "drozdze", Color::White, 30), t8(100, 430, "woda", Color::White, 30), t9(100, 200, "jajka", Color::White, 30),
-t10(100, 440, "maslo", Color::White, 30), maka(20, 16, "flour.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"), chlebek(20, 276, 4, 1, 2, 2, "chleb.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
+g9(780, 600, "olis_strzalka.png", "olis_strzalka03.png"), t11(200, 380, "precle:", Color::White, 30), t12(200, 420, "rogaliki", Color::White, 30), t13(480, 300, "chalki", Color::White, 30), n1(0, 0, "nakladka_przepis.png"), kajzerka(20, 16, 2, 1, 1, "kajzerka.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
+maka(20, 16, "flour.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"), chlebek(20, 276, 4, 1, 2, "chleb.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
 mleko(20, 796, "milk.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"), drozdze(20, 536, "drozdzebabuni.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
-chalka(20, 16, 2, 2, 3, 3, "chalka.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
-precel(20, 536, 3, 1, 2, 3, "precel.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"), rogalik(20, 796, 3, 1, 2, 5, "rogal.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
+chalka(20, 16, 2, 3, 2, "chalka.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
+precel(20, 536, 3, 1, 2, "precel.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"), rogalik(20, 796, 3, 1, 2, "rogal.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
 woda(20, 276, "woda.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"), jajka(20, 16, "egg.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"), maslo(20, 276, "maslo.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
 wyjdz(1745, 13, "guzik__akcja_wyjdz.png", "guzik__akcja_wyjdz_zaznaczony.png"), chleb_e(20, 276, "chleb_ekwipunek.png"), kajzerka_e(20, 16, "kajzerka_ekwipunek.png"),
 chalka_e(20, 16, "chalka_ekwipunek.png"), precel_e(20, 536, "precel_ekwipunek.png"), rogal_e(20, 796, "rogal_ekwipunek.png"), odmow(1745, 900, "nie_sprzedaj.png", "nie_sprzedaj_zaznaczony.png"),
-t14(1100, 20, "monety", Color::White, 60)
+t14(950, 20, "monety", Color::White, 60), chmurka(939,236, "chmurka.png"), zamowienie(1078,281, "chleb_klient.png")
 {
 	if(!mruczenie.openFromFile("purr.ogg")) cerr << "Nie udalo siê zaladowac muzyki!" << endl;;
 	mruczenie.setLoop(true);
@@ -181,23 +179,22 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 
 void akcja::wyswietl(RenderWindow& okno)
 {
-	t2.nap.setString("maka: " + to_string(z1.maka));
-	t3.nap.setString("monety: " + to_string(z1.monety));
-	t4.nap.setString("chleby: " + to_string(z1.chleb));
-	t5.nap.setString("kajzerki: " + to_string(z1.kajzerka));
-	t6.nap.setString("mleko: " + to_string(z1.mleko));
-	t7.nap.setString("drozdze: " + to_string(z1.drozdze));
-	t8.nap.setString("woda: " + to_string(z1.woda));
-	t9.nap.setString("jajka: " + to_string(z1.jajka));
-	t10.nap.setString("maslo: " + to_string(z1.maslo));
-	t11.nap.setString("precle: " + to_string(z1.precel));
-	t12.nap.setString("rogale: " + to_string(z1.rogalik));
-	t13.nap.setString("chalki: " + to_string(z1.chalka));
-	t14.nap.setString("Monety: " + z1.zaokraglij(z1.monety));
+	t2.nap.setString("Flour: " + to_string(z1.maka));
+	t4.nap.setString("Bread: " + to_string(z1.chleb));
+	t5.nap.setString("Bread roll: " + to_string(z1.kajzerka));
+	t6.nap.setString("Milk: " + to_string(z1.mleko));
+	t7.nap.setString("Yeast: " + to_string(z1.drozdze));
+	t8.nap.setString("Water: " + to_string(z1.woda));
+	t9.nap.setString("Egg: " + to_string(z1.jajka));
+	t10.nap.setString("Butter: " + to_string(z1.maslo));
+	t11.nap.setString("Pretzel: " + to_string(z1.precel));
+	t12.nap.setString("Crescent roll: " + to_string(z1.rogalik));
+	t13.nap.setString("Hallah: " + to_string(z1.chalka));
+	t14.nap.setString("Coins: " + z1.zaokraglij(z1.monety));
 	o2.rysuj(okno);
 	MrPaw.klatka.rysuj(okno);
 	o1.rysuj(okno);
-	if (!z1.wydajzamowienie)
+	if (!z1.wydajzamowienie && !n1.nakladkaAktywna)
 	{
 		odmow.rysuj(okno);
 	}
@@ -233,19 +230,11 @@ void akcja::wyswietl(RenderWindow& okno)
 			drozdze.rysujskladnik(okno);
 			woda.rysujskladnik(okno);
 			if (z1.dzien > 1)mleko.rysujskladnik(okno);
-			okno.draw(t3.nap);
-			okno.draw(t2.nap);
-			if (z1.dzien > 1)okno.draw(t6.nap);
-			okno.draw(t7.nap);
-			okno.draw(t8.nap);
 		}
 		if (n1.nakladkaskladniki && n1.zmienstrone)
 		{
 			if (z1.dzien > 3)jajka.rysujskladnik(okno);
 			if (z1.dzien > 6)maslo.rysujskladnik(okno);
-			okno.draw(t3.nap);
-			if (z1.dzien > 3)okno.draw(t9.nap);
-			if (z1.dzien > 6)okno.draw(t10.nap);
 		}
 		if (n1.nakladkaekwipunek && !n1.zmienstrone)
 		{
@@ -271,7 +260,12 @@ void akcja::wyswietl(RenderWindow& okno)
 			chalka_e.rysuj(okno);
 		}
 	}
+	if (kotek_najwyzej)
+	{
+		chmurka.rysuj(okno);
+		zamowienie.rysuj(okno);
 		okno.draw(t1.nap);
+	}
 		okno.draw(t14.nap);
 }
 
