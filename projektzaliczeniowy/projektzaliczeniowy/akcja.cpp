@@ -36,12 +36,13 @@ int x;
 
 
 
-akcja::akcja(petla& p1, zmienne& z1) :p1(p1), z1(z1), g1(200, 200, "tg1.png", "tg1.png"), o1(800, 700, "cat1.png"), o2(0, 0, "bakery_background.png"), o3(0, 0, "nakladka_przepis.png"),
-t1(1233, 390, " ", Color::Black, 60), dystans(0), t3(400, 30, "", Color::White, 30), t4(553,284, "", Color::White, 30),
+akcja::akcja(petla& p1, zmienne& z1) :p1(p1), z1(z1), g1(750, 1000, "sell.png", "sell.png"), o1(800, 700, "cat1.png"), o2(0, 0, "bakery_background.png"), o3(0, 0, "nakladka_przepis.png"),
+t1(1233, 390, " ", Color::Black, 60), dystans(0), t3(400, 30, "", Color::White, 30), t4(528,475, "", Color::Black, 30), t5(528, 216, "", Color::Black, 30),
 g2(1560, 13, "zakoncz_dzien.png", "zakoncz_dzien_zaznaczony.png"), g3(100, 10, "tg1.png", "tg1.png"), g4(30, 13, "akcja_przepisy_guzik.png", "akcja_przepisy_guzik_zaznaczony.png"),
 g5(780, 0, "gzuik_przepisy.png", "gzuik_przepisy.png"), g6(780, 137, "guzik_skladniki.png", "guzik_skladniki_zaznaczony.png"),
-g7(780, 274, "piecyk.png", "piecyk.png"), g8(780, 411, "guzik_wyjdz.png", "guzik_wyjdz_zaznaczony.png"),
-g9(780, 600, "olis_strzalka.png", "olis_strzalka03.png"), t11(200, 380, "precle:", Color::White, 30), t12(200, 420, "rogaliki", Color::White, 30), t13(480, 300, "chalki", Color::White, 30), n1(0, 0, "nakladka_przepis.png"), kajzerka(20, 16, 2, 1, 1, "kajzerka.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
+g7(780, 274, "piecyk.png", "piecyk.png"), g8(780, 411, "guzik_wyjdz.png", "guzik_wyjdz_zaznaczony.png"), t6(100, 950, "mleko", Color::White, 30), t7(100, 650, "drozdze", Color::White, 30), t8(100, 430, "woda", Color::White, 30), t9(100, 200, "jajka", Color::White, 30),
+t10(100, 440, "maslo", Color::White, 30), t2(100, 200, "maka", Color::White, 30),
+g9(780, 600, "olis_strzalka.png", "olis_strzalka03.png"), t11(528, 730, "precle:", Color::Black, 30), t12(528, 990, "rogaliki", Color::Black, 30), t13(528, 216, "chalki", Color::Black, 30), n1(0, 0, "nakladka_przepis.png"), kajzerka(20, 16, 2, 1, 1, "kajzerka.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
 maka(20, 16, "flour.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"), chlebek(20, 276, 4, 1, 2, "chleb.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
 mleko(20, 796, "milk.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"), drozdze(20, 536, "drozdzebabuni.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
 chalka(20, 16, 2, 3, 2, "chalka.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
@@ -76,6 +77,17 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 		if (g1.p1(pozycjamyszy) && n1.nakladkaekwipunek)
 		{
 			z1.wydajzamowienie = true;
+			chlebek.liczba_do_wypieczenia = 0;
+			kajzerka.liczba_do_wypieczenia = 0;
+			chalka.liczba_do_wypieczenia = 0;
+			precel.liczba_do_wypieczenia = 0;
+			rogalik.liczba_do_wypieczenia = 0;
+			maka.liczba_do_wypieczenia = 0;
+			jajka.liczba_do_wypieczenia = 0;
+			woda.liczba_do_wypieczenia = 0;
+			drozdze.liczba_do_wypieczenia = 0;
+			maslo.liczba_do_wypieczenia = 0;
+			mleko.liczba_do_wypieczenia = 0;
 		}
 		if (odmow.p1(pozycjamyszy) && !z1.wydajzamowienie)
 		{
@@ -99,7 +111,7 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 			{
 				z1.zrobchleb(chlebek.liczba_do_wypieczenia);
 			}
-			if (precel.moznaUpiec(maka, drozdze, mleko, z1) && z1.maka >= maka.liczba_do_wypieczenia && z1.drozdze >= drozdze.liczba_do_wypieczenia && z1.mleko >= mleko.liczba_do_wypieczenia)
+			if (precel.moznaUpiec(maka, mleko, drozdze, z1) && z1.maka >= maka.liczba_do_wypieczenia && z1.drozdze >= drozdze.liczba_do_wypieczenia && z1.mleko >= mleko.liczba_do_wypieczenia)
 			{
 				z1.zrobprecla(precel.liczba_do_wypieczenia);
 			}
@@ -144,30 +156,26 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 		{
 			if(z1.maka> maka.liczba_do_wypieczenia)
 			maka.przyciskNacisnietySkladnik(z1, pozycjamyszy);
-			if (maka.g2.p1(pozycjamyszy))maka.zmniejsz();
 			if (z1.mleko > mleko.liczba_do_wypieczenia && z1.dzien>1)
 			mleko.przyciskNacisnietySkladnik(z1, pozycjamyszy);
-			if (mleko.g2.p1(pozycjamyszy))mleko.zmniejsz();
 			if (z1.drozdze > drozdze.liczba_do_wypieczenia)
 			drozdze.przyciskNacisnietySkladnik(z1, pozycjamyszy);
-			if (drozdze.g2.p1(pozycjamyszy))drozdze.zmniejsz();
 			if (z1.woda > woda.liczba_do_wypieczenia)
 			woda.przyciskNacisnietySkladnik(z1, pozycjamyszy);
-			if (woda.g2.p1(pozycjamyszy))woda.zmniejsz();
 		}
 		if (n1.nakladkaskladniki && n1.nakladkaAktywna && n1.zmienstrone)
 		{
 			if(z1.jajka>jajka.liczba_do_wypieczenia && z1.dzien>3)
 			jajka.przyciskNacisnietySkladnik(z1, pozycjamyszy);
-			if (jajka.g2.p1(pozycjamyszy))jajka.zmniejsz();
 			if(z1.maslo>maslo.liczba_do_wypieczenia && z1.dzien>6)
 			maslo.przyciskNacisnietySkladnik(z1, pozycjamyszy);
-			if (maslo.g2.p1(pozycjamyszy))maslo.zmniejsz();
 		}
-		if (g2.p1(pozycjamyszy) && !n1.nakladkaAktywna)
+		if (g2.p1(pozycjamyszy) && !n1.nakladkaAktywna || z1.wszyscy)
 		{
 			z1.inflacja();
 			z1.dzien++;
+			z1.ilu = 0;
+			z1.wszyscy = false;
 			p1.zmana_stanu(make_unique<sklep>(p1, z1));
 		}
 		if (wyjdz.p1(pozycjamyszy) && !n1.nakladkaAktywna)
@@ -179,14 +187,14 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 
 void akcja::wyswietl(RenderWindow& okno)
 {
-	t2.nap.setString("Flour: " + to_string(z1.maka));
+	t2.nap.setString(to_string(z1.maka));
 	t4.nap.setString(to_string(z1.chleb));
 	t5.nap.setString(to_string(z1.kajzerka));
-	t6.nap.setString("Milk: " + to_string(z1.mleko));
-	t7.nap.setString("Yeast: " + to_string(z1.drozdze));
-	t8.nap.setString("Water: " + to_string(z1.woda));
-	t9.nap.setString("Egg: " + to_string(z1.jajka));
-	t10.nap.setString("Butter: " + to_string(z1.maslo));
+	t6.nap.setString( to_string(z1.mleko));
+	t7.nap.setString( to_string(z1.drozdze));
+	t8.nap.setString( to_string(z1.woda));
+	t9.nap.setString( to_string(z1.jajka));
+	t10.nap.setString( to_string(z1.maslo));
 	t11.nap.setString(to_string(z1.precel));
 	t12.nap.setString(to_string(z1.rogalik));
 	t13.nap.setString(to_string(z1.chalka));
@@ -226,15 +234,15 @@ void akcja::wyswietl(RenderWindow& okno)
 
 		if (n1.nakladkaskladniki && !n1.zmienstrone)
 		{
-			maka.rysujskladnik(okno);
-			drozdze.rysujskladnik(okno);
-			woda.rysujskladnik(okno);
-			if (z1.dzien > 1)mleko.rysujskladnik(okno);
+			maka.rysujskladnik(okno), okno.draw(t2.nap);;
+			drozdze.rysujskladnik(okno) , okno.draw(t7.nap);;
+			woda.rysujskladnik(okno), okno.draw(t8.nap);;
+			if (z1.dzien > 1)mleko.rysujskladnik(okno), okno.draw(t6.nap);;
 		}
 		if (n1.nakladkaskladniki && n1.zmienstrone)
 		{
-			if (z1.dzien > 3)jajka.rysujskladnik(okno);
-			if (z1.dzien > 6)maslo.rysujskladnik(okno);
+			if (z1.dzien > 3)jajka.rysujskladnik(okno), okno.draw(t9.nap);;
+			if (z1.dzien > 6)maslo.rysujskladnik(okno), okno.draw(t10.nap);;
 		}
 		if (n1.nakladkaekwipunek && !n1.zmienstrone)
 		{
@@ -252,12 +260,13 @@ void akcja::wyswietl(RenderWindow& okno)
 				rogal_e.rysuj(okno);
 				okno.draw(t12.nap);
 			}
-			if (z1.dzien > 6)okno.draw(t13.nap);
 			g1.rysuj(okno);
 		}
 		if (n1.nakladkaekwipunek && !n1.zmienstrone && z1.dzien > 6)
 		{
 			chalka_e.rysuj(okno);
+			if (z1.dzien > 6)okno.draw(t13.nap);
+			g1.rysuj(okno);
 		}
 	}
 	if (kotek_najwyzej)

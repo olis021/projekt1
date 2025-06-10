@@ -45,6 +45,7 @@ void stats::wyswietl(RenderWindow& okno)
 	okno.draw(t1.nap);
     okno.draw(t3.nap);
 }
+
 void stats::obsluga_zdarzen(Event& e,RenderWindow& okno)
 {
     if (e.type == Event::MouseButtonPressed && e.mouseButton.button == Mouse::Left)
@@ -52,42 +53,42 @@ void stats::obsluga_zdarzen(Event& e,RenderWindow& okno)
         Vector2i pozycjamyszy = Mouse::getPosition(okno);
         if (g1.p1(pozycjamyszy))
         {
-            if (z1.monety >= z1.cena_maka) {
+            if (z1.monety+niepewnosc >= z1.cena_maka) {
                 z1.kupmake();
             }
             
         }
         if (g3.p1(pozycjamyszy))
         {
-            if (z1.monety >= z1.cena_drozdze)
+            if (z1.monety + niepewnosc >= z1.cena_drozdze)
             {
                 z1.kupdrozdze();
             }
         }
         if (g4.p1(pozycjamyszy))
         {
-            if (z1.monety >= z1.cena_woda)
+            if (z1.monety + niepewnosc >= z1.cena_woda)
             {
                 z1.kupwoda();
             }
         }
         if (g5.p1(pozycjamyszy) && z1.dzien>1)
         {
-            if (z1.monety >= z1.cena_mleko)
+            if (z1.monety + niepewnosc >= z1.cena_mleko)
             {
                 z1.kupmleko();
             }
         }
         if (g6.p1(pozycjamyszy) && z1.dzien>3)
         {
-            if (z1.monety >= z1.cena_jajko)
+            if (z1.monety + niepewnosc >= z1.cena_jajko)
             {
                 z1.kupjajka();
             }
         }
         if (g7.p1(pozycjamyszy) && z1.dzien>6)
         {
-            if (z1.monety >= z1.cena_masla)
+            if (z1.monety + niepewnosc >= z1.cena_masla)
             {
                 z1.kupmaslo();
             }

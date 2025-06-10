@@ -8,7 +8,7 @@
 #include <iomanip>
 using namespace std;
 using namespace sf;
-
+const double niepewnosc = 0;
 class zmienne
 {
 public:
@@ -29,6 +29,8 @@ public:
 	int precel;
 	int chalka;
 	int rogalik;
+	int ilu = 0;
+	bool wszyscy = false;
 
 	bool wydajzamowienie = false;
 	double cena_kajzerka;
@@ -42,12 +44,12 @@ public:
 	double cena_jajko;
 	double cena_mleko;
 	double cena_masla;
-	void kupmake() { monety = monety - cena_maka, maka++; }
-	void kupdrozdze() { monety = monety - cena_drozdze, drozdze++; }
-	void kupmleko() { monety = monety - cena_mleko, mleko++; }
-	void kupmaslo() { monety = monety - cena_masla, maslo++; }
-	void kupjajka() { monety = monety - cena_jajko, jajka++; }
-	void kupwoda() { monety = monety - cena_woda, woda++; }
+	void kupmake() { monety = monety+niepewnosc - cena_maka, maka++; }
+	void kupdrozdze() { monety = monety + niepewnosc - cena_drozdze, drozdze++; }
+	void kupmleko() { monety = monety + niepewnosc - cena_mleko, mleko++; }
+	void kupmaslo() { monety = monety + niepewnosc - cena_masla, maslo++; }
+	void kupjajka() { monety = monety + niepewnosc - cena_jajko, jajka++; }
+	void kupwoda() { monety = monety + niepewnosc - cena_woda, woda++; }
 	void zrobchleb(int x) { maka = maka - x*4,drozdze=drozdze-x,woda=woda-x*2, chleb = chleb + x; }
 	void zrobprecla(int x) { maka = maka - x * 3, drozdze = drozdze - x,  mleko = mleko - x * 2, precel = precel + x; }
 	void zrobrogala(int x) { maka = maka - x * 3, jajka = jajka - 2*x, mleko = mleko - x , rogalik = rogalik + x; }
@@ -57,8 +59,8 @@ public:
 		monety = monety - podatek;
 	}
 	zmienne() {
-		monety = 100, dzien = 1, maka = 0, chleb = 0, kajzerka = 0, precel = 0, rogalik = 0, chalka = 0, jajka = 0, drozdze = 0, woda = 0, maka = 0, maslo = 0, mleko = 0, inflacja_wartosc = 1.2, podatek = 15;
-			cena_maka = 2, cena_jajko = 0.8, cena_mleko = 2, cena_woda = 0.2, cena_masla = 2.8, cena_drozdze = 1, cena_chlebek = 3, cena_kajzerka = 0.8, cena_precel = 2.8, cena_chalka = 3, cena_rogalik = 1.8;
+		monety = 20, dzien = 1, maka = 0, chleb = 0, kajzerka = 0, precel = 0, rogalik = 0, chalka = 0, jajka = 0, drozdze = 0, woda = 0, maka = 0, maslo = 0, mleko = 0, inflacja_wartosc = 1.2, podatek = 15;
+			cena_maka = 2, cena_jajko = 0.8, cena_mleko = 2, cena_woda = 0.2, cena_masla = 2.8, cena_drozdze = 0.4, cena_chlebek = 14, cena_kajzerka = 8, cena_precel = 18, cena_chalka = 22, cena_rogalik = 20;
 	}
 	void inflacja()
 	{
@@ -77,15 +79,14 @@ public:
 
 		podatek = podatek * inflacja_wartosc;
 
-		inflacja_wartosc += 0.2;
 	}
-	string zaokraglij(double x)
+	string zaokraglij(double& x)
 	{
+		x = round(x * 100.0) / 100.0;
 		ostringstream bufor_do_string;
 		bufor_do_string << fixed << setprecision(2) << x;
 		return bufor_do_string.str();
 	}
-
 	virtual ~zmienne() {};
 };
 inline int losuj(int min, int max) {

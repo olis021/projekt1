@@ -5,6 +5,7 @@ using namespace std;
 using namespace sf;
 
 vector<string> koty = { "cat1.png","cat2.png","cat3.png","cat4.png","cat5.png","cat6.png","cat7.png","cat8.png","cat9.png","cat10.png" };
+float czashopka = 0.0;
 void akcja::klienci(float& dystans, float dt)
 {
 	if (!losowanie)
@@ -35,7 +36,8 @@ void akcja::klienci(float& dystans, float dt)
 		}else if(!hop && hopka == 0) o1.obraz.move(0, 10) , hop=true;
 		dystans = dystans + 100 * dt;
 		hopka++;
-		if (hopka >= 50*dt)
+		czashopka += dt;
+		if (hopka >= 50*czashopka)
 		{
 			hopka = 0;
 		}
@@ -50,35 +52,35 @@ void akcja::klienci(float& dystans, float dt)
 	{
 		z1.wydajzamowienie = false;
 		z1.chleb = z1.chleb - ile;
-		z1.monety = z1.monety + 10 * ile;
+		z1.monety = z1.monety + z1.cena_chlebek * ile;
 		sprzedane = true;
 	}
 	if (za == 2 && z1.kajzerka >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
 	{
 		z1.wydajzamowienie = false;
 		z1.kajzerka = z1.kajzerka - ile;
-		z1.monety = z1.monety + 5 * ile;
+		z1.monety = z1.monety + z1.cena_kajzerka * ile;
 		sprzedane = true;
 	}
 	if (za == 3 && z1.precel >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
 	{
 		z1.wydajzamowienie = false;
 		z1.precel = z1.precel - ile;
-		z1.monety = z1.monety + 15 * ile;
+		z1.monety = z1.monety + z1.cena_precel * ile;
 		sprzedane = true;
 	}
 	if (za == 4 && z1.rogalik >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
 	{
 		z1.wydajzamowienie = false;
 		z1.rogalik = z1.rogalik - ile;
-		z1.monety = z1.monety + 20 * ile;
+		z1.monety = z1.monety + z1.cena_rogalik * ile;
 		sprzedane = true;
 	}
 	if (za == 5 && z1.chalka >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
 	{
 		z1.wydajzamowienie = false;
 		z1.chalka = z1.chalka - ile;
-		z1.monety = z1.monety + 30 * ile;
+		z1.monety = z1.monety + z1.cena_chalka * ile;
 		sprzedane = true;
 	}
 	if (dystans >= 200 && dystans <= 750 && sprzedane || odmowa)
@@ -103,14 +105,20 @@ void akcja::klienci(float& dystans, float dt)
 		if (dystans >= 200 && dystans <= 240) t1.nap.setString("dziekuje do widzenia!");
 		
 	}
-	if (dystans >= 750)
+	if (dystans >= 750 && !z1.wszyscy)
 	{
 		losowanie = false;
 		sprzedane = false;
 		losowanie2 = false;
+		z1.ilu++;
 		odmowa = false;
 		o1.obraz.setPosition(800, 700); // add set position func
 		dystans = 0;
+		if (z1.ilu == 5)
+		{
+			z1.wszyscy = true;
+
+		}
 	}
 }
 
