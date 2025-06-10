@@ -31,6 +31,7 @@ public:
 	int rogalik;
 	int ilu = 0;
 	int n = 2;
+	int k = 8;
 	bool wszyscy = false;
 
 	bool wydajzamowienie = false;
@@ -52,7 +53,7 @@ public:
 	void kupjajka() { monety = monety + niepewnosc - cena_jajko, jajka++; }
 	void kupwoda() { monety = monety + niepewnosc - cena_woda, woda++; }
 	void zrobchleb(int x) { maka = maka - x*4,drozdze=drozdze-x,woda=woda-x*2, chleb = chleb + x; }
-	void zrobprecla(int x) { maka = maka - x * 3, drozdze = drozdze - x,  mleko = mleko - x * 2, precel = precel + x; }
+	void zrobprecla(int x) { maka = maka - x * 3, drozdze = drozdze - x*2,  mleko = mleko - x , precel = precel + x; }
 	void zrobrogala(int x) { maka = maka - x * 3, jajka = jajka - 2*x, mleko = mleko - x , rogalik = rogalik + x; }
 	void zrobchalke(int x) { maka = maka - x * 2, jajka = jajka - x*3, maslo = maslo - x * 2, chalka = chalka + x; }
 	void zrobkajzerke(int x) { maka = maka - 2*x,drozdze=drozdze-x,woda=woda-x, kajzerka = kajzerka + x; }
@@ -61,7 +62,7 @@ public:
 	}
 	zmienne() {
 		monety = 80, dzien = 1, maka = 0, chleb = 0, kajzerka = 0, precel = 0, rogalik = 0, chalka = 0, jajka = 0, drozdze = 0, woda = 0, maka = 0, maslo = 0, mleko = 0, inflacja_wartosc = 1.2, podatek = 15;
-			cena_maka = 2, cena_jajko = 0.8, cena_mleko = 2, cena_woda = 0.2, cena_masla = 2.8, cena_drozdze = 0.4, cena_chlebek = 14, cena_kajzerka = 8, cena_precel = 18, cena_chalka = 26, cena_rogalik = 22;
+			cena_maka = 2, cena_jajko = 0.8, cena_mleko = 2, cena_woda = 0.2, cena_masla = 2.8, cena_drozdze = 0.4, cena_chlebek = 12, cena_kajzerka = 8, cena_precel = 16, cena_chalka = 20, cena_rogalik = 18;
 	}
 	void inflacja()
 	{
@@ -79,7 +80,7 @@ public:
 		cena_precel = cena_precel*inflacja_wartosc;
 
 		podatek = podatek * inflacja_wartosc;
-
+		podatek++;
 	}
 	string zaokraglij(double& x)
 	{

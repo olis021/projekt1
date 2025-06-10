@@ -24,7 +24,7 @@ void akcja::klienci(float& dystans, float dt)
 		losowanie = true;
 		meow.play();
 	}
-	if (dystans < 200 )
+	if (dystans < 210 )
 	{
 		z1.wydajzamowienie = false;
 		o1.obraz.move(-100 * dt, -50 * dt);
@@ -42,50 +42,52 @@ void akcja::klienci(float& dystans, float dt)
 			hopka = 0;
 		}
 	}
-	if (dystans > 190 && dystans <= 200)
+	if (dystans > 190 && dystans <= 230)
 	{
 		kotek_najwyzej = true;
 		zamowienie.zmienTeksture(zam[za]);
 		t1.nap.setString(to_string(ile));
 	}
-	if (za == 1 && z1.chleb >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
+	if (za == 1 && z1.chleb >= ile && dystans >= 200 && dystans <= 500 && !sprzedane && z1.wydajzamowienie)
 	{
 		z1.wydajzamowienie = false;
 		z1.chleb = z1.chleb - ile;
 		z1.monety = z1.monety + z1.cena_chlebek * ile;
 		sprzedane = true;
 	}
-	if (za == 2 && z1.kajzerka >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
+	if (za == 2 && z1.kajzerka >= ile && dystans >= 200 && dystans <= 500 && !sprzedane && z1.wydajzamowienie)
 	{
 		z1.wydajzamowienie = false;
 		z1.kajzerka = z1.kajzerka - ile;
 		z1.monety = z1.monety + z1.cena_kajzerka * ile;
 		sprzedane = true;
 	}
-	if (za == 3 && z1.precel >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
+	if (za == 3 && z1.precel >= ile && dystans >= 200 && dystans <= 500 && !sprzedane && z1.wydajzamowienie)
 	{
 		z1.wydajzamowienie = false;
 		z1.precel = z1.precel - ile;
 		z1.monety = z1.monety + z1.cena_precel * ile;
 		sprzedane = true;
 	}
-	if (za == 4 && z1.rogalik >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
+	if (za == 4 && z1.rogalik >= ile && dystans >= 200 && dystans <= 500 && !sprzedane && z1.wydajzamowienie)
 	{
 		z1.wydajzamowienie = false;
 		z1.rogalik = z1.rogalik - ile;
 		z1.monety = z1.monety + z1.cena_rogalik * ile;
 		sprzedane = true;
 	}
-	if (za == 5 && z1.chalka >= ile && dystans >= 200 && dystans <= 800 && !sprzedane && z1.wydajzamowienie)
+	if (za == 5 && z1.chalka >= ile && dystans >= 200 && dystans <= 500&& !sprzedane && z1.wydajzamowienie)
 	{
 		z1.wydajzamowienie = false;
 		z1.chalka = z1.chalka - ile;
 		z1.monety = z1.monety + z1.cena_chalka * ile;
 		sprzedane = true;
 	}
-	if (dystans >= 200 && dystans <= 750 && sprzedane || odmowa)
+	if (dystans >= 200 && dystans <= 500 && sprzedane || odmowa)
 	{
 		kotek_najwyzej = false;
+		z1.wydajzamowienie = false;
+
 		o1.obraz.move(-100 * dt, 0); //add move func
 	
 
@@ -105,7 +107,7 @@ void akcja::klienci(float& dystans, float dt)
 		if (dystans >= 200 && dystans <= 240) t1.nap.setString("dziekuje do widzenia!");
 		
 	}
-	if (dystans >= 750 && !z1.wszyscy)
+	if (dystans >= 500 && !z1.wszyscy)
 	{
 		losowanie = false;
 		sprzedane = false;
@@ -115,7 +117,7 @@ void akcja::klienci(float& dystans, float dt)
 		o1.obraz.setPosition(800, 700); // add set position func
 		dystans = 0;
 	}
-		if (z1.ilu == 6)
+		if (z1.ilu == z1.k)
 		{
 			z1.wszyscy = true;
 

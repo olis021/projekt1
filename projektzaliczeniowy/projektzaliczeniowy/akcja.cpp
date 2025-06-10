@@ -37,12 +37,12 @@ int x;
 
 
 akcja::akcja(petla& p1, zmienne& z1) :p1(p1), z1(z1), g1(750, 1000, "sell.png", "sell.png"), o1(800, 700, "cat1.png"), o2(0, 0, "bakery_background.png"), o3(0, 0, "nakladka_przepis.png"),
-t1(1233, 390, " ", Color::Black, 60), dystans(0), t3(400, 30, "", Color::White, 30), t4(528,475, "", Color::Black, 30), t5(528, 216, "", Color::Black, 30),
+t1(1233, 390, " ", Color::Black, 60), dystans(0), t3(400, 30, "", Color::White, 30), t4(328,475, "", Color::Black, 30), t5(328, 216, "", Color::Black, 30),
 g2(1560, 13, "zakoncz_dzien.png", "zakoncz_dzien_zaznaczony.png"), g3(100, 10, "tg1.png", "tg1.png"), g4(30, 13, "akcja_przepisy_guzik.png", "akcja_przepisy_guzik_zaznaczony.png"),
 g5(780, 0, "gzuik_przepisy.png", "gzuik_przepisy.png"), g6(780, 137, "guzik_skladniki.png", "guzik_skladniki_zaznaczony.png"),
 g7(780, 274, "piecyk.png", "piecyk.png"), g8(780, 411, "guzik_wyjdz.png", "guzik_wyjdz_zaznaczony.png"), t6(100, 950, "mleko", Color::White, 30), t7(100, 650, "drozdze", Color::White, 30), t8(100, 430, "woda", Color::White, 30), t9(100, 200, "jajka", Color::White, 30),
 t10(100, 440, "maslo", Color::White, 30), t2(100, 200, "maka", Color::White, 30),
-g9(780, 600, "olis_strzalka.png", "olis_strzalka03.png"), t11(528, 730, "precle:", Color::Black, 30), t12(528, 990, "rogaliki", Color::Black, 30), t13(528, 216, "chalki", Color::Black, 30), n1(0, 0, "nakladka_przepis.png"), kajzerka(20, 16, 2, 1, 1, "kajzerka.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
+g9(780, 600, "olis_strzalka.png", "olis_strzalka03.png"), t11(328, 730, "precle:", Color::Black, 30), t12(328, 990, "rogaliki", Color::Black, 30), t13(328, 216, "chalki", Color::Black, 30), n1(0, 0, "nakladka_przepis.png"), kajzerka(20, 16, 2, 1, 1, "kajzerka.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
 maka(20, 16, "flour.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"), chlebek(20, 276, 4, 1, 2, "chleb.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
 mleko(20, 796, "milk.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"), drozdze(20, 536, "drozdzebabuni.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
 chalka(20, 16, 2, 3, 2, "chalka.png", "guzik_plus.png", "guzik_plus_zaznaczony.png", "guzik_minus.png", "guzik_minus_zaznaczony.png"),
@@ -119,7 +119,7 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 			{
 				z1.zrobrogala(rogalik.liczba_do_wypieczenia);
 			}
-			if (chalka.moznaUpiec(maka, maslo, jajka, z1) && z1.maka >= maka.liczba_do_wypieczenia && z1.jajka >= jajka.liczba_do_wypieczenia && z1.maslo >= maslo.liczba_do_wypieczenia)
+			if (chalka.moznaUpiec(maka, jajka, maslo, z1) && z1.maka >= maka.liczba_do_wypieczenia && z1.jajka >= jajka.liczba_do_wypieczenia && z1.maslo >= maslo.liczba_do_wypieczenia)
 			{
 				z1.zrobchalke(chalka.liczba_do_wypieczenia);
 			}
@@ -154,21 +154,27 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 		else if (n1.nakladkaAktywna && n1.nakladkaprzepisy && n1.zmienstrone && z1.dzien>6) chalka.przyciskNacisniety(pozycjamyszy);
 		if (n1.nakladkaskladniki && n1.nakladkaAktywna && !n1.zmienstrone)
 		{
-			if(z1.maka> maka.liczba_do_wypieczenia)
-			maka.przyciskNacisnietySkladnik(z1, pozycjamyszy);
+			if (z1.maka > maka.liczba_do_wypieczenia)
+				maka.przyciskNacisnietySkladnik(z1, pozycjamyszy);
+			else if(maka.g2.p1(pozycjamyszy))maka.zmniejsz();
 			if (z1.mleko > mleko.liczba_do_wypieczenia && z1.dzien>1)
 			mleko.przyciskNacisnietySkladnik(z1, pozycjamyszy);
+			else if (mleko.g2.p1(pozycjamyszy))mleko.zmniejsz();
 			if (z1.drozdze > drozdze.liczba_do_wypieczenia)
 			drozdze.przyciskNacisnietySkladnik(z1, pozycjamyszy);
+			else if (drozdze.g2.p1(pozycjamyszy))drozdze.zmniejsz();
 			if (z1.woda > woda.liczba_do_wypieczenia)
 			woda.przyciskNacisnietySkladnik(z1, pozycjamyszy);
+			else if (woda.g2.p1(pozycjamyszy))woda.zmniejsz();
 		}
 		if (n1.nakladkaskladniki && n1.nakladkaAktywna && n1.zmienstrone)
 		{
 			if(z1.jajka>jajka.liczba_do_wypieczenia && z1.dzien>3)
 			jajka.przyciskNacisnietySkladnik(z1, pozycjamyszy);
+			else if (jajka.g2.p1(pozycjamyszy))jajka.zmniejsz();
 			if(z1.maslo>maslo.liczba_do_wypieczenia && z1.dzien>6)
 			maslo.przyciskNacisnietySkladnik(z1, pozycjamyszy);
+			else if (maslo.g2.p1(pozycjamyszy))maslo.zmniejsz();
 		}
 		if (g2.p1(pozycjamyszy) && !n1.nakladkaAktywna || z1.wszyscy)
 		{
@@ -189,16 +195,16 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 void akcja::wyswietl(RenderWindow& okno)
 {
 	t2.nap.setString(to_string(z1.maka));
-	t4.nap.setString(to_string(z1.chleb));
-	t5.nap.setString(to_string(z1.kajzerka));
+	t4.nap.setString(z1.zaokraglij(z1.cena_chlebek) + "    " + to_string(z1.chleb));
+	t5.nap.setString(z1.zaokraglij(z1.cena_kajzerka)+"    " + to_string(z1.kajzerka));
 	t6.nap.setString( to_string(z1.mleko));
 	t7.nap.setString( to_string(z1.drozdze));
 	t8.nap.setString( to_string(z1.woda));
 	t9.nap.setString( to_string(z1.jajka));
 	t10.nap.setString( to_string(z1.maslo));
-	t11.nap.setString(to_string(z1.precel));
-	t12.nap.setString(to_string(z1.rogalik));
-	t13.nap.setString(to_string(z1.chalka));
+	t11.nap.setString(z1.zaokraglij(z1.cena_precel) + "    " + to_string(z1.precel));
+	t12.nap.setString(z1.zaokraglij(z1.cena_rogalik) + "    " + to_string(z1.rogalik));
+	t13.nap.setString(z1.zaokraglij(z1.cena_chalka) + "    " + to_string(z1.chalka));
 	t14.nap.setString("Coins: " + z1.zaokraglij(z1.monety));
 	o2.rysuj(okno);
 	MrPaw.klatka.rysuj(okno);
