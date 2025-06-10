@@ -10,8 +10,8 @@ void akcja::klienci(float& dystans, float dt)
 {
 	if (!losowanie)
 	{
-		if (z1.dzien == 2 || z1.dzien == 4 || z1.dzien == 7) n++;
-		za = losuj(1, n);
+	
+		za = losuj(1, z1.n);
 		ile = losuj(1, 3);
 		numerkota = losuj(0, 9);
 		while (numerkota == ostatnikot)
@@ -114,11 +114,11 @@ void akcja::klienci(float& dystans, float dt)
 		odmowa = false;
 		o1.obraz.setPosition(800, 700); // add set position func
 		dystans = 0;
-		if (z1.ilu == 5)
+	}
+		if (z1.ilu == 6)
 		{
 			z1.wszyscy = true;
 
 		}
-	}
 }
 

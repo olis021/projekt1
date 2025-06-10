@@ -30,6 +30,7 @@ public:
 	int chalka;
 	int rogalik;
 	int ilu = 0;
+	int n = 2;
 	bool wszyscy = false;
 
 	bool wydajzamowienie = false;
@@ -59,8 +60,8 @@ public:
 		monety = monety - podatek;
 	}
 	zmienne() {
-		monety = 20, dzien = 1, maka = 0, chleb = 0, kajzerka = 0, precel = 0, rogalik = 0, chalka = 0, jajka = 0, drozdze = 0, woda = 0, maka = 0, maslo = 0, mleko = 0, inflacja_wartosc = 1.2, podatek = 15;
-			cena_maka = 2, cena_jajko = 0.8, cena_mleko = 2, cena_woda = 0.2, cena_masla = 2.8, cena_drozdze = 0.4, cena_chlebek = 14, cena_kajzerka = 8, cena_precel = 18, cena_chalka = 22, cena_rogalik = 20;
+		monety = 80, dzien = 1, maka = 0, chleb = 0, kajzerka = 0, precel = 0, rogalik = 0, chalka = 0, jajka = 0, drozdze = 0, woda = 0, maka = 0, maslo = 0, mleko = 0, inflacja_wartosc = 1.2, podatek = 15;
+			cena_maka = 2, cena_jajko = 0.8, cena_mleko = 2, cena_woda = 0.2, cena_masla = 2.8, cena_drozdze = 0.4, cena_chlebek = 14, cena_kajzerka = 8, cena_precel = 18, cena_chalka = 26, cena_rogalik = 22;
 	}
 	void inflacja()
 	{

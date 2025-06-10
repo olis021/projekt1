@@ -176,6 +176,7 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 			z1.dzien++;
 			z1.ilu = 0;
 			z1.wszyscy = false;
+			if (z1.dzien == 2 || z1.dzien == 4 || z1.dzien == 7) z1.n++;
 			p1.zmana_stanu(make_unique<sklep>(p1, z1));
 		}
 		if (wyjdz.p1(pozycjamyszy) && !n1.nakladkaAktywna)
@@ -262,7 +263,7 @@ void akcja::wyswietl(RenderWindow& okno)
 			}
 			g1.rysuj(okno);
 		}
-		if (n1.nakladkaekwipunek && !n1.zmienstrone && z1.dzien > 6)
+		if (n1.nakladkaekwipunek && n1.zmienstrone && z1.dzien > 6)
 		{
 			chalka_e.rysuj(okno);
 			if (z1.dzien > 6)okno.draw(t13.nap);
@@ -276,5 +277,14 @@ void akcja::wyswietl(RenderWindow& okno)
 		okno.draw(t1.nap);
 	}
 		okno.draw(t14.nap);
+		if (z1.wszyscy)
+		{
+			z1.inflacja();
+			z1.dzien++;
+			z1.ilu = 0;
+			z1.wszyscy = false;
+			if (z1.dzien == 2 || z1.dzien == 4 || z1.dzien == 7) z1.n++;
+			p1.zmana_stanu(make_unique<sklep>(p1, z1));
+		}
 }
 

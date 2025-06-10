@@ -61,7 +61,7 @@ class akcja :public status_gry
 	float dystans;
 protected:
 
-	int za = 1, ile = 1, n = 2;
+	int za = 1, ile = 1;
 	int numerkota = 0;
 	int ostatnikot = 0;
 	bool sprzedane = false;
