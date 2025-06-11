@@ -31,18 +31,18 @@ void akcja::klienci(float& dystans, float dt)
 		z1.wydajzamowienie = false;
 		o1.obraz.move(-100 * dt, -50 * dt);
 
-		if (hop && hopka==0)
-		{
-			o1.obraz.move(0, -10);
-			hop = false;
-		}else if(!hop && hopka == 0) o1.obraz.move(0, 10) , hop=true;
 		dystans = dystans + 100 * dt;
-		hopka++;
-		czashopka += dt;
-		if (hopka >= 50*czashopka)
-		{
-			hopka = 0;
-		}
+		//if (hop && hopka==0)
+		//{
+		//	o1.obraz.move(0, -10);
+		//	hop = false;
+		//}else if(!hop && hopka == 0) o1.obraz.move(0, 10) , hop=true;
+		//hopka++;
+		//czashopka += dt;
+		//if (hopka >= 50*czashopka)
+		//{
+		//	hopka = 0;
+		//}
 	}
 	if (dystans > 190 && dystans <= 230) //kotek w najzwyzszym polozeniu
 	{
@@ -94,18 +94,18 @@ void akcja::klienci(float& dystans, float dt)
 		o1.obraz.move(-100 * dt, 0); 
 	
 
-		if (hop && hopka==0)
+		dystans = dystans + 100 * dt;
+		/*if (hop && hopka==0)
 		{
 			o1.obraz.move(0, -10);
 			hop = false;
 		}
 		else if(!hop && hopka==0) o1.obraz.move(0, 35), hop = true;
-		dystans = dystans + 100 * dt;
 		hopka++;
 		if (hopka >= 50)
 		{
 			hopka = 0;
-		}
+		}*/
 		t1.nap.setString(" ");
 		if (dystans >= 200 && dystans <= 240) t1.nap.setString("dziekuje do widzenia!");
 		
