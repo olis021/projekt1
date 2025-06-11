@@ -23,7 +23,7 @@ void koniec::obsluga_zdarzen(Event& e, RenderWindow& okno)
     {
         Vector2i pozycjamyszy = Mouse::getPosition(okno);
 
-        if (g1.p1(pozycjamyszy))
+        if (g1.p1(pozycjamyszy)) //guzik wyjdz z gry klikniety
         {
             okno.close();
         }
@@ -32,5 +32,5 @@ void koniec::obsluga_zdarzen(Event& e, RenderWindow& okno)
 void koniec::logika(float dt, Event& e, RenderWindow& okno)
 {
     Vector2i pozycjamyszy = Mouse::getPosition(okno);
-    g1.wskaznikGuzik(pozycjamyszy);
+    g1.wskaznikGuzik(pozycjamyszy); //podswietlanie guzik awyjdz po najechaniu na niego myszka
 }

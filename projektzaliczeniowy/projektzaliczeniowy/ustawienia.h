@@ -6,6 +6,7 @@
 using namespace std;
 using namespace sf;
 class ustawienia :public status_gry
+///instrukcja dla gracza po rozpoczeciu rozgrywki///
 {
 	petla& p1;
 	grafika o1;

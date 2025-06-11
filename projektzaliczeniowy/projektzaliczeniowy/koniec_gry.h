@@ -6,6 +6,7 @@
 using namespace std;
 using namespace sf;
 class koniec :public status_gry
+///klasa pochodna od status_gry, w tym stanie gry jestes informowany o przegranej///
 {
 	petla& p1;
 	zmienne& z1;

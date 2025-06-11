@@ -8,6 +8,7 @@
 using namespace std;
 using namespace sf;
 class akcja :public status_gry
+///klasa pochodna od status_gry, ten stan gry obejmuje glowne mechaniki piekarni - pieczenie chleba, obsluga klientow///
 {
 	petla& p1;
 	zmienne& z1;
@@ -71,6 +72,7 @@ protected:
 	bool losowanie2 = false;
 	bool odmowa = false;
 	bool kotek_najwyzej = false;
+
 
 public:
 	akcja(petla& p1, zmienne& z1);

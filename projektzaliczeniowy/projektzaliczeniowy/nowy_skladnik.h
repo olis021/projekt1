@@ -6,6 +6,7 @@
 using namespace std;
 using namespace sf;
 class nowy_skladnik :public status_gry
+///klasa pochodna od status_gry, w tym stanie gry jestes informowany o wonym odblokowanym skladniku///
 {
 	petla& p1;
 	napisy t1;

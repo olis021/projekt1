@@ -64,9 +64,18 @@ t14(950, 20, "monety", Color::White, 60), chmurka(939,236, "chmurka.png"), zamow
 void akcja::logika(float dt,Event& e,RenderWindow& okno)
 {
 	Vector2i pozycjamyszy = Mouse::getPosition(okno);
-	guzikiZaznaczenie(pozycjamyszy);
-	MrPaw.update(dt);
-	klienci(dystans, dt);
+	guzikiZaznaczenie(pozycjamyszy); //podswietlanie guzikow najechanych wskaznikiem
+	MrPaw.update(dt); //animacja kotka
+	klienci(dystans, dt); //logika klienta i pieczenia
+	if (z1.wszyscy) //zakonczenie dnia po pojaiweniu sie 6 klientow
+	{
+		z1.inflacja();
+		z1.dzien++;
+		z1.ilu = 0;
+		z1.wszyscy = false;
+		if (z1.dzien == 2 || z1.dzien == 4 || z1.dzien == 7) z1.n++;
+		p1.zmana_stanu(make_unique<sklep>(p1, z1));
+	}
 }
 
 void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
@@ -74,7 +83,7 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 	Vector2i pozycjamyszy = Mouse::getPosition(okno);
 	if (e.type == Event::MouseButtonPressed && e.mouseButton.button == Mouse::Left)
 	{
-		if (g1.p1(pozycjamyszy) && n1.nakladkaekwipunek)
+		if (g1.p1(pozycjamyszy) && n1.nakladkaekwipunek) //guzik sprzedaj klikniety
 		{
 			z1.wydajzamowienie = true;
 			chlebek.liczba_do_wypieczenia = 0;
@@ -89,19 +98,19 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 			maslo.liczba_do_wypieczenia = 0;
 			mleko.liczba_do_wypieczenia = 0;
 		}
-		if (odmow.p1(pozycjamyszy) && !z1.wydajzamowienie)
+		if (odmow.p1(pozycjamyszy) && !z1.wydajzamowienie) //guzik odmowienie wydania zamowienia klikniety
 		{
 			odmowa = true;
 		}
-		if (g6.p1(pozycjamyszy))
+		if (g6.p1(pozycjamyszy)) //guzik skladniki klikniety
 		{
 			n1.ustawbool(false, true, false, false, z1);
 		}
-		if (g5.p1(pozycjamyszy))
+		if (g5.p1(pozycjamyszy)) //guzik przepisy klikniety
 		{
 			n1.ustawbool(true, false, false, false, z1);
 		}
-		if (g7.p1(pozycjamyszy))
+		if (g7.p1(pozycjamyszy))//guzik ekwipunek klikniety
 		{
 			if (kajzerka.moznaUpiec(maka,drozdze, woda, z1) && z1.maka >= maka.liczba_do_wypieczenia && z1.drozdze >= drozdze.liczba_do_wypieczenia && z1.woda >= woda.liczba_do_wypieczenia)
 			{
@@ -125,17 +134,17 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 			}
 			n1.ustawbool(false, false, true, z1.wydajzamowienie, z1);
 		}
-		if (g4.p1(pozycjamyszy) && !n1.nakladkaAktywna)
+		if (g4.p1(pozycjamyszy) && !n1.nakladkaAktywna) //guzik nakladka klikniety
 		{
 			meow.play();
 			n1.nakladkaAktywna = true;
 		}
 
-		if (n1.nakladkaAktywna && g8.p1(pozycjamyszy))
+		if (n1.nakladkaAktywna && g8.p1(pozycjamyszy))// guzik wyjdz z nakladki klikniety
 		{
 			n1.nakladkaAktywna = false;
 		}
-		if (n1.nakladkaAktywna && g9.p1(pozycjamyszy) && !n1.zmienstrone)
+		if (n1.nakladkaAktywna && g9.p1(pozycjamyszy) && !n1.zmienstrone) //zmien strone w nakladce 
 		{
 			n1.zmienstrone = true;
 		}
@@ -143,7 +152,7 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 		{
 			n1.zmienstrone = false;
 		}
-		if (n1.nakladkaAktywna && n1.nakladkaprzepisy && !n1.zmienstrone)
+		if (n1.nakladkaAktywna && n1.nakladkaprzepisy && !n1.zmienstrone) //obsluga guzikow przepisow strona 1
 		{
 			kajzerka.przyciskNacisniety(pozycjamyszy);
 			chlebek.przyciskNacisniety(pozycjamyszy);
@@ -151,8 +160,8 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 			precel.przyciskNacisniety(pozycjamyszy);
 			if(z1.dzien>3)rogalik.przyciskNacisniety(pozycjamyszy);
 		}
-		else if (n1.nakladkaAktywna && n1.nakladkaprzepisy && n1.zmienstrone && z1.dzien>6) chalka.przyciskNacisniety(pozycjamyszy);
-		if (n1.nakladkaskladniki && n1.nakladkaAktywna && !n1.zmienstrone)
+		else if (n1.nakladkaAktywna && n1.nakladkaprzepisy && n1.zmienstrone && z1.dzien>6) chalka.przyciskNacisniety(pozycjamyszy); //obsluga guzikow przepisu strona 2
+		if (n1.nakladkaskladniki && n1.nakladkaAktywna && !n1.zmienstrone) // obsluga guzikow skladnikow strona 1
 		{
 			if (z1.maka > maka.liczba_do_wypieczenia)
 				maka.przyciskNacisnietySkladnik(z1, pozycjamyszy);
@@ -167,7 +176,7 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 			woda.przyciskNacisnietySkladnik(z1, pozycjamyszy);
 			else if (woda.g2.p1(pozycjamyszy))woda.zmniejsz();
 		}
-		if (n1.nakladkaskladniki && n1.nakladkaAktywna && n1.zmienstrone)
+		if (n1.nakladkaskladniki && n1.nakladkaAktywna && n1.zmienstrone)//obsluga guzikow skladnikow strona 2
 		{
 			if(z1.jajka>jajka.liczba_do_wypieczenia && z1.dzien>3)
 			jajka.przyciskNacisnietySkladnik(z1, pozycjamyszy);
@@ -176,17 +185,42 @@ void akcja::obsluga_zdarzen(Event& e, RenderWindow& okno)
 			maslo.przyciskNacisnietySkladnik(z1, pozycjamyszy);
 			else if (maslo.g2.p1(pozycjamyszy))maslo.zmniejsz();
 		}
-		if (g2.p1(pozycjamyszy) && !n1.nakladkaAktywna || z1.wszyscy)
+		if (g2.p1(pozycjamyszy) && !n1.nakladkaAktywna || z1.wszyscy)//guzik zakoncz dzien klikniety
 		{
-			z1.inflacja();
 			z1.dzien++;
 			z1.ilu = 0;
 			z1.wszyscy = false;
 			if (z1.dzien == 2 || z1.dzien == 4 || z1.dzien == 7) z1.n++;
 			p1.zmana_stanu(make_unique<sklep>(p1, z1));
 		}
-		if (wyjdz.p1(pozycjamyszy) && !n1.nakladkaAktywna)
+		if (wyjdz.p1(pozycjamyszy) && !n1.nakladkaAktywna) //guzik wyjdz do menu klikniety
 		{
+			z1.inflacja_wartosc = 1, 2;
+			z1.maka = 0;
+			z1.woda = 0;
+			z1.jajka = 0;
+			z1.drozdze = 0;
+			z1.maslo = 0;
+			z1.mleko = 0;
+			z1.chleb = 0;
+			z1.kajzerka = 0;
+			z1.precel = 0;
+			z1.rogalik = 0;
+			z1.chalka = 0;
+			z1.cena_maka = 2;
+			z1.cena_masla = 2.8;
+			z1.cena_jajko = 0.8;
+			z1.cena_woda = 0.2;
+			z1.cena_mleko = 2;
+			z1.cena_drozdze = 0.4;
+			z1.cena_chlebek = 12;
+			z1.cena_kajzerka = 8;
+			z1.cena_precel = 16;
+			z1.cena_rogalik = 18;
+			z1.cena_chalka = 20;
+			z1.podatek = 15;
+			z1.dzien = 1;
+			z1.monety = 80;
 			p1.zmana_stanu(make_unique<menu>(p1));
 		}
 	}
@@ -209,17 +243,17 @@ void akcja::wyswietl(RenderWindow& okno)
 	o2.rysuj(okno);
 	MrPaw.klatka.rysuj(okno);
 	o1.rysuj(okno);
-	if (!z1.wydajzamowienie && !n1.nakladkaAktywna)
+	if (!z1.wydajzamowienie && !n1.nakladkaAktywna) //rysuj guzik odmow
 	{
 		odmow.rysuj(okno);
 	}
-	if (!n1.nakladkaAktywna)
+	if (!n1.nakladkaAktywna) //rysuj guzik zakoncz dzien, wyjdz do menu i nakladka
 	{
 	g2.rysuj(okno);
 	g4.rysuj(okno);
 	wyjdz.rysuj(okno);
 	}
-	else
+	else //rysowanie nakladki
 	{
 		n1.rysuj(okno);
 		g5.rysuj(okno);
@@ -227,31 +261,31 @@ void akcja::wyswietl(RenderWindow& okno)
 		g7.rysuj(okno);
 		g8.rysuj(okno);
 		g9.rysuj(okno);
-		if (n1.nakladkaprzepisy && !n1.zmienstrone)
+		if (n1.nakladkaprzepisy && !n1.zmienstrone) //rysowanie przepisow strona 1
 		{
 			kajzerka.rysujprzepis(okno);
 			chlebek.rysujprzepis(okno);
 			if(z1.dzien>1)precel.rysujprzepis(okno);
 			if(z1.dzien>3)rogalik.rysujprzepis(okno);
 		}
-		if (n1.nakladkaprzepisy && n1.zmienstrone)
+		if (n1.nakladkaprzepisy && n1.zmienstrone)//rysowanie przepisow strona 2
 		{
 			if(z1.dzien>6)chalka.rysujprzepis(okno);
 		}
 
-		if (n1.nakladkaskladniki && !n1.zmienstrone)
+		if (n1.nakladkaskladniki && !n1.zmienstrone)//rysowanie skladnikow strona 1
 		{
 			maka.rysujskladnik(okno), okno.draw(t2.nap);;
 			drozdze.rysujskladnik(okno) , okno.draw(t7.nap);;
 			woda.rysujskladnik(okno), okno.draw(t8.nap);;
 			if (z1.dzien > 1)mleko.rysujskladnik(okno), okno.draw(t6.nap);;
 		}
-		if (n1.nakladkaskladniki && n1.zmienstrone)
+		if (n1.nakladkaskladniki && n1.zmienstrone) //rysowanie przepisow strona 2
 		{
 			if (z1.dzien > 3)jajka.rysujskladnik(okno), okno.draw(t9.nap);;
 			if (z1.dzien > 6)maslo.rysujskladnik(okno), okno.draw(t10.nap);;
 		}
-		if (n1.nakladkaekwipunek && !n1.zmienstrone)
+		if (n1.nakladkaekwipunek && !n1.zmienstrone)//rysowanie ekwipunku strona 1
 		{
 			kajzerka_e.rysuj(okno);
 			chleb_e.rysuj(okno);
@@ -269,28 +303,20 @@ void akcja::wyswietl(RenderWindow& okno)
 			}
 			g1.rysuj(okno);
 		}
-		if (n1.nakladkaekwipunek && n1.zmienstrone && z1.dzien > 6)
+		if (n1.nakladkaekwipunek && n1.zmienstrone && z1.dzien > 6) //rysowanie ekwipunku strona 2
 		{
 			chalka_e.rysuj(okno);
 			if (z1.dzien > 6)okno.draw(t13.nap);
 			g1.rysuj(okno);
 		}
 	}
-	if (kotek_najwyzej)
+	if (kotek_najwyzej) //rysowanie chmurki z zamowieniem
 	{
 		chmurka.rysuj(okno);
 		zamowienie.rysuj(okno);
 		okno.draw(t1.nap);
 	}
 		okno.draw(t14.nap);
-		if (z1.wszyscy)
-		{
-			z1.inflacja();
-			z1.dzien++;
-			z1.ilu = 0;
-			z1.wszyscy = false;
-			if (z1.dzien == 2 || z1.dzien == 4 || z1.dzien == 7) z1.n++;
-			p1.zmana_stanu(make_unique<sklep>(p1, z1));
-		}
+		
 }
 

@@ -13,11 +13,11 @@ void menu::obsluga_zdarzen(Event& e, RenderWindow& okno)
     if (e.type == Event::MouseButtonPressed && e.mouseButton.button == Mouse::Left)
     {
         Vector2i pozycjamyszy = Mouse::getPosition(okno);
-        if (g1.p1(pozycjamyszy))
+        if (g1.p1(pozycjamyszy)) //guzik play
             p1.zmana_stanu(make_unique<ustawienia>(p1));
-        if (g2.p1(pozycjamyszy))
+        if (g2.p1(pozycjamyszy)) //guzik quit
             okno.close();
-        if(g3.p1(pozycjamyszy))
+        if(g3.p1(pozycjamyszy)) //guzik constrols - instrukcja gry
             p1.zmana_stanu(make_unique<kontrolki>(p1));
     }
 }

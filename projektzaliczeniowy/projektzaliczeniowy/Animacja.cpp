@@ -6,7 +6,7 @@ using namespace sf;
 Animacja::Animacja(const vector<string>& sciezki, const vector<float>& czasy, float x, float y): klatki(sciezki), czasKlatek(czasy), klatka(x, y, sciezki[0]) {}
 void Animacja::update(float dt) {
     timer += dt;
-    if (timer >= czasKlatek[aktualna]) {
+    if (timer >= czasKlatek[aktualna]) { // gdy timer jest rowny lub wiekszy od czasu przewidzianego na dana klatke zmieniamy ja
         timer = 0.f;
         aktualna = (aktualna + 1) % klatki.size(); //na poczatku klatka 0 sprawdzamy jaka reszta przez liczbe klatek, jezeli nie 0 to przechodzimy do nastepnje klatki
         klatka.zmienTeksture(klatki[aktualna]);

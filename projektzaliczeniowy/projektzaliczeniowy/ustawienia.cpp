@@ -12,7 +12,7 @@ void ustawienia::obsluga_zdarzen(Event& e, RenderWindow& okno)
     if (e.type == Event::MouseButtonPressed && e.mouseButton.button == Mouse::Left)
     {
         Vector2i pozycjamyszy = Mouse::getPosition(okno);
-        if (g1.p1(pozycjamyszy))
+        if (g1.p1(pozycjamyszy)) //instukcja dla gracza po rozpoczeciu rozgrywki
         {
             p1.zmana_stanu(make_unique<stats>(p1,z1));
         }

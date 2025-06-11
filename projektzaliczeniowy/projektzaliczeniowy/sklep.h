@@ -5,6 +5,7 @@
 using namespace std;
 using namespace sf;
 class sklep :public status_gry
+///klasa pochodna od status_gry, w tym stanie gry p³acisz podatek///
 {
 	petla& p1;
 	grafika o1;

@@ -5,17 +5,18 @@
 #include <iostream>
 using namespace sf;
 using namespace std;
-//plik naglowkowy z klasa obiekt, napisy, grafika, button
-static Color tlo = Color::Black;
-static Font arial;
+
+/// <summary>
+/// Podstawowe klasy takie jak obiekt, grafika, przycisk, napis u¿ywane w ca³ym projekcie
+/// </summary>
 
 class obiekt
-	//podstawowy obiekt, po którym bêd¹ dziedziczyæ klasy guzik, napis itd.
+///podstawowy obiekt, po którym bêd¹ dziedziczyæ klasy guzik, napis itd.///
 {
 protected:
 	float x; //zmienne po³o¿enia
 	float y;
-	FloatRect hitbox;
+	FloatRect hitbox; //SFML: okreslenie hitboxow i kolizji
 public:
 	obiekt(float x, float y);
 	virtual ~obiekt() {};
@@ -32,8 +33,8 @@ public:
 	Text nap;
 	napisy(float x, float y, string tresc, Color kolor, int Size);
 	napisy() : obiekt(0, 0), tresc("napis"), Size(1) {}
-	void rysujnapisInt(RenderWindow& okno, int& x);
-	void zmienNapis(RenderWindow& okno, string nowyNapis);
+	void rysujnapisInt(RenderWindow& okno, int& x); //wyswietl int w formie string
+	void zmienNapis(RenderWindow& okno, string nowyNapis); //zmien tresc napisu
 	virtual ~napisy() {};
 };
 
@@ -46,9 +47,9 @@ public:
 	Sprite obraz;
 	grafika(float x, float y, string nazwa);
 	grafika() : obiekt(0.f, 0.f), nazwa("grafika") {}
-	void rysuj(RenderWindow& okno); //virtual?
-	void zmienTeksture(string nowaTekstura);
-	void zmienPolozenie(float x, float y);
+	void rysuj(RenderWindow& okno); //narusyj grafike
+	void zmienTeksture(string nowaTekstura); //zmien teksture grafiki
+	void zmienPolozenie(float x, float y); //zmien polozenie grafiki
 	Vector2f zwrocPolozenie();
 	virtual ~grafika() {};
 };
@@ -61,15 +62,6 @@ public:
 	button( float x, float y, string nazwa, string nazwaWskaznika);
 	button() : grafika(0,0,"guzik"){}
 	bool p1(Vector2i pozycjamyszy);
-	void wskaznikGuzik(Vector2i pozycjamyszy);
+	void wskaznikGuzik(Vector2i pozycjamyszy); //sprawdz czy naje¿d¿amy wskanzikiem na guzik i zmien jego teksture
 	virtual ~button() {};
 };
-
-
-//
-//class obiekt:public button
-//{
-//public:
-//	obiekt(float x, float y, string nazwa);
-//	bool czystoi();
-//};

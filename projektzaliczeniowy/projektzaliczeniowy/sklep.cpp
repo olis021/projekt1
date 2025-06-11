@@ -31,19 +31,21 @@ void sklep::obsluga_zdarzen(Event& e, RenderWindow& okno)
 
     if (e.type == Event::MouseButtonPressed && e.mouseButton.button == Mouse::Left)
     {
-        if (z1.dzien == 1) 
+        if (z1.dzien == 1) // nie plac czynszu przed pierwszym dniem
         {
             zaplacone = true;
         }
         Vector2i pozycjamyszy = Mouse::getPosition(okno);
 
-        if (g2.p1(pozycjamyszy) && z1.dzien >1 && !zaplacone)
+        if (g2.p1(pozycjamyszy) && z1.dzien >1 && !zaplacone) //guzik zaplac podatek
         {
             z1.zaplacpodatek();
             zaplacone = true;
         }
-        if (g1.p1(pozycjamyszy) && zaplacone && z1.monety>0)
+        if (g1.p1(pozycjamyszy) && zaplacone && z1.monety>0) //guzik przejdz dalej
         {
+            z1.inflacja();
+
             if (z1.dzien == 2 || z1.dzien == 4 || z1.dzien == 7)
             {
                 p1.zmana_stanu(make_unique<nowy_skladnik>(p1, z1));
@@ -54,7 +56,7 @@ void sklep::obsluga_zdarzen(Event& e, RenderWindow& okno)
             }
             zaplacone = false;
         }
-        else if (z1.monety < 0)
+        else if (z1.monety < 0) //przegrana gdy zbyt malo monet
         {
             p1.zmana_stanu(make_unique<koniec>(p1, z1));
 
@@ -64,5 +66,5 @@ void sklep::obsluga_zdarzen(Event& e, RenderWindow& okno)
 void sklep::logika(float dt, Event& e, RenderWindow& okno)
 {
     Vector2i pozycjamyszy = Mouse::getPosition(okno);
-    g1.wskaznikGuzik(pozycjamyszy);
+    g1.wskaznikGuzik(pozycjamyszy); //podswietlanie guzika przejdz dalej
 }

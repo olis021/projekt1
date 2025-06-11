@@ -5,10 +5,11 @@
 #include "Na1.h"
 
 class Animacja
+///klasa animacja na potrzeby animacji kotka piekarza bedacej w tle gdy status_gry to akcja///
 {
 protected:
-	const vector<string> klatki;
-	const vector<float> czasKlatek;
+	const vector<string> klatki; //vector z nazwami plikow poszczegolnych klatek
+	const vector<float> czasKlatek; //ile czasu kazda klatka ma przebywac na ekranie
 	size_t aktualna = 0;
 	float timer = 0.f;
 public:

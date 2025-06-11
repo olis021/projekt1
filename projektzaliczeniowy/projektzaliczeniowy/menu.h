@@ -5,7 +5,7 @@
 #include "status_gry.h"
 using namespace std;
 using namespace sf;
-//dzeidziczy po klasie wirtualnej (musi miec te same funkcje - dlatego override - zapewnic poprawne nadpisywanie funkcji wirtualnej)
+
 class menu :public status_gry
 {
 	petla& p1;

@@ -7,6 +7,7 @@ using namespace sf;
 
 
 class skladnik : public grafika
+/// klasa skladnik - zebranie grafik, zmiennych i guzikow przypisanych do danego skladnika w jaednym miejscu///
 {
 public:
 	int liczba_do_wypieczenia = 0;
@@ -14,17 +15,18 @@ public:
 	napisy t1;
 	button g1;
 	button g2;
-	void zmniejsz();
+	void zmniejsz(); //zmniejsz liczbe_do_wypieczenia
 	skladnik(float x, float y, string nazwaObraz, string nazwaGuzik1, string nazwaGuzikZaznaczony1, string nazwaGuzik2, string nazwaGuzikZaznaczony2);
 	skladnik() : grafika(0, 0, "kajzerka.png"),
 		g1(0 + 340, 0 + 160, "kajzerka.png", "kajzerka.png"), g2(0 + 589, 0 + 160, "kajzerka.png", "kajzerka.png"), t1(0 + 495, 0 + 168, "0", Color::Black, 50) {
 	}
 	void rysujskladnik(RenderWindow& okno);
-	void przyciskNacisnietySkladnik(zmienne& z1, Vector2i pozycjamyszy);
+	void przyciskNacisnietySkladnik(zmienne& z1, Vector2i pozycjamyszy); // zwieksz lub zmniejsz liczba_do_wypieczenia
 	virtual ~skladnik() {};
 };
 
 class przepis : public skladnik
+///klasa zbiera grafiki, przyciski i zmnienne danego przepisu w jednym miejscu///
 {
 public:
 	bool warunek(skladnik& s1, skladnik& s2, skladnik& s3);
@@ -41,12 +43,13 @@ public:
 	}
 	void rysujprzepis(RenderWindow& okno);
 	void przyciskNacisniety(Vector2i pozycjamyszy);
-	bool moznaUpiec(skladnik& s1, skladnik& s2, skladnik& s3, zmienne& z1);
+	bool moznaUpiec(skladnik& s1, skladnik& s2, skladnik& s3, zmienne& z1); // sprawdzenie czy mozliwe jest upieczenie danego wypieku
 	virtual ~przepis() {};
 };
 
 
 class nakladka : public grafika
+///nakladka pieczenie + warunki wyswietlania przepisow, ladnikow i ekwipunku///
 {
 public:
 	bool nakladkaAktywna = false;

@@ -84,10 +84,10 @@ public:
 	}
 	string zaokraglij(double& x)
 	{
-		x = round(x * 100.0) / 100.0;
+		x = round(x * 100.0) / 100.0; // fucnkja round zaokragla do najblizszej liczby calkowitej, zaokraglamy dane ze zmiennych
 		ostringstream bufor_do_string;
-		bufor_do_string << fixed << setprecision(2) << x;
-		return bufor_do_string.str();
+		bufor_do_string << fixed << setprecision(2) << x; //ustaw stala liczbe miejsc po przecinku, zaokraglamy do stringa
+		return bufor_do_string.str(); 
 	}
 	virtual ~zmienne() {};
 };

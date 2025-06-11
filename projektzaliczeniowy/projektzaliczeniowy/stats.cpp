@@ -19,7 +19,7 @@ void stats::wyswietl(RenderWindow& okno)
     t5.nap.setString("Milk: " + to_string(z1.mleko) + ", price: " + z1.zaokraglij(z1.cena_mleko));
     t7.nap.setString("Egg: " + to_string(z1.jajka) + ", price: " + z1.zaokraglij(z1.cena_jajko));
     t8.nap.setString("Butter: " + to_string(z1.maslo) + ", price: " + z1.zaokraglij(z1.cena_masla));
-    o1.rysuj(okno);
+    o1.rysuj(okno); //tlo
     g2.rysuj(okno);
     g1.rysuj(okno);
     okno.draw(t2.nap);
@@ -27,17 +27,17 @@ void stats::wyswietl(RenderWindow& okno)
     okno.draw(t4.nap);
     g4.rysuj(okno);
     okno.draw(t6.nap);
-    if (z1.dzien > 1)
+    if (z1.dzien > 1) //skladniki >= dzien 2
     {
         g5.rysuj(okno);
         okno.draw(t5.nap);
     }
-    if (z1.dzien > 3)
+    if (z1.dzien > 3) //skladniki >= dzien 4
     {
         g6.rysuj(okno);
         okno.draw(t7.nap);
     }
-    if (z1.dzien > 6)
+    if (z1.dzien > 6) //skladniki >= dzien 7
     {
         g7.rysuj(okno);
         okno.draw(t8.nap);
@@ -51,49 +51,49 @@ void stats::obsluga_zdarzen(Event& e,RenderWindow& okno)
     if (e.type == Event::MouseButtonPressed && e.mouseButton.button == Mouse::Left)
     {
         Vector2i pozycjamyszy = Mouse::getPosition(okno);
-        if (g1.p1(pozycjamyszy))
+        if (g1.p1(pozycjamyszy)) //guzik zakup maki
         {
             if (z1.monety+niepewnosc >= z1.cena_maka) {
                 z1.kupmake();
             }
             
         }
-        if (g3.p1(pozycjamyszy))
+        if (g3.p1(pozycjamyszy)) //guzik zakup drozdzy
         {
             if (z1.monety + niepewnosc >= z1.cena_drozdze)
             {
                 z1.kupdrozdze();
             }
         }
-        if (g4.p1(pozycjamyszy))
+        if (g4.p1(pozycjamyszy)) //guzik zakup wody
         {
             if (z1.monety + niepewnosc >= z1.cena_woda)
             {
                 z1.kupwoda();
             }
         }
-        if (g5.p1(pozycjamyszy) && z1.dzien>1)
+        if (g5.p1(pozycjamyszy) && z1.dzien>1) //guzik zakup mleka
         {
             if (z1.monety + niepewnosc >= z1.cena_mleko)
             {
                 z1.kupmleko();
             }
         }
-        if (g6.p1(pozycjamyszy) && z1.dzien>3)
+        if (g6.p1(pozycjamyszy) && z1.dzien>3) //guzik zakup jajek
         {
             if (z1.monety + niepewnosc >= z1.cena_jajko)
             {
                 z1.kupjajka();
             }
         }
-        if (g7.p1(pozycjamyszy) && z1.dzien>6)
+        if (g7.p1(pozycjamyszy) && z1.dzien>6) //guzik zakup masla
         {
             if (z1.monety + niepewnosc >= z1.cena_masla)
             {
                 z1.kupmaslo();
             }
         }
-        if (g2.p1(pozycjamyszy))
+        if (g2.p1(pozycjamyszy)) //guzik graj dalej
         {
             p1.zmana_stanu(make_unique<akcja>(p1,z1));
         }
@@ -102,5 +102,5 @@ void stats::obsluga_zdarzen(Event& e,RenderWindow& okno)
 void stats::logika(float dt, Event& e, RenderWindow& okno)
 {
     Vector2i pozycjamyszy = Mouse::getPosition(okno);
-    g2.wskaznikGuzik(pozycjamyszy);
+    g2.wskaznikGuzik(pozycjamyszy); //podswietlenie guzika graj dalej
 }

@@ -6,6 +6,7 @@
 using namespace std;
 using namespace sf;
 class kontrolki :public status_gry
+///klasa pochodna po status_gry, która zawiera instrukcje gry///
 {
 	petla& p1;
 	button g1;
